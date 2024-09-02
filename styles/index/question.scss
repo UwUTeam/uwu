@@ -2,42 +2,101 @@
 
 .question {
   position: relative;
-  width: 80%;
+  width: 100%;
+
+  .button_qw {
+    width: 49%;
+  }
 }
 
-h2 {
-  font-size: 1.125rem; // equivalent to text-lg
-  font-weight: bold; // equivalent to font-bold
-  color: $color_text; // equivalent to text-black
-
-  span {
-    color: $color_orenge; // equivalent to text-orange-500
-  }
+span {
+  color: $color_orenge; // equivalent to text-orange-500
 }
 
 .tabs {
   display: flex;
-  margin-top: 1rem; // equivalent to mt-4
+  /*  margin-top: 1rem; */ // equivalent to mt-4
 
   .tab-group {
     display: flex;
     flex-direction: column;
     gap: 0.5rem; // equivalent to space-y-2
-
+    width: 100%;
+    .but_con {
+      // equivalent to px-4 py-2
+      border-radius: $border_rad; // equivalent to rounded-lg
+      background-color: $color_block_content; // equivalent to bg-gray-200
+      color: $color_text; // equivalent to text-black
+      z-index: 1;
+    }
     .tab {
       padding: 0.5rem 1rem; // equivalent to px-4 py-2
       border-radius: $border_rad; // equivalent to rounded-lg
-      background-color: #e5e7eb; // equivalent to bg-gray-200
+      background-color: $color_block_content; // equivalent to bg-gray-200
       color: $color_text; // equivalent to text-black
+      z-index: 1;
+      transition: all 0.3s ease;
 
       &.active {
         background-color: $color_orenge; // equivalent to bg-orange-500
         color: $color_text_w; // equivalent to text-white
+        z-index: 2;
       }
     }
   }
 
   .tab-group + .tab-group {
     margin-left: 0.5rem; // equivalent to space-x-2
+  }
+}
+.tab-test {
+  background-color: $color_line;
+  width: 100%;
+
+  border-radius: $border_rad;
+}
+.tab {
+  padding: 0.5rem 1rem; // equivalent to px-4 py-2
+  border-radius: $border_rad; // equivalent to rounded-lg
+  background-color: $color_block_content; // equivalent to bg-gray-200
+  color: $color_text; // equivalent to text-black
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  &.active {
+    background-color: $color_orenge; // equivalent to bg-orange-500
+    color: $color_text_w; // equivalent to text-white
+    z-index: 2;
+  }
+}
+.but_con {
+  // equivalent to px-4 py-2
+  border-radius: $border_rad; // equivalent to rounded-lg
+  background-color: $color_block_content; // equivalent to bg-gray-200
+  color: $color_text; // equivalent to text-black
+  z-index: 1;
+}
+.tab-test {
+  border-radius: $border_rad; // первоначальный радиус углов
+
+  &.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0px;
+  }
+}
+.drop-content {
+  background-color: $color_block_content;
+  border-color: $color_block_content;
+  position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  /* margin-top: -10px; */
+  transition: all 0.3s ease;
+  p {
+    text-align: center;
   }
 }
