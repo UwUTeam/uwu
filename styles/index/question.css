@@ -115,12 +115,39 @@ body {
   flex-direction: column;
 }
 
-.firstblock {
-  background-color: #ffffff;
-  width: 60%;
-  /* height: 300px; */ /* Adjust the height as needed */
-  padding: 20px;
-  margin: 0 auto;
-  margin-top: 4px;
+.question {
+  position: relative;
+  width: 80%;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #000000;
+}
+h2 span {
+  color: #f96c33;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 1rem;
+}
+.tabs .tab-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tabs .tab-group .tab {
+  padding: 0.5rem 1rem;
   border-radius: 25px;
-}/*# sourceMappingURL=firstblock.css.map */
+  background-color: #e5e7eb;
+  color: #000000;
+}
+.tabs .tab-group .tab.active {
+  background-color: #f96c33;
+  color: #ffffff;
+}
+.tabs .tab-group + .tab-group {
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=question.css.map */

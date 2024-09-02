@@ -1,0 +1,43 @@
+@import "main.scss";
+
+.question {
+  position: relative;
+  width: 80%;
+}
+
+h2 {
+  font-size: 1.125rem; // equivalent to text-lg
+  font-weight: bold; // equivalent to font-bold
+  color: $color_text; // equivalent to text-black
+
+  span {
+    color: $color_orenge; // equivalent to text-orange-500
+  }
+}
+
+.tabs {
+  display: flex;
+  margin-top: 1rem; // equivalent to mt-4
+
+  .tab-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; // equivalent to space-y-2
+
+    .tab {
+      padding: 0.5rem 1rem; // equivalent to px-4 py-2
+      border-radius: $border_rad; // equivalent to rounded-lg
+      background-color: #e5e7eb; // equivalent to bg-gray-200
+      color: $color_text; // equivalent to text-black
+
+      &.active {
+        background-color: $color_orenge; // equivalent to bg-orange-500
+        color: $color_text_w; // equivalent to text-white
+      }
+    }
+  }
+
+  .tab-group + .tab-group {
+    margin-left: 0.5rem; // equivalent to space-x-2
+  }
+}

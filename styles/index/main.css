@@ -113,14 +113,4 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.firstblock {
-  background-color: #ffffff;
-  width: 60%;
-  /* height: 300px; */ /* Adjust the height as needed */
-  padding: 20px;
-  margin: 0 auto;
-  margin-top: 4px;
-  border-radius: 25px;
-}/*# sourceMappingURL=firstblock.css.map */
+}/*# sourceMappingURL=main.css.map */
