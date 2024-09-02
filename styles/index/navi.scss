@@ -1,0 +1,62 @@
+// Основные стили для навигации
+.firstblock.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; // Настройка отступов по вашему дизайну
+    background-color: #fff; // Цвет фона
+  
+    // Логотип
+    .navbar-logo {
+      img {
+        height: 40px; // Подгоните высоту под ваш дизайн
+      }
+    }
+  
+    // Личный кабинет
+    .navbar-account {
+      display: inline-block;
+      padding: 10px 20px; // Настройка внутреннего отступа
+      font-size: 16px;
+      color: #fff; // Цвет текста
+      background-color: #ff7f50; // Оранжевый фон кнопки
+      border-radius: 20px; // Радиус скругления углов кнопки
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #ff5722; // Цвет кнопки при наведении
+      }
+    }
+  
+    // Кнопка бургер-меню
+    .navbar-burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+  
+      span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #ff7f50; // Цвет для полосок бургер-меню
+        border-radius: 2px;
+      }
+    }
+  
+    // Выравнивание кнопки и бургер-меню
+    .navbar-account,
+    .navbar-burger {
+      margin-left: auto; // Перемещает "Личный кабинет" и бургер-меню вправо
+    }
+  
+    .navbar-burger {
+      margin-left: 10px; // Отступ между кнопкой "Личный кабинет" и бургер-меню
+    }
+  }
+  
