@@ -2,15 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 5px 20px;
   background-color: #fff;
 }
 .firstblock.navi .navbar-logo img {
   height: 40px;
+  padding-right: 15px;
+  border-radius: 50%;
 }
 .firstblock.navi .navbar-account {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-size: 16px;
   color: #fff;
   background-color: #ff7f50;
@@ -23,20 +25,23 @@
 }
 .firstblock.navi .navbar-burger {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  background: transparent;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ff7f50;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
-.firstblock.navi .navbar-burger span {
+.firstblock.navi .navbar-burger::before {
+  content: "";
   display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #ff7f50;
-  border-radius: 2px;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
 }
 .firstblock.navi .navbar-account,
 .firstblock.navi .navbar-burger {

@@ -3,21 +3,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px; // Настройка отступов по вашему дизайну
+    padding: 5px 20px; // Отступы для навигационного блока
     background-color: #fff; // Цвет фона
   
     // Логотип
     .navbar-logo {
       img {
-        height: 40px; // Подгоните высоту под ваш дизайн
+        height: 40px; // Высота логотипа
+        padding-right: 15px; // Отступ справа
+        border-radius: 50%; // Круглая форма изображения
       }
     }
   
     // Личный кабинет
     .navbar-account {
       display: inline-block;
-      padding: 10px 20px; // Настройка внутреннего отступа
-      font-size: 16px;
+      padding: 8px 20px; // Внутренние отступы
+      font-size: 16px; // Размер шрифта
       color: #fff; // Цвет текста
       background-color: #ff7f50; // Оранжевый фон кнопки
       border-radius: 20px; // Радиус скругления углов кнопки
@@ -29,27 +31,31 @@
       }
     }
   
-    // Кнопка бургер-меню
+    // Бургер-меню
     .navbar-burger {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30px;
-      height: 20px;
-      background: transparent;
+      justify-content: center;
+      align-items: center;
+      width: 40px; // Ширина круга бургер-меню
+      height: 40px; // Высота круга бургер-меню
+      background-color: #ff7f50; // Цвет фона круга
+      border-radius: 50%; // Круглая форма
       border: none;
       cursor: pointer;
+      padding: 0;
   
-      span {
+      // Горизонтальная линия внутри круга
+      &::before {
+        content: '';
         display: block;
-        width: 100%;
-        height: 4px;
-        background-color: #ff7f50; // Цвет для полосок бургер-меню
-        border-radius: 2px;
+        width: 16px; // Ширина линии
+        height: 2px; // Высота линии
+        background-color: #fff; // Цвет линии
+        border-radius: 1px; // Скругленные углы линии
       }
     }
   
-    // Выравнивание кнопки и бургер-меню
+    // Расположение кнопок
     .navbar-account,
     .navbar-burger {
       margin-left: auto; // Перемещает "Личный кабинет" и бургер-меню вправо
