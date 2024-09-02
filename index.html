@@ -12,11 +12,11 @@
     />
 
     <!-- Custom CSS compiled from SCSS -->
-
-    <link rel="stylesheet" href="/styles/index/firstblock.css" />
-    <link rel="stylesheet" href="/styles/index/search_pack.css">
-    <link rel="stylesheet" href="/styles/index/question.css" />
     <link rel="stylesheet" href="/styles/index/main.css" />
+    <link rel="stylesheet" href="/styles/index/firstblock.css" />
+    <link rel="stylesheet" href="/styles/index/search_pack.css" />
+    <link rel="stylesheet" href="/styles/index/question.css" />
+
     <link rel="stylesheet" href="/styles/index/navi.css" />
   </head>
   <div class="firstblock navi">
@@ -49,23 +49,65 @@
 
     <div class="firstblock">
       <div class="question">
-        <h2>Часто задаваемые <span>вопросы</span> и <span>требования</span></h2>
-
-        <div class="tabs">
-          <div class="tab-group">
+        <div class="tabs column-gap-2">
+          <div class="col">
             <div class="flax flax-row">
-              <button class="tab active">вопросы</button>
-              <button class="tab">требования</button>
+              <h2 class="fs-4 font-bold w-100 mb-1">
+                Часто задаваемые <span>вопросы</span> и <span>требования</span>
+              </h2>
+              <div class="but_con">
+                <button
+                  class="tab active button_w button_qw"
+                  id="questions-btn"
+                >
+                  вопросы
+                </button>
+                <button class="tab button_q button_qw" id="requirements-btn">
+                  требования
+                </button>
+              </div>
             </div>
-            <button class="tab">Как я могу отследить свою посылку?</button>
-            <button class="tab">Как я могу отследить свою посылку?</button>
-            <button class="tab">Как я могу отследить свою посылку?</button>
+            <div class="dropdown">
+              <button
+                id="dropdownButton"
+                class="tab-test p-2 mt-1 btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <button class="tab-test p-2 mt-1">
+              Как я могу отследить свою посылку?
+            </button>
+            <button class="tab-test p-2 mt-1">
+              Как я могу отследить свою посылку?
+            </button>
           </div>
 
-          <div class="tab-group">
-            <button class="tab">отследить свою посылку?</button>
-            <button class="tab">Как я могу отследить свою посылку?</button>
-            <button class="tab">Как я могу отследить свою посылку?</button>
+          <div class="col mt-2">
+            <button class="tab-test p-2 mt-2">
+              Как я могу отследить свою посылку?
+            </button>
+            <button class="tab-test p-2 mt-1">
+              Как я могу отследить свою посылку?
+            </button>
+            <button class="tab-test p-2 mt-1">
+              Как я могу отследить свою посылку?
+            </button>
+            <button class="tab-test p-2 mt-1">
+              Как я могу отследить свою посылку?
+            </button>
+            <button class="tab-test p-2 mt-1">
+              Как я могу отследить свою посылку?
+            </button>
           </div>
         </div>
       </div>
@@ -81,5 +123,29 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document
+        .getElementById("questions-btn")
+        .addEventListener("click", function () {
+          this.classList.add("active");
+          document
+            .getElementById("requirements-btn")
+            .classList.remove("active");
+        });
+
+      document
+        .getElementById("requirements-btn")
+        .addEventListener("click", function () {
+          this.classList.add("active");
+          document.getElementById("questions-btn").classList.remove("active");
+        });
+    </script>
+    <script>
+      document
+        .getElementById("dropdownButton")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
