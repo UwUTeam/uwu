@@ -178,6 +178,7 @@ span {
   background-color: #f96c33;
   color: #ffffff;
   z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .but_con {
@@ -194,6 +195,7 @@ span {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-bottom: 0px;
+  box-shadow: 0 10px 1px 0px #f2f3f5;
 }
 
 .drop-content {
@@ -207,6 +209,7 @@ span {
   border: none;
   /* margin-top: -10px; */
   transition: all 0.3s ease;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .drop-content p {
   text-align: center;

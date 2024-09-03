@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <title>My Website</title>
 
     <!-- Bootstrap CSS -->
@@ -12,32 +15,34 @@
     />
 
     <!-- Custom CSS compiled from SCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/index/main.css" />
     <link rel="stylesheet" href="/styles/index/firstblock.css" />
     <link rel="stylesheet" href="/styles/index/search_pack.css" />
     <link rel="stylesheet" href="/styles/index/question.css" />
-
+    <link rel="stylesheet" href="/styles/index/news_block.css" />
     <link rel="stylesheet" href="/styles/index/navi.css" />
   </head>
-  <div class="firstblock navi">
-    <!-- Логотип -->
-    <a href="/" class="navbar-logo">
-      <img src="/img/logo.png" alt="Логотип сайта" />
-    </a>
-  
-    <!-- Личный кабинет -->
-    <a href="/account" class="navbar-account">
-      Личный кабинет
-    </a>
-  
-    <!-- Кнопка бургер-меню -->
-    <button class="navbar-burger" aria-label="Открыть меню">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-  
+  <body>
+    <div class="firstblock navi">
+      <!-- Логотип -->
+      <a href="/" class="navbar-logo">
+        <img src="/img/logo.png" alt="Логотип сайта" />
+      </a>
+
+      <!-- Личный кабинет -->
+      <a href="/account" class="navbar-account"> Личный кабинет </a>
+
+      <!-- Кнопка бургер-меню -->
+      <button class="navbar-burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
     <div class="firstblock"></div>
 
@@ -69,8 +74,7 @@
             </div>
             <div class="dropdown">
               <button
-                id="dropdownButton"
-                class="tab-test p-2 mt-1 btn-secondary dropdown-toggle"
+                class="tab-test p-2 mt-1 btn-secondary"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -84,34 +88,463 @@
                 </p>
               </ul>
             </div>
-            <button class="tab-test p-2 mt-1">
-              Как я могу отследить свою посылку?
-            </button>
-            <button class="tab-test p-2 mt-1">
-              Как я могу отследить свою посылку?
-            </button>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
           </div>
-
           <div class="col mt-2">
-            <button class="tab-test p-2 mt-2">
-              Как я могу отследить свою посылку?
-            </button>
-            <button class="tab-test p-2 mt-1">
-              Как я могу отследить свою посылку?
-            </button>
-            <button class="tab-test p-2 mt-1">
-              Как я могу отследить свою посылку?
-            </button>
-            <button class="tab-test p-2 mt-1">
-              Как я могу отследить свою посылку?
-            </button>
-            <button class="tab-test p-2 mt-1">
-              Как я могу отследить свою посылку?
-            </button>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="firstblock">
+      <div class="dropdown">
+        <button
+          class="news-block-content p-2 mt-1 btn-secondary"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <div class="news-block-content d-flex flex-grow-1">
+            <img src="https://via.placeholder.com/40" alt="Avatar" />
+            <div>
+              <div class="title">Автор: Администратор</div>
+              <div class="description">Новая технология отслеживания</div>
+            </div>
+          </div>
+        </button>
+        <ul class="dropdown-menu drop-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at
+            odio reiciendis.000000000000000000000000000000000000000
+          </p>
+        </ul>
+      </div>
+
+      <div class="news-block-content d-flex flex-grow-1">
+        <img src="https://via.placeholder.com/40" alt="Avatar" />
+        <div>
+          <div class="title">Автор: Администратор</div>
+          <div class="description">Новая технология отслеживания</div>
+        </div>
+      </div>
+    </div>
+    <div class="firstblock">
+      <div class="news-text-h2">
+        <h2 class="news-text fs-4 font-bold w-100 mb-1">
+          Последние новости в <span>мире</span>
+        </h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news-block d-flex flex-column w-100 h-100">
+              <div class="tabs d-flex w-100 h-100 gap-2">
+                <div class="news-block-col col-6 d-flex flex-column gap-2">
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 0000000000000
+                        000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.000000000 000000000000
+                        00000000000 0000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.000000000 0000000 000000
+                        00000 00000 00 0000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.0000 00000000000
+                        0000000000 000000000 00000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">заменить на другой элемент</div>
+                          <div class="description">
+                            заменить на другой элемент
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 00000000
+                        00000000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <!-- Повторите блоки контента по аналогии -->
+                </div>
+                <div class="news-block-col col-6 d-flex flex-column gap-2">
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.0000000000000000
+                        00000000000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.000000000000 00000000
+                        000000 00000 00000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.000000 000000000 0000000
+                        000000 00000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">Автор: Администратор</div>
+                          <div class="description">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.000000 00000000000
+                        000000000 00000000 00000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title">заменить на другой элемент</div>
+                          <div class="description">
+                            заменить на другой элемент
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.000000 00000 000000 00000
+                        000 000000 00000000
+                      </p>
+                    </ul>
+                  </div>
+                  <!-- Повторите блоки контента по аналогии -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="firstblock"></div>
 
     <div class="firstblock"></div>
 
@@ -123,6 +556,40 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Находим все dropdown элементы
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        // Для каждого dropdown элемента
+        dropdowns.forEach(function (dropdown) {
+          const dropdownButton = dropdown.querySelector(".btn-secondary");
+          const dropdownMenu = dropdown.querySelector(
+            ".dropdown-menu.drop-content"
+          );
+
+          // Функция для добавления или удаления класса 'active'
+          function toggleActiveClass() {
+            if (dropdownMenu.classList.contains("show")) {
+              dropdownButton.classList.add("active");
+            } else {
+              dropdownButton.classList.remove("active");
+            }
+          }
+
+          // Отслеживаем изменения в атрибутах класса
+          const observer = new MutationObserver(toggleActiveClass);
+
+          // Начинаем наблюдение за элементом dropdownMenu
+          observer.observe(dropdownMenu, {
+            attributes: true, // Наблюдаем за изменениями атрибутов
+            attributeFilter: ["class"], // Только для изменений класса
+          });
+        });
+      });
+    </script>
     <script>
       document
         .getElementById("questions-btn")
@@ -141,11 +608,15 @@
         });
     </script>
     <script>
-      document
-        .getElementById("dropdownButton")
-        .addEventListener("click", function () {
-          this.classList.toggle("active");
-        });
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
     </script>
   </body>
 </html>

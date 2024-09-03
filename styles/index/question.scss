@@ -67,6 +67,7 @@ span {
     background-color: $color_orenge; // equivalent to bg-orange-500
     color: $color_text_w; // equivalent to text-white
     z-index: 2;
+    transition: all 0.3s ease;
   }
 }
 .but_con {
@@ -83,19 +84,21 @@ span {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 0px;
+    box-shadow: 0 10px 1px 0px $color_block_content;
   }
 }
 .drop-content {
   background-color: $color_block_content;
   border-color: $color_block_content;
   position: relative;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: $border_rad;
+  border-bottom-right-radius: $border_rad;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border: none;
   /* margin-top: -10px; */
   transition: all 0.3s ease;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
   p {
     text-align: center;
   }

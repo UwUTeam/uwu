@@ -7,7 +7,11 @@ $color_text_w: #ffffff;
 $color_block_content: #f2f3f5;
 $border_rad: 25px;
 $padding_main: 20px;
+$index: --index; /* root */
 
+:root {
+  --index: calc(1vw + 1vh);
+}
 * {
   padding: 0px;
   margin: 0px;
