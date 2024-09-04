@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* root */
+:root {
+  --index: calc(1vw + 1vh);
+}
+
 * {
   padding: 0px;
   margin: 0px;
