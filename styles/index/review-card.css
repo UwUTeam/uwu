@@ -1,18 +1,9 @@
-$color_bac: #f2f3f5;
-$color_block: #ffffff;
-$color_orenge: #f96c33;
-$color_line: #f2f3f5;
-$color_text: #000000;
-$color_text_w: #ffffff;
-$color_block_content: #f2f3f5;
-$border_rad: 25px;
-$padding_main: 20px;
-$transition-time: 0.5s;
-$index: --index; /* root */
-
+@charset "UTF-8";
+/* root */
 :root {
   --index: calc(1vw + 1vh);
 }
+
 * {
   padding: 0px;
   margin: 0px;
@@ -93,7 +84,7 @@ input::-ms-clear {
 }
 
 button,
-input[type="submit"] {
+input[type=submit] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -123,8 +114,8 @@ legend {
 
 /* обнуление конец */
 body {
-  background-color: $color_bac;
+  background-color: #f2f3f5;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+}/*# sourceMappingURL=review-card.css.map */

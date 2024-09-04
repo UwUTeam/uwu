@@ -218,4 +218,12 @@ span {
 }
 .drop-content p {
   text-align: center;
+}
+
+.orange-line {
+  width: 90%; /* Линия занимает 80% от ширины блока */
+  height: 3px; /* Высота линии */
+  background-color: #f96c33; /* Цвет линии */
+  margin: 0 auto; /* Центрирование линии */
+  border-radius: 25px;
 }/*# sourceMappingURL=question.css.map */

@@ -123,6 +123,7 @@ body {
 .firstblock {
   background-color: #ffffff;
   width: 60%;
+  max-width: 1150px;
   /* height: 300px; */ /* Adjust the height as needed */
   padding: 20px;
   margin: 0 auto;
