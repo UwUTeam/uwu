@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>My Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />  <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> <!-- Custom CSS compiled from SCSS -->
+    <link rel="stylesheet" href="/styles/login/main.css" />
+    <link rel="stylesheet" href="/styles/login/firstblock.css" />
+    <link rel="stylesheet" href="/styles/login/navi.css" />
+    <link rel="stylesheet" href="/styles/login/panel.css" />
+    <link rel="stylesheet" href="/styles/login/login.css" />
+    <link rel="stylesheet" href="/styles/login/test.css" />
+<body>
+    <div class="firstblock navi show" style="position: relative">
+        <!-- Логотип -->
+        <a href="/" class="navbar-logo">
+          <img src="/img/logo.png" alt="Логотип сайта" />
+        </a>
+  
+        <!-- Личный кабинет -->
+        <a href="/account" class="navbar-account"> Личный кабинет </a>
+  
+        <!-- Бургер-меню -->
+        <div class="navbar-container">
+          <button class="navbar-burger" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+            <!-- Иконка бургер-меню -->
+            <i class="bi bi-x-lg d-none"></i>
+            <!-- Иконка крестика, скрыта по умолчанию -->
+          </button>
+        </div>
+  
+        <!-- Меню, которое должно открываться на всю ширину контейнера -->
+        <nav class="navbar-menu">
+          <ul class="navbar-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Услуги</a></li>
+          </ul>
+  
+          <!-- Языковой переключатель -->
+          <div class="language-switcher">
+            <button class="lang-btn lang-active">en</button>
+            <button class="lang-btn">ru</button>
+            <button class="lang-btn">de</button>
+          </div>
+        </nav>
+      </div>
+    <!--  <div class="firstblock panel"> 
+        <div class="login-container">
+            <form class="login-form">
+              <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+              <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+          
+
+
+              <div class="form-floating  form-group ">
+                <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                <label for="floatingInput">Адрес электронной почты</label>
+              </div>
+              <div class="form-floating form-group ">
+                <input type="password" class="form-control " id="floatingPassword" placeholder="Пароль"  required>
+                <label for="floatingPassword">Пароль</label>
+              </div>
+          
+              <button type="submit" class="login-btn">войти</button>
+          
+              <div class="registration-link">
+                <a href="#" class="btn btn-light">регистрация</a> <a href="#" class="btn btn-light">восстановить</a>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+                </form>
+          </div>
+    </div>
+    <div class="firstblock panel"> <div class="login-container"> 
+        <form class="login-form">
+          <h2 class="login-title">Регистрация нового  <span class="highlight">пользователя</span></h2>
+          <p class="login-subtitle">Еще нет аккаунта? Зарегистрируйтесь, чтобы начать пользоваться всеми преимуществами нашего сервиса.</p>
+      
+          <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating  form-group ">
+           
+        
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">2</label>
+               
+                  </div> 
+            </div>
+            <div class="col-md">
+                <div class="form-floating  form-group ">
+           
+        
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">2</label>
+               
+                  </div> 
+              </div>
+          </div>
+       
+          <div class="form-floating  form-group ">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+            <label for="floatingInput">Адрес электронной почты</label>
+          </div>
+          <div class="form-floating form-group ">
+            <input type="password" class="form-control " id="floatingPassword" placeholder="Пароль"  required>
+            <label for="floatingPassword">Пароль</label>
+          </div>
+          <div class="form-floating  form-group ">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+            <label for="floatingInput">Адрес электронной почты</label>
+          </div>
+          <div class="form-floating form-group ">
+            <input type="password" class="form-control " id="floatingPassword" placeholder="Пароль"  required>
+            <label for="floatingPassword">Пароль</label>
+          </div>
+      
+          <button type="submit" class="login-btn">зарегистрироваться</button>
+      
+          <div class="registration-link">
+          <a href="#" class="btn btn-light">войти </a>
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+            </form>
+      </div></div>
+    <div class="firstblock panel"> <div class="login-container">
+        <form class="login-form">
+          <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+          <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+      
+
+
+          <div class="form-floating  form-group ">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+            <label for="floatingInput">Адрес электронной почты</label>
+          </div>
+         
+      
+          <button type="submit" class="login-btn">отправить код</button>
+      
+          <div class="registration-link">
+            <a href="#" class="btn btn-light">войти</a> 
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+            </form>
+      </div></div>
+     <div class="firstblock panel"> <div class="login-container">
+        <form class="login-form">
+          <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+          <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+      
+
+
+          <div class="form-floating  form-group ">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+            <label for="floatingInput">код</label>
+          </div>
+         
+      
+          <button type="submit" class="login-btn">восстановить пароль</button>
+      
+          <div class="registration-link">
+            <a href="#" class="btn btn-light">войти</a> 
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+            </form>
+      </div></div>
+      <div class="firstblock panel"> <div class="login-container">
+        <form class="login-form">
+          <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+          <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+      
+
+
+          <div class="form-floating  form-group ">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+            <label for="floatingInput">новый пароль</label>
+          </div>
+          <div class="form-floating  form-group ">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+            <label for="floatingInput">повтор пароля</label>
+          </div>
+         
+      
+          <button type="submit" class="login-btn">сменить пароль</button>
+      
+          <div class="registration-link">
+            <a href="#" class="btn btn-light">войти</a> 
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+            </form>
+      </div></div>  -->
+      <div class="flip-container">
+        <div class="flipper" id="flipper">
+          <div class="block" id="block1">
+            <div class="firstblock panel"> <!-- 1 -->
+                <div class="login-container">
+                    <form class="login-form">
+                      <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+                      <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+                  
+        
+        
+                      <div class="form-floating  form-group ">
+                        <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                        <label for="floatingInput">Адрес электронной почты</label>
+                      </div>
+                      <div class="form-floating form-group ">
+                        <input type="password" class="form-control " id="floatingPassword" placeholder="Пароль"  required>
+                        <label for="floatingPassword">Пароль</label>
+                      </div>
+                  
+                      <button type="submit" class="login-btn" data-no-flip="true" data-flip-target="2" onclick="flipTo(2, event)">войти</button><!-- NO -->
+                  
+                      <div class="registration-link">
+                        <a  onclick="flipTo(2)" class="btn btn-light">регистрация</a> <a onclick="flipTo(3)" class="btn btn-light">восстановить</a>
+                        <div class="dots">
+                          <span class="dot"></span>
+                          <span class="dot"></span>
+                          <span class="dot"></span>
+                        </div>
+                      </div>
+                        </form>
+                  </div>
+            </div>
+          </div>
+          <div class="block hidden" id="block2">
+            <div class="firstblock panel"> <div class="login-container"> <!-- 2 -->
+                <form class="login-form">
+                  <h2 class="login-title">Регистрация нового  <span class="highlight">пользователя</span></h2>
+                  <p class="login-subtitle">Еще нет аккаунта? Зарегистрируйтесь, чтобы начать пользоваться всеми преимуществами нашего сервиса.</p>
+              
+                  <div class="row g-2">
+                    <div class="col-md">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name" required>
+                            <label for="floatingFirstName">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name" required>
+                            <label for="floatingLastName">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                  <div class="form-floating  form-group ">
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">Адрес электронной почты</label>
+                  </div>
+                  <div class="form-floating form-group ">
+                    <input type="password" class="form-control " id="floatingPassword" placeholder="Пароль"  required>
+                    <label for="floatingPassword">Пароль</label>
+                  </div>
+                 
+                  <div class="form-floating form-group ">
+                    <input type="password" class="form-control " id="floatingPassword" placeholder="Пароль"  required>
+                    <label for="floatingPassword">Пароль</label>
+                  </div>
+              
+                  <button type="submit" class="login-btn" data-no-flip="true" data-flip-target="1" onclick="flipTo(1, event)">зарегистрироваться</button><!-- NO -->
+              
+                  <div class="registration-link">
+                  <a onclick="flipTo(1)" class="btn btn-light">войти </a>
+                    <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                    </form>
+              </div></div>
+          </div>
+          <div class="block hidden" id="block3">
+            <div class="firstblock panel"> <div class="login-container"><!-- 3 -->
+                <form class="login-form">
+                  <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+                  <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+                  <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+                  <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+                  <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+              
+        
+        
+                  <div class="form-floating  form-group ">
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">Адрес электронной почты</label>
+                  </div>
+                 
+              
+                  <button type="submit" class="login-btn" data-no-flip="true" data-flip-target="4" onclick="flipTo(4, event)">отправить код</button><!-- NO -->
+              
+                  <div class="registration-link">
+                    <a onclick="flipTo(1)" class="btn btn-light">войти</a> 
+                    <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                    </form>
+              </div></div>
+          </div>
+          <div class="block hidden" id="block4">
+            <div class="firstblock panel"> <div class="login-container">
+                <form class="login-form">
+                  <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+                  <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+              
+        
+        
+                  <div class="form-floating  form-group ">
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">код</label>
+                  </div>
+                 
+              
+                  <button type="submit" class="login-btn" data-no-flip="true" data-flip-target="5" onclick="flipTo(5, event)">восстановить пароль</button><!-- NO -->
+              
+                  <div class="registration-link">
+                    <a onclick="flipTo(1)" class="btn btn-light">войти</a> 
+                    <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                    </form>
+              </div></div><!-- 4 -->
+          </div>
+          <div class="block hidden" id="block5">
+            <div class="firstblock panel"> <div class="login-container">
+                <form class="login-form">
+                  <h2 class="login-title">Вход в <span class="highlight">личный кабинет</span></h2>
+                  <p class="login-subtitle">Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.</p>
+              
+        
+        
+                  <div class="form-floating  form-group ">
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">новый пароль</label>
+                  </div>
+                  <div class="form-floating  form-group ">
+                    <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">повтор пароля</label>
+                  </div>
+                 
+              
+                  <button type="submit" class="login-btn" data-no-flip="true" data-flip-target="1" onclick="flipTo(1, event)">сменить пароль</button>  <!-- NO -->
+              
+                  <div class="registration-link">
+                    <a onclick="flipTo(1)" class="btn btn-light">войти</a> 
+                    <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </div>
+                  </div>
+                    </form>
+              </div></div> <!-- 5 -->
+          </div>
+        </div>
+      </div>
+
+
+      
+      <script>/* let currentBlock = 1;
+        let flipping = false;
+        
+        function flipTo(blockNumber) {
+          if (flipping || currentBlock === blockNumber) return;
+          flipping = true;
+        
+          const currentElement = document.getElementById(`block${currentBlock}`);
+          const nextElement = document.getElementById(`block${blockNumber}`);
+        
+          // Показываем следующий блок перед началом анимации
+          nextElement.classList.remove('hidden');
+        
+          // Выполняем анимацию переворота
+          document.getElementById('flipper').style.transform = `rotateY(${(blockNumber - 1) * 180}deg)`;
+        
+          // Ждем завершения анимации
+          setTimeout(() => {
+            // Скрываем текущий блок после завершения анимации
+            currentElement.classList.add('hidden');
+            flipping = false;
+          }, 600);  // Время анимации совпадает с CSS
+        
+          currentBlock = blockNumber;  // Обновляем текущий блок
+        }
+         */
+        </script>
+        <script>let currentBlock = 1;
+            let flipping = false;
+            
+            function flipTo(blockNumber, event) {
+              // Проверка, была ли нажата кнопка с атрибутом 'data-no-flip'
+              if (event && event.target && event.target.getAttribute('data-no-flip') === 'true') {
+                const form = event.target.closest('.block').querySelector('form');
+                
+                // Проверяем валидность формы
+                if (form && !form.checkValidity()) {
+                  form.reportValidity();  // Показываем стандартные ошибки валидации
+                  return;  // Прекращаем выполнение, если поля не заполнены
+                }
+                
+                // Если форма валидна, получаем целевой блок для перелистывания
+                blockNumber = event.target.getAttribute('data-flip-target');
+                if (!blockNumber) return;  // Если целевой блок не указан, не выполняем переключение
+              }
+            
+              if (flipping || currentBlock === blockNumber) return;
+              flipping = true;
+            
+              const currentElement = document.getElementById(`block${currentBlock}`);
+              const nextElement = document.getElementById(`block${blockNumber}`);
+            
+              // Делаем следующий блок видимым
+              nextElement.classList.add('visible');
+              nextElement.classList.remove('hidden');
+            
+              // Выполняем анимацию переворота
+              document.getElementById('flipper').style.transform = `rotateY(${(blockNumber - 1) * 180}deg)`;
+            
+              // Ждем завершения анимации переворота (0.6s как в CSS)
+              setTimeout(() => {
+                // После завершения анимации скрываем текущий блок
+                currentElement.classList.add('hidden');
+                currentElement.classList.remove('visible');
+                
+                flipping = false;
+              }, 600);  // Время анимации совпадает с CSS
+            
+              currentBlock = blockNumber;  // Обновляем текущий блок
+            }
+            
+            
+            </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script><!-- Bootstrap JS -->
+    <script src="assets/js/scripts.js"></script><!-- Custom JS -->
+    <script src="https://cdn.tailwindcss.com"></script><!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </body>
+</html>

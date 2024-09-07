@@ -1,21 +1,9 @@
 @charset "UTF-8";
-$color_bac: #f2f3f5;
-$color_block: #ffffff;
-$color_orenge: #f96c33;
-$color_line: #f2f3f5;
-$color_text: #000000;
-$color_text_g: #4e4a67;
-$color_grem: #4e4a67;
-$color_text_w: #ffffff;
-$color_block_content: #f2f3f5;
-$border_rad: 25px;
-$padding_main: 20px;
-$transition-time: 0.5s;
-$index: --index; /* root */
-
+/* root */
 :root {
   --index: calc(1vw + 1vh);
 }
+
 * {
   padding: 0px;
   margin: 0px;
@@ -96,7 +84,7 @@ input::-ms-clear {
 }
 
 button,
-input[type="submit"] {
+input[type=submit] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -126,8 +114,21 @@ legend {
 
 /* обнуление конец */
 body {
-  background-color: $color_bac;
+  background-color: #f2f3f5;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
+.panel {
+  background-color: #ffffff;
+  width: 40%;
+  max-width: 1150px;
+  /* height: 300px; */ /* Adjust the height as needed */
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 4px;
+  border-radius: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
+}/*# sourceMappingURL=panel.css.map */
