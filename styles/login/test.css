@@ -5,6 +5,7 @@
   height: 200px; */
   position: relative;
   top: 10vh;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .flipper {

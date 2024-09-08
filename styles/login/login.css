@@ -120,25 +120,32 @@ body {
   flex-direction: column;
 }
 
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
 .login-title {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #000000;
 }
 .login-title .highlight {
-  color: #ff6600;
+  color: #f96c33;
 }
 
 .login-subtitle {
   margin-bottom: 20px;
   font-size: 14px;
-  color: #666;
+  color: #4e4a67;
 }
 
 .form-group {
   margin-bottom: 15px;
 }
 .form-group .form-control {
-  background-color: #f0f0f0;
+  background-color: #f2f3f5;
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
@@ -146,8 +153,8 @@ body {
 }
 
 .login-btn {
-  background-color: #ff6600;
-  color: #fff;
+  background-color: #f96c33;
+  color: #ffffff;
   font-size: 18px;
   border-radius: 30px;
   padding: 10px 0;
@@ -162,10 +169,10 @@ body {
   margin-top: 20px;
 }
 .registration-link .btn-light {
-  background-color: #f0f0f0;
+  background-color: #f2f3f5;
   border-radius: 30px;
   padding: 10px 20px;
-  color: #666;
+  color: #4e4a67;
   width: 60%;
   height: 50px;
   margin-right: 10px;
@@ -177,7 +184,7 @@ body {
 .registration-link .dots .dot {
   width: 50px;
   height: 50px;
-  background-color: #ff6600;
+  background-color: #f96c33;
   border-radius: 50%;
 }
 
@@ -190,4 +197,9 @@ body {
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
 .form-floating > .form-select ~ label::after {
   background: none;
+}
+
+.form-control:focus {
+  border-color: #f96c33; /* Указываем желаемый цвет */
+  box-shadow: 0 0 0 0.25rem rgba(249, 108, 51, 0.4); /* Опционально: настройка тени */
 }/*# sourceMappingURL=login.css.map */

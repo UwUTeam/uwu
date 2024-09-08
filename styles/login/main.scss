@@ -2,6 +2,7 @@
 $color_bac: #f2f3f5;
 $color_block: #ffffff;
 $color_orenge: #f96c33;
+$color_orenge_rgb: 249, 108, 51;
 $color_line: #f2f3f5;
 $color_text: #000000;
 $color_text_g: #4e4a67;
@@ -130,4 +131,9 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }

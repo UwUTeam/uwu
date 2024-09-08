@@ -120,6 +120,12 @@ body {
   flex-direction: column;
 }
 
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
 .navi.active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
