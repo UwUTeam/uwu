@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import "main.scss";
+
+.input-container {
+  z-index: 2;
+  
+  align-items: center;
+  position: relative; /* Контейнер станет родителем для абсолютного позиционирования */
+  background-color: $color_line;
+  border-radius: 25px; /* Скругление углов контейнера */
+
+  .form-control {
+    flex: 1; /* Поле ввода займет все доступное пространство */
+    padding-right: 50px; /* Пространство для кнопки */
+    background-color: $color_line;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px; /* Скругление углов инпута */
+    
+  }
+
+  .btn-arrow {
+    position: absolute; /* Абсолютное позиционирование для кнопки */
+    right: 10px; /* Отступ справа */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Сдвигаем кнопку вверх, чтобы она была по центру */
+    background-color: $color_orenge;
+    border: none;
+    border-radius: 50%; /* Круглая кнопка */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 1rem;
+      color: $color_block;
+    }
+
+    &:hover {
+      background-color: darken($color_orenge, 10%);
+    }
+  }
+}
+
+.leftsearch {
+  background-color: $color_block;
+  width: 55%;
+  border-radius: 25px; /* Скругление углов для левого блока */
+  
+}
+
+.form-group {
+  .form-control {
+    background-color: $color_line;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px; /* Скругление инпута внутри группы */
+
+  }
+}
+.widthfromsearch{
+width: 92%;
+
+
+}
+.login-btn {
+  background-color: $color_orenge;
+  color: $color_text_w;
+  font-size: 18px;
+  border-radius: 25px; /* Скругление кнопки входа */
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+}
+
+.registration-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  .btn-light {
+    background-color: $color_line;
+    border-radius: 30px; /* Скругление кнопки регистрации */
+    padding: 10px 20px;
+    color: $color_text_w;
+    margin-right: 10px;
+  }
+
+  .dots {
+    display: flex;
+    gap: 3px;
+
+    .dot {
+      background-color: $color_orenge;
+      border-radius: $border_rad;
+    }
+  }
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background: none;
+}
+
+.form-control:focus {
+  border-color: $color_orenge;
+  box-shadow: 0 0 0 0.25rem rgba(249, 108, 51, 0.4);
+}

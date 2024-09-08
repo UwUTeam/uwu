@@ -125,6 +125,7 @@ body {
   border-bottom-right-radius: 0;
   margin-bottom: 0px;
   box-shadow: 0 10px 1px 0px #f2f3f5;
+  z-index: 101;
 }
 
 .firstblock.navi {
@@ -182,6 +183,7 @@ body {
   background-color: #ffffff; /* Белые полоски */
   border-radius: 1px;
   margin: 3px 0;
+  z-index: 101;
 }
 
 .firstblock.navi::before {
@@ -242,7 +244,7 @@ body {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 25px 25px; /* Скругленные углы снизу */
-  z-index: 9999;
+  z-index: 101;
 }
 
 .navbar-menu.is-active {
@@ -290,4 +292,62 @@ body {
 .language-switcher .lang-btn:hover {
   background-color: #f24b07; /* Темнее оранжевый при наведении */
   color: #ffffff; /* Белый текст при наведении */
+}
+
+/* Для блока навигации */
+.navi {
+  border-radius: 25px; /* Радиус по умолчанию */
+  z-index: 101;
+}
+.navi.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: border-radius 0.3s ease; /* Плавное изменение радиуса нижних углов */
+}
+
+/* Для выпадающего меню */
+.navbar-menu {
+  border-radius: 25px; /* Скругленные углы по умолчанию */
+  transition: border-radius 0.3s ease; /* Плавный переход радиусов */
+}
+.navbar-menu.is-active {
+  border-top-left-radius: 0; /* Верхние углы выравниваются при открытии */
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 25px; /* Нижние углы остаются скругленными */
+  border-bottom-right-radius: 25px;
+}
+
+.navbar-menu {
+  display: none; /* Меню скрыто по умолчанию */
+  position: absolute;
+  top: 100%; /* Открываем меню прямо под навигацией */
+  left: 0;
+  width: 100%; /* Меню занимает всю ширину контейнера */
+  background-color: #ffffff; /* Цвет фона меню */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 25px 25px;
+  z-index: 101;
+}
+
+.navbar-menu.is-active {
+  display: block; /* Показываем меню при открытии */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  opacity: 0; /* По умолчанию невидим */
+  pointer-events: none; /* Не позволяет кликам проходить через оверлей, когда он скрыт */
+  transition: opacity 0.3s ease;
+  z-index: 100; /* Фон выше контента, но ниже меню */
+}
+
+.overlay.active {
+  opacity: 1; /* Делаем оверлей видимым */
+  pointer-events: all; /* Включаем клики, когда меню открыто */
 }/*# sourceMappingURL=navi.css.map */

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* root */
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  /* исправлено */
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* обнуление конец */
+body {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-container {
+  z-index: 2;
+  align-items: center;
+  position: relative; /* Контейнер станет родителем для абсолютного позиционирования */
+  background-color: #f2f3f5;
+  border-radius: 25px; /* Скругление углов контейнера */
+}
+.input-container .form-control {
+  flex: 1; /* Поле ввода займет все доступное пространство */
+  padding-right: 50px; /* Пространство для кнопки */
+  background-color: #f2f3f5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px; /* Скругление углов инпута */
+}
+.input-container .btn-arrow {
+  position: absolute; /* Абсолютное позиционирование для кнопки */
+  right: 10px; /* Отступ справа */
+  top: 50%; /* Центрируем по вертикали */
+  transform: translateY(-50%); /* Сдвигаем кнопку вверх, чтобы она была по центру */
+  background-color: #f96c33;
+  border: none;
+  border-radius: 50%; /* Круглая кнопка */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container .btn-arrow i {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.input-container .btn-arrow:hover {
+  background-color: #f24b07;
+}
+
+.leftsearch {
+  background-color: #ffffff;
+  width: 55%;
+  border-radius: 25px; /* Скругление углов для левого блока */
+}
+
+.form-group .form-control {
+  background-color: #f2f3f5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px; /* Скругление инпута внутри группы */
+}
+
+.widthfromsearch {
+  width: 92%;
+}
+
+.login-btn {
+  background-color: #f96c33;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 25px; /* Скругление кнопки входа */
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+}
+
+.registration-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.registration-link .btn-light {
+  background-color: #f2f3f5;
+  border-radius: 30px; /* Скругление кнопки регистрации */
+  padding: 10px 20px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.registration-link .dots {
+  display: flex;
+  gap: 3px;
+}
+.registration-link .dots .dot {
+  background-color: #f96c33;
+  border-radius: 25px;
+}
+
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
+  background: none;
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background: none;
+}
+
+.form-control:focus {
+  border-color: #f96c33;
+  box-shadow: 0 0 0 0.25rem rgba(249, 108, 51, 0.4);
+}/*# sourceMappingURL=searchform.css.map */
