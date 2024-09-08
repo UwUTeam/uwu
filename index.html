@@ -33,9 +33,10 @@
     <link rel="stylesheet" href="/styles/index/advantage-card.css" />
     <link rel="stylesheet" href="/styles/index/review-card.css" />
     <link rel="stylesheet" href="/styles/index/footer.css" />
+    <link rel="stylesheet" href="/styles/index/searchform.css" />
   </head>
   <body>
-    <div class="firstblock navi show" style="position: relative">
+    <div class="firstblock navi show navibordrad" style="position: relative">
       <!-- Логотип -->
       <a href="/" class="navbar-logo">
         <img src="/img/logo.png" alt="Логотип сайта" />
@@ -70,9 +71,40 @@
           <button class="lang-btn">de</button>
         </div>
       </nav>
+      
     </div>
+    <div class="overlay"></div>
+    <div class="firstblock">
+      <div class="leftsearch">
+     <div class="form_search fs-1 font-bold w-100 mb-1">
+      <h2>Помогу найти твою <br><span>посылку</span></h2></div>
+<div class="form_search fs-5 font-bold w-100 mb-1"><p>Введите номер отслеживания, чтобы<br>узнать текущее местоположение вашей<br>посылки.</p></div>
+<div class="widthfromsearch">
+<div class="input-container">
+ 
+  <div class="form-floating  form-group anim-3">
+    <input type="text" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+    <label for="floatingInput">Num pack</label>
+  
+    <button class="btn btn-arrow">
+      <i class="bi bi-arrow-right"></i>
+    </button>
+  </div>
+  </div>
+  </div>
+</div>
 
-    <div class="firstblock"></div>
+  <div class="maps">
+
+
+  </div>
+     </div>
+    
+
+
+
+
+    </div>
 
     <div class="firstblock"></div>
 
@@ -703,19 +735,41 @@
     </script>
 
     <script>
-      const burger = document.querySelector(".navbar-burger");
-      const menu = document.querySelector(".navbar-menu");
-      const iconList = burger.querySelector(".bi-list");
-      const iconX = burger.querySelector(".bi-x-lg");
+const burger = document.querySelector(".navbar-burger");
+const menu = document.querySelector(".navbar-menu");
+const navi = document.querySelector(".navi");
+const iconList = burger.querySelector(".bi-list");
+const iconX = burger.querySelector(".bi-x-lg");
+const overlay = document.querySelector(".overlay"); // Добавляем оверлей
 
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("is-active");
-        menu.classList.toggle("is-active");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("is-active");
+  menu.classList.toggle("is-active");
+  navi.classList.toggle("active");
 
-        // Переключаем видимость иконок
-        iconList.classList.toggle("d-none");
-        iconX.classList.toggle("d-none");
-      });
+  // Переключаем видимость иконок
+  iconList.classList.toggle("d-none");
+  iconX.classList.toggle("d-none");
+
+  // Добавляем логику для оверлея
+  overlay.classList.toggle("active"); // Показываем/скрываем оверлей при открытии меню
+});
+
+// Закрытие меню при клике на оверлей
+overlay.addEventListener("click", () => {
+  burger.classList.remove("is-active");
+  menu.classList.remove("is-active");
+  navi.classList.remove("active");
+  iconList.classList.remove("d-none");
+  iconX.classList.add("d-none");
+  overlay.classList.remove("active");
+});
+
+    </script>
+    <script>
+
+
+
     </script>
   </body>
 </html>
