@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* root */
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  /* исправлено */
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* обнуление конец */
+body {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.jj .swiper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.jj .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+}
+.jj .tabs {
+  display: flex;
+  flex-grow: 1;
+  gap: 2%;
+}
+.jj .news-block-col {
+  flex: 1 1 50%;
+}
+.jj .news-block-content {
+  border-radius: 25px; /* Используйте значения напрямую вместо переменных */
+  background-color: #f2f3f5; /* аналог bg-gray-200 */
+  color: #000; /* текст черного цвета */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  height: 90%; /* Для того чтобы контент занимал всю высоту */
+}
+.jj .news-block-content img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.jj .news-text-h2 h2 {
+  /*  font-size: 2vw; */ /* Используйте относительные единицы */
+}
+.jj .news-block-content .description {
+  /* font-size: 1.5vw; */ /* Используйте относительные единицы */
+}
+.jj .swiper-slide img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.jj .swiper-pagination {
+  width: 50px;
+  background: #f2f3f5;
+}
+.jj .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  /* font-size: 12px; */
+  color: #000;
+  opacity: 1;
+  background: #ffffff;
+}
+.jj .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #f96c33;
+}
+.jj .swiper-wrapper {
+  margin-bottom: 20px;
+}
+.jj .swiper-horizontal > .swiper-pagination-bullets,
+.jj .swiper-pagination-bullets.swiper-pagination-horizontal,
+.jj .swiper-pagination-custom,
+.jj .swiper-pagination-fraction {
+  position: relative;
+  margin: 0 auto;
+  width: 10%;
+  padding: 3px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+}/*# sourceMappingURL=news_block.css.map */

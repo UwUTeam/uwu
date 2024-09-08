@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* root */
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  /* исправлено */
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* обнуление конец */
+body {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navi.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0px;
+  box-shadow: 0 10px 1px 0px #f2f3f5;
+}
+
+.firstblock.navi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-color: #ffffff; /* Используем переменную для фона */
+}
+
+.firstblock.navi .navbar-logo img {
+  height: 40px;
+  padding-right: 15px;
+  border-radius: 50%;
+}
+
+.firstblock.navi .navbar-account {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #ffffff; /* Белый текст */
+  background-color: #f96c33; /* Оранжевый фон кнопки */
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.firstblock.navi .navbar-account:hover {
+  background-color: #f24b07; /* Темнее оранжевый при наведении */
+}
+
+.firstblock.navi .navbar-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f96c33; /* Оранжевый цвет для бургер-меню */
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.firstblock.navi .navbar-burger:hover {
+  background-color: black; /* Темнее оранжевый при наведении */
+}
+
+.firstblock.navi .navbar-burger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff; /* Белые полоски */
+  border-radius: 1px;
+  margin: 3px 0;
+}
+
+.firstblock.navi::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #ffffff; /* Белая полоска */
+  border-radius: 1px;
+}
+
+.navbar-account,
+.navbar-burger {
+  margin-left: auto;
+}
+
+.navbar-burger {
+  margin-left: 10px;
+}
+
+.firstblock.navi {
+  position: relative; /* Относительное позиционирование для выпадающего меню */
+}
+
+.navbar-container {
+  position: relative; /* Контейнер для бургер-меню */
+}
+
+.navbar-burger {
+  background-color: #f96c33; /* Используем переменную для оранжевого */
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-burger i {
+  color: #ffffff; /* Белые иконки */
+  font-size: 1.5rem;
+}
+
+.navbar-burger.is-active .bi-list {
+  display: none;
+}
+
+.navbar-burger.is-active .bi-x-lg {
+  display: inline;
+}
+
+/* Правильное позиционирование выпадающего меню */
+.navbar-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Открываем меню прямо под навигацией */
+  left: 0;
+  width: 100%; /* Меню занимает всю ширину контейнера */
+  background-color: #ffffff; /* Белый фон */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 25px 25px; /* Скругленные углы снизу */
+  z-index: 9999;
+}
+
+.navbar-menu.is-active {
+  display: block; /* Показываем меню при открытии */
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-nav li {
+  margin-bottom: 10px;
+}
+
+.navbar-nav li a {
+  color: #000000; /* Черный текст */
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language-switcher .lang-btn {
+  background-color: #e0e0e0; /* Здесь нет переменной, если нужно — добавим */
+  border: none;
+  border-radius: 50%;
+  color: #000000;
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.language-switcher .lang-btn.lang-active {
+  background-color: #f96c33; /* Оранжевый цвет для активного языка */
+  color: #ffffff; /* Белый цвет текста для активного языка */
+}
+
+.language-switcher .lang-btn:hover {
+  background-color: #f24b07; /* Темнее оранжевый при наведении */
+  color: #ffffff; /* Белый текст при наведении */
+}/*# sourceMappingURL=navi.css.map */

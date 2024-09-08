@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>My Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />  <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> <!-- Custom CSS compiled from SCSS -->
+    <link rel="stylesheet" href="/styles/account/main_account.css" />
+    <link rel="stylesheet" href="/styles/account/firstblock.css" />
+    <link rel="stylesheet" href="/styles/account/navi.css" />
+    <link rel="stylesheet" href="/styles/account/info.css" />
+    <link rel="stylesheet" href="/styles/account/parcel.css" />
+    <link rel="stylesheet" href="/styles/account/footer.css" />
+    <link rel="stylesheet" href="/styles/account/product-info.css" />
+    <link rel="stylesheet" href="/styles/account/shipment-actions.css" />
+<body>
+    <div class="firstblock navi show" style="position: relative">
+        <!-- Логотип -->
+        <a href="/" class="navbar-logo">
+          <img src="/img/logo.png" alt="Логотип сайта" />
+        </a>
+  
+        <!-- Личный кабинет -->
+        <a href="/account" class="navbar-account"> Личный кабинет </a>
+  
+        <!-- Бургер-меню -->
+        <div class="navbar-container">
+          <button class="navbar-burger" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+            <!-- Иконка бургер-меню -->
+            <i class="bi bi-x-lg d-none"></i>
+            <!-- Иконка крестика, скрыта по умолчанию -->
+          </button>
+        </div>
+  
+        <!-- Меню, которое должно открываться на всю ширину контейнера -->
+        <nav class="navbar-menu">
+          <ul class="navbar-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Услуги</a></li>
+          </ul>
+  
+          <!-- Языковой переключатель -->
+          <div class="language-switcher">
+            <button class="lang-btn lang-active">en</button>
+            <button class="lang-btn">ru</button>
+            <button class="lang-btn">de</button>
+          </div>
+        </nav>
+      </div>
+      <div class="firstblock"><div class="container">
+        <div class="row">
+            <!-- Левая колонка -->
+            <div class="col-md-6 profile-info">
+                <div class="profile-card">
+                   
+                    <div class="profile-details">
+                      <div class="row"> 
+                         <div class="profile-image col-md-6"></div>
+                      <div class="col">
+                        <p >Номер клиента: <span class="client-number ">#731241</span></p>
+                        <p>ФИО</p>
+                    </div>
+                    </div>
+                        <p>Тариф: <span class="tariff">Стандартный</span></p>
+                        <p>Почта: <span class="email">xxxxxx@gmail.com</span></p>
+                        <p>Адрес: <span class="address">xxxxxxxxxxxxxxxx</span></p>
+                        <p>Телефон: <span class="phone">xxxxxxxxxxxxx</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Правая колонка -->
+            <div class="col-md-6 profile-menu">
+                <ul class="menu">
+                    <li>Профиль</li>
+                    <li>Тарифы</li>
+                    <li>Получатели</li>
+                    <li>Адреса доставки</li>
+                    <li>Сменить пароль</li>
+                    <li>Выход</li>
+                </ul>
+            </div>
+        </div>
+    </div></div>
+       <div class="firstblock"><div class="container form-container">
+        <div class="row ">
+            <div class="col-md-6 mt-3">
+              <div class="form-floating  form-group anim-3">
+                <input type="text" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                <label for="floatingInput">Адрес электронной почты</label>
+              </div> 
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="form-floating  form-group anim-3">
+                <input type="text" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                <label for="floatingInput">Адрес электронной почты</label>
+              </div> 
+            </div>
+        </div>
+    
+        <div class="row ">
+            <div class="col-md-6 mt-3">
+              <div class="form-floating  form-group anim-3">
+                <input type="text" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                <label for="floatingInput">Адрес электронной почты</label>
+              </div> 
+            </div>
+            <div class="col-md-6 mt-3">
+              <div class="form-floating  form-group anim-3">
+                <input type="text" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                <label for="floatingInput">Адрес электронной почты</label>
+              </div> 
+            </div>
+        </div>
+    
+        <div class="row mt-2">
+            <div class="col-md-12 mt-2">
+              <div class="form-floating  mt-1 form-group anim-3">
+                <input type="text" class="form-control " id="floatingInput" placeholder="name@example.com"  required>
+                <label for="floatingInput">Адрес электронной почты</label>
+              </div>     </div>
+        </div>
+    
+        <div class="row mt-3">
+            <div class="col-md-12 text-right">
+                <button class="btn btn-orange">Добавить ожидаемую посылку</button>
+            </div>
+        </div>
+    </div></div>
+        <div class="firstblock"><div class="container product-info-container">
+          <div class="row">
+              <div class="col-12">
+                  <h4><strong>Информация о <span class="highlight">товарах</span></strong></h4>
+                  <p class="instructions">Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления таможенной декларации.</p>
+              </div>
+          </div>
+      
+          <div class="row mt-3">
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingLink" placeholder="Ссылка на товар" required>
+                      <label for="floatingLink">Ссылка на товар</label>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingType" placeholder="Тип товара" required>
+                      <label for="floatingType">Тип товара</label>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="row ">
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingName" placeholder="Название товара" required>
+                      <label for="floatingName">Название товара</label>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingBrand" placeholder="Бренд" required>
+                      <label for="floatingBrand">Бренд</label>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingColor" placeholder="Цвет" required>
+                      <label for="floatingColor">Цвет</label>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingSize" placeholder="Размер" required>
+                      <label for="floatingSize">Размер</label>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="row ">
+            
+              <div class="col-md-6">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingQuantity" placeholder="Количество в шт" required>
+                      <label for="floatingQuantity">Количество в шт</label>
+                  </div>
+              </div>
+              <div class="col-md-6 ">
+                  <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingPrice" placeholder="Стоимость за шт" required>
+                      <label for="floatingPrice">Стоимость за шт</label>
+                  </div>
+              </div>
+              <div class="col text-left ml-4 ">
+                <button class="btn btn-orange">+ Добавить</button>
+            </div>
+          </div>
+      
+         <!--  <div class="row mt-3">
+              <div class="col-md-12 text-left">
+                  <button class="btn btn-orange">+ Добавить товар</button>
+              </div>
+          </div> -->
+      </div>
+      </div> 
+        <div class="firstblock"> <div class="container action-container">
+          <h4><strong>Выберите дальнейшие действия с <span class="highlight">посылкой</span></strong></h4>
+      
+          <div class="row mt-4 action-box-box">
+              <div class="col-4">
+                  <div class="action-box active" id="action1">
+                      <div class="icon-placeholder"></div>
+                      <p class="action-text">
+                          Отправить посылку сразу без объединения с другими посылками<br>
+                          <small>Самый быстрый вариант: после регистрации входящей посылки мы сразу ее упакуем.</small>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="action-box" id="action2">
+                      <div class="icon-placeholder"></div>
+                      <p class="action-text">
+                          Объединить эту посылку с другой посылкой<br>
+                          <small>При объединении посылки сроки упаковки могут быть увеличены</small>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="action-box" id="action3">
+                      <div class="icon-placeholder"></div>
+                      <p class="action-text">
+                          Разделить посылку<br>
+                          <small>Вариант для тех, кому нужно разделить посылку на несколько частей.</small>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div></div> 
+        <div class="firstblock"></div>
+        <div class="firstblock footer"></div>
+            <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.action-box');
+
+    boxes.forEach(box => {
+        box.addEventListener('click', function() {
+            // Убираем активный класс у всех элементов
+            boxes.forEach(b => b.classList.remove('active'));
+            // Добавляем активный класс к нажатому элементу
+            this.classList.add('active');
+        });
+    });
+});
+
+            </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script><!-- Bootstrap JS -->
+    <script src="assets/js/scripts.js"></script><!-- Custom JS -->
+    <script src="https://cdn.tailwindcss.com"></script><!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </body>
+</html>

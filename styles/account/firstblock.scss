@@ -1,14 +1,12 @@
 @charset "UTF-8";
-@import "main_login.scss";
-.panel {
+@import "main_account.scss";
+.firstblock {
   background-color: $color_block;
-  width: 40%;
+  width: 60%;
   max-width: 1150px;
   /* height: 300px; */ /* Adjust the height as needed */
   padding: $padding_main;
   margin: 0 auto;
   margin-top: 4px;
   border-radius: $border_rad;
-  padding-left: 70px;
-  padding-right: 70px;
 }

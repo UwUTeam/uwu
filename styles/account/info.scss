@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "main_account.scss";
+.container {
+}
+
+.profile-info {
+  margin-bottom: 10px;
+  .profile-card {
+    background-color: $color_bac;
+    padding: 20px;
+    border-radius: $border_rad;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    color: $color_text;
+
+    span {
+      color: $color_text_g;
+    }
+
+    .profile-image {
+      width: 80px;
+      height: 80px;
+      background-color: #000;
+      border-radius: $border_rad;
+      margin-bottom: 10px;
+    }
+
+    .client-number {
+      color: $color_orenge;
+      font-weight: bold;
+    }
+
+    .tariff,
+    .email,
+    .address,
+    .phone {
+      font-weight: normal;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}
+
+.profile-menu {
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: $color_text;
+
+    li {
+      background-color: $color_bac;
+      padding: 15px;
+      margin-bottom: 5px;
+      border-radius: $border_rad;
+      text-align: center;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}
