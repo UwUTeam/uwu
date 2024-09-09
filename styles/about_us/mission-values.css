@@ -120,27 +120,29 @@ body {
   flex-direction: column;
 }
 
-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
+.mission-values-container .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 2rem;
 }
-
-.firstblock {
-  background-color: #ffffff;
-  width: 60%;
-  max-width: 1150px;
-  /* height: 300px; */ /* Adjust the height as needed */
+.mission-values-container .section-title span {
+  color: #f96c33;
+}
+.mission-values-container .value-box {
+  background-color: #f2f3f5;
   padding: 20px;
-  margin: 0 auto;
-  margin-top: 4px;
   border-radius: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  /*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
-
-.firstblock-1 {
-  display: none; /* Все блоки скрыты по умолчанию */
+.mission-values-container .value-box h3 {
+  color: #f96c33;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
-
-.firstblock-1.active {
-  display: block; /* Отображаем только активный блок */
-}/*# sourceMappingURL=firstblock.css.map */
+.mission-values-container .value-box p {
+  font-size: 1rem;
+  color: #000000;
+}/*# sourceMappingURL=mission-values.css.map */

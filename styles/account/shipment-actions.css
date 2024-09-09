@@ -163,8 +163,14 @@ canvas {
   background-color: #f96c33;
   color: #ffffff;
 }
+.action-container .action-box.active :hover {
+  background-color: #f2f3f5;
+}
+.action-container .action-box.active :hover p {
+  background: none;
+}
 .action-container .action-box:hover {
-  background-color: #000000;
+  background-color: #4e4a67;
   color: #ffffff;
 }
 .action-container .action-box p {
@@ -181,4 +187,8 @@ canvas {
   padding-right: calc(var(--bs-gutter-x) * 0);
   padding-left: calc(var(--bs-gutter-x) * 0);
   margin-top: var(--bs-gutter-y);
+}
+
+.action-container .action-box.active :hover {
+  background: none;
 }/*# sourceMappingURL=shipment-actions.css.map */

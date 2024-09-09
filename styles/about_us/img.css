@@ -120,27 +120,12 @@ body {
   flex-direction: column;
 }
 
-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
+.firstblock-img {
+  padding: 0;
 }
-
-.firstblock {
-  background-color: #ffffff;
-  width: 60%;
-  max-width: 1150px;
-  /* height: 300px; */ /* Adjust the height as needed */
-  padding: 20px;
-  margin: 0 auto;
-  margin-top: 4px;
+.firstblock-img .img {
+  width: 100%;
+  height: 390px;
+  background-color: black;
   border-radius: 25px;
-}
-
-.firstblock-1 {
-  display: none; /* Все блоки скрыты по умолчанию */
-}
-
-.firstblock-1.active {
-  display: block; /* Отображаем только активный блок */
-}/*# sourceMappingURL=firstblock.css.map */
+}/*# sourceMappingURL=img.css.map */

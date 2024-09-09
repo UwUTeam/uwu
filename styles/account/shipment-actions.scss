@@ -43,10 +43,16 @@
     &.active {
       background-color: $color_orenge;
       color: $color_text_w;
+      :hover {
+        background-color: $color_block_content;
+        p {
+          background: none;
+        }
+      }
     }
 
     &:hover {
-      background-color: #000000;
+      background-color: $color_grem;
       color: $color_text_w;
     }
 
@@ -67,4 +73,7 @@
     padding-left: calc(var(--bs-gutter-x) * 0);
     margin-top: var(--bs-gutter-y);
   }
+}
+.action-container .action-box.active :hover {
+  background: none;
 }

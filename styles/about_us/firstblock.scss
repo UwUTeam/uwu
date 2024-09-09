@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "main_account.scss";
+@import "main_about_us.scss";
 .firstblock {
   background-color: $color_block;
   width: 60%;
@@ -9,12 +9,4 @@
   margin: 0 auto;
   margin-top: 4px;
   border-radius: $border_rad;
-}
-
-.firstblock-1 {
-  display: none; /* Все блоки скрыты по умолчанию */
-}
-
-.firstblock-1.active {
-  display: block; /* Отображаем только активный блок */
 }
