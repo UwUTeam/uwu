@@ -126,58 +126,67 @@ canvas {
   height: 100vh;
 }
 
-.jj .swiper {
+.swiper {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.jj .swiper-slide {
+
+.swiper-slide {
   font-size: 18px;
   background: #fff;
   display: flex;
 }
-.jj .tabs {
+
+.tabs {
   display: flex;
   flex-grow: 1;
   gap: 2%;
 }
-.jj .news-block-col {
+
+.news-block-col {
   flex: 1 1 50%;
 }
-.jj .news-block-content {
+
+.news-block-content {
   border-radius: 25px; /* Используйте значения напрямую вместо переменных */
   background-color: #f2f3f5; /* аналог bg-gray-200 */
-  color: #000; /* текст черного цвета */
+  color: #000000; /* текст черного цвета */
   z-index: 1;
   display: flex;
   align-items: center;
   padding-left: 6px;
   height: 90%; /* Для того чтобы контент занимал всю высоту */
 }
-.jj .news-block-content img {
+.news-block-content img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 15px;
 }
-.jj .news-text-h2 h2 {
+
+.news-text-h2 h2 {
   /*  font-size: 2vw; */ /* Используйте относительные единицы */
 }
-.jj .news-block-content .description {
+
+.news-block-content .description {
   /* font-size: 1.5vw; */ /* Используйте относительные единицы */
 }
-.jj .swiper-slide img {
+
+.swiper-slide img {
   display: block;
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.jj .swiper-pagination {
+
+.swiper-pagination {
   width: 50px;
   background: #f2f3f5;
 }
-.jj .swiper-pagination-bullet {
+
+.swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   text-align: center;
@@ -187,17 +196,20 @@ canvas {
   opacity: 1;
   background: #ffffff;
 }
-.jj .swiper-pagination-bullet-active {
+
+.swiper-pagination-bullet-active {
   color: #fff;
   background: #f96c33;
 }
-.jj .swiper-wrapper {
+
+.swiper-wrapper {
   margin-bottom: 20px;
 }
-.jj .swiper-horizontal > .swiper-pagination-bullets,
-.jj .swiper-pagination-bullets.swiper-pagination-horizontal,
-.jj .swiper-pagination-custom,
-.jj .swiper-pagination-fraction {
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   position: relative;
   margin: 0 auto;
   width: 10%;

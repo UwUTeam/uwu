@@ -1,0 +1,144 @@
+@charset "UTF-8";
+.color-picker {
+  text-align: center;
+}
+.color-picker input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.color-display {
+  height: 200px;
+  background-color: #000000;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.side-menu-left {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1c1c27;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 99;
+}
+
+.side-menu-left div {
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  background-color: #181826;
+  border-bottom: #00dae1;
+}
+
+.side-menu-right div {
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  background-color: #181826;
+  border-bottom: #00dae1;
+}
+
+.side-menu-left a {
+  transition: 0.3s;
+  color: #fff;
+}
+
+.side-menu-left a:hover {
+  color: #00dae1;
+}
+
+.side-menu-left .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Стили для правого меню */
+.side-menu-right {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1c1c27;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 99;
+}
+
+.side-menu-right a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu-right a:hover {
+  color: #00dae1;
+}
+
+.side-menu-right .close-btn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* Основной контент */
+#main-content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+/* Кнопки открытия меню */
+.open-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #1c1c27;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  transition: 0.3s;
+}
+.open-btn:hover {
+  background-color: #000000;
+}
+
+.accordion-button {
+  background-color: rgb(16, 17, 22);
+  border-bottom: #00dae1;
+  color: #00dae1;
+}
+
+.accordion {
+  --bs-accordion-border-color: none;
+}
+
+.accordion {
+  size: 1px;
+}
+
+.form-control {
+  padding: 0;
+}
+
+.accordion-body {
+  padding: 0;
+  padding-bottom: 5px;
+}/*# sourceMappingURL=menu-left.css.map */

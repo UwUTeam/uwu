@@ -5,19 +5,22 @@
   padding: 0;
   justify-content: center;
   /* margin: 0 0 20px 0; */
+  background-color: #1c1c27;
 }
 .tabs-a .tab-a {
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #1c1c27;
+  color: #fff;
   /*   margin-right: 10px; */
+  transition: 0.6s;
 }
 .tabs-a .tab-a:hover {
-  background-color: #ddd;
+  background-color: #000000;
 }
 .tabs-a .tab-a.active {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #00cfdd;
+  color: #000000;
   border-bottom: none;
 }
 
@@ -40,7 +43,7 @@
   width: 100%; /* Начальная ширина */
   height: 680px; /* Начальная высота */
   max-width: 100%; /* Чтобы не выходило за пределы экрана */
-  border: 1px solid #ccc;
+  /*   border: 1px solid #ccc; */
   overflow: hidden;
   resize: both; /* CSS-свойство для изменения размеров */
 }
