@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.tabs-a {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  /* margin: 0 0 20px 0; */
+
+  .tab-a {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    /*   margin-right: 10px; */
+
+    &:hover {
+      background-color: #ddd;
+    }
+
+    &.active {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-bottom: none;
+    }
+  }
+}
+
+.pages-content {
+  div {
+    display: none;
+    /*   width: 90%;
+    height: 8%; */
+    &.active {
+      display: block;
+    }
+  }
+}
+.index-pg {
+  width: 100%;
+  height: 100vh;
+}
+.resizable-container {
+  position: relative;
+  width: 100%; /* Начальная ширина */
+  height: 680px; /* Начальная высота */
+  max-width: 100%; /* Чтобы не выходило за пределы экрана */
+  border: 1px solid #ccc;
+  overflow: hidden;
+  resize: both; /* CSS-свойство для изменения размеров */
+}
+
+.resizable-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.resizer {
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+  border-radius: 50%;
+}
+dl,
+ol,
+ul {
+  margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.menu-admin {
+  background-color: aqua;
+  width: 200px;
+  height: 100vh; /* Высота на весь экран */
+  overflow: hidden; /* Отключаем прокрутку внутри элемента */
+}
+
+body {
+  margin: 0; /* Убираем отступы страницы */
+  overflow: hidden; /* Отключаем прокрутку на всей странице */
+}/*# sourceMappingURL=menu.css.map */

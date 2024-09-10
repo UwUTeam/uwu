@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>My Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />  <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> <!-- Custom CSS compiled from SCSS -->
+    <link rel="stylesheet" href="/public/styles/account/main_account.css" />
+    <link rel="stylesheet" href="/public/styles/account/firstblock.css" />
+    <link rel="stylesheet" href="/public/styles/account/navi.css" />
+    <link rel="stylesheet" href="/public/styles/account/info.css" />
+    <link rel="stylesheet" href="/public/styles/account/parcel.css" />
+    <link rel="stylesheet" href="/public/styles/account/footer.css" />
+    <link rel="stylesheet" href="/public/styles/account/product-info.css" />
+    <link rel="stylesheet" href="/public/styles/account/shipment-actions.css" /> 
+    <link rel="stylesheet" href="/public/styles/account/anim.css" />
+    <link rel="stylesheet" href="/public/styles/account/news_block.css" /> 
+    <link rel="stylesheet" href="/public/styles/account/question.css" />
+<body>
+    <div class="firstblock navi show" style="position: relative">
+        <!-- Логотип -->
+        <a href="/" class="navbar-logo">
+          <img src="/public/img/logo.png" alt="Логотип сайта" />
+        </a>
+  
+        <!-- Личный кабинет -->
+        <a href="/account" class="navbar-account"> Личный кабинет </a>
+  
+        <!-- Бургер-меню -->
+        <div class="navbar-container">
+          <button class="navbar-burger" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+            <!-- Иконка бургер-меню -->
+            <i class="bi bi-x-lg d-none"></i>
+            <!-- Иконка крестика, скрыта по умолчанию -->
+          </button>
+        </div>
+  
+        <!-- Меню, которое должно открываться на всю ширину контейнера -->
+        <nav class="navbar-menu">
+          <ul class="navbar-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Услуги</a></li>
+          </ul>
+  
+          <!-- Языковой переключатель -->
+          <div class="language-switcher">
+            <button class="lang-btn lang-active">en</button>
+            <button class="lang-btn">ru</button>
+            <button class="lang-btn">de</button>
+          </div>
+        </nav>
+      </div>
+      <div class="firstblock"><div class="container">
+        <div class="row">
+            <!-- Левая колонка -->
+            <div class="col-md-6 profile-info">
+                <div class="profile-card">
+                   
+                    <div class="profile-details">
+                      <div class="row"> 
+                         <div class="profile-image col-md-6"></div>
+                      <div class="col">
+                        <p >Номер клиента: <span class="client-number ">#731241</span></p>
+                        <p>ФИО</p>
+                    </div>
+                    </div>
+                        <p>Тариф: <span class="tariff">Стандартный</span></p>
+                        <p>Почта: <span class="email">xxxxxx@gmail.com</span></p>
+                        <p>Адрес: <span class="address">xxxxxxxxxxxxxxxx</span></p>
+                        <p>Телефон: <span class="phone">xxxxxxxxxxxxx</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Правая колонка -->
+            <div class="col-md-6 profile-menu">
+              <ul class="menu">
+                  <li data-target="Profile">Профиль</li>
+                  <li data-target="Tariffs">Тарифы</li>
+                  <li data-target="Recipients">Получатели</li>
+                  <li data-target="Delivery_Addresses">Адреса доставки</li>
+                  <li data-target="Change_password">Сменить пароль</li>
+                  <li data-target="Logout">Выход</li>
+              </ul>
+          </div> </div> </div> </div>
+          
+          <div class="firstblock firstblock-1 Profile">Контент профиля</div>
+          <div class="firstblock firstblock-1 Tariffs">Контент тарифов</div>
+          <div class="firstblock firstblock-1 Recipients">Контент получателей</div>
+          <div class="firstblock firstblock-1 Delivery_Addresses">Контент адресов доставки</div>
+          <div class="firstblock firstblock-1 Change_password">Контент смены пароля</div>
+   
+          <div class="firstblock ">
+            <div class="container form-container">
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <div class="form-floating form-group ">
+                            <input type="text" class="form-control" id="email1" placeholder="name@example.com" required>
+                            <label for="email1">Адрес электронной почты</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="form-floating form-group ">
+                            <input type="text" class="form-control" id="email2" placeholder="name@example.com" required>
+                            <label for="email2">Адрес электронной почты</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mt-3">
+                        <div class="form-floating form-group">
+                            <input type="text" class="form-control" id="email3" placeholder="name@example.com" required>
+                            <label for="email3">Адрес электронной почты</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="form-floating form-group ">
+                            <input type="text" class="form-control" id="email4" placeholder="name@example.com" required>
+                            <label for="email4">Адрес электронной почты</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-12 mt-2">
+                        <div class="form-floating mt-1 form-group">
+                            <input type="text" class="form-control" id="email5" placeholder="name@example.com" required>
+                            <label for="email5">Адрес электронной почты</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12 text-right">
+                        <button class="btn btn-orange" id="addParcelBtn">Добавить ожидаемую посылку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="parcelContainer">
+          <div class="firstblock firstblock-1 anim-0-block" id="parcelInfoBlock">
+              <div class="container product-info-container">
+                  <div class="row">
+                      <div class="col-12 anim-0">
+                          <h4><strong>Информация о <span class="highlight">товарах</span></strong></h4>
+                          <p class="instructions">Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления таможенной декларации.</p>
+                      </div>
+                  </div>
+      
+                  <div class="row mt-3">
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-1">
+                              <input type="text" class="form-control" id="floatingLink" placeholder="Ссылка на товар" required>
+                              <label for="floatingLink">Ссылка на товар</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-1">
+                              <input type="text" class="form-control" id="floatingType" placeholder="Тип товара" required>
+                              <label for="floatingType">Тип товара</label>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="row ">
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-2">
+                              <input type="text" class="form-control" id="floatingName" placeholder="Название товара" required>
+                              <label for="floatingName">Название товара</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-2">
+                              <input type="text" class="form-control" id="floatingBrand" placeholder="Бренд" required>
+                              <label for="floatingBrand">Бренд</label>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-3">
+                              <input type="text" class="form-control" id="floatingColor" placeholder="Цвет" required>
+                              <label for="floatingColor">Цвет</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-3">
+                              <input type="text" class="form-control" id="floatingSize" placeholder="Размер" required>
+                              <label for="floatingSize">Размер</label>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="row ">
+                      <div class="col-md-6">
+                          <div class="form-floating form-group anim-4">
+                              <input type="text" class="form-control" id="floatingQuantity" placeholder="Количество в шт" required>
+                              <label for="floatingQuantity">Количество в шт</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6 ">
+                          <div class="form-floating form-group anim-4">
+                              <input type="text" class="form-control" id="floatingPrice" placeholder="Стоимость за шт" required>
+                              <label for="floatingPrice">Стоимость за шт</label>
+                          </div>
+                      </div>
+                      <div class="col text-left ml-5">
+                          <button class="btn btn-orange add-item-btn">+ Добавить товар</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="firstblock firstblock-1 anim-6-block" id="parcelActionBlock"> <div class="container action-container">
+          <h4 class="anim-6"><strong>Выберите дальнейшие действия с <span class="highlight">посылкой</span></strong></h4>
+      
+          <div class="row mt-4 action-box-box anim-7">
+              <div class="col-4">
+                  <div class="action-box active" id="action1">
+                      <div class="icon-placeholder"></div>
+                      <p class="action-text">
+                          Отправить посылку сразу без объединения с другими посылками<br>
+                          <small>Самый быстрый вариант: после регистрации входящей посылки мы сразу ее упакуем.</small>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="action-box" id="action2">
+                      <div class="icon-placeholder"></div>
+                      <p class="action-text">
+                          Объединить эту посылку с другой посылкой<br>
+                          <small>При объединении посылки сроки упаковки могут быть увеличены</small>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="action-box" id="action3">
+                      <div class="icon-placeholder"></div>
+                      <p class="action-text">
+                          Разделить посылку<br>
+                          <small>Вариант для тех, кому нужно разделить посылку на несколько частей.</small>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div></div> 
+      
+    <div class="firstblock">
+        <div class="question">
+          <div class="tabs column-gap-2">
+            <div class="col">
+              <div class="flax flax-row">
+                <h2 class="fs-4 font-bold w-100 mb-1">
+                  Часто задаваемые <span>вопросы</span> и <span>требования</span>
+                </h2>
+                <div class="but_con">
+                  <button
+                    class="tab active button_w button_qw"
+                    id="questions-btn"
+                  >
+                    вопросы
+                  </button>
+                  <button class="tab button_q button_qw" id="requirements-btn">
+                    требования
+                  </button>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+            </div>
+            <div class="col mt-2">
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button
+                  class="tab-test p-2 mt-1 btn-secondary"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Как я могу отследить свою посылку?
+                </button>
+                <ul class="dropdown-menu drop-content">
+                  <div class="orange-line"></div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                    at odio reiciendis.
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="firstblock">
+        <div class="news-text-h2">
+          <h2 class="news-text fs-4 font-bold w-100 mb-1">
+            Последние новости в <span>мире</span>
+          </h2>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="news-block d-flex flex-column w-100 h-100">
+                <div class="tabs d-flex w-100 h-100 gap-2">
+                  <div class="news-block-col col-6 d-flex flex-column gap-2">
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.00000000000 0000000000000
+                          000000000000000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.000000000 000000000000
+                          00000000000 0000000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.000000000 0000000 000000
+                          00000 00000 00 0000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.0000 00000000000
+                          0000000000 000000000 00000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">заменить на другой элемент</div>
+                            <div class="description">
+                              заменить на другой элемент
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.00000000000 00000000
+                          00000000000000000000
+                        </p>
+                      </ul>
+                    </div>
+                    <!-- Повторите блоки контента по аналогии -->
+                  </div>
+                  <div class="news-block-col col-6 d-flex flex-column gap-2">
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.0000000000000000
+                          00000000000000000000000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.000000000000 00000000
+                          000000 00000 00000000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.000000 000000000 0000000
+                          000000 00000000000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">Автор: Администратор</div>
+                            <div class="description">
+                              Новая технология отслеживания
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.000000 00000000000
+                          000000000 00000000 00000
+                        </p>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button
+                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="news-block-content d-flex flex-grow-1">
+                          <img
+                            src="https://via.placeholder.com/40"
+                            alt="Avatar"
+                          />
+                          <div>
+                            <div class="title">заменить на другой элемент</div>
+                            <div class="description">
+                              заменить на другой элемент
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu drop-content">
+                        <div class="orange-line"></div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quae at odio reiciendis.000000 00000 000000 00000
+                          000 000000 00000000
+                        </p>
+                      </ul>
+                    </div>
+                    <!-- Повторите блоки контента по аналогии -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+        <div class="firstblock"></div>
+        <div class="firstblock footer"></div><script>document.querySelectorAll('.menu li').forEach(item => {
+          item.addEventListener('click', function() {
+              // Скрыть все блоки
+              document.querySelectorAll('.firstblock').forEach(block => {
+                  block.classList.remove('active');
+              });
+      
+              // Показать выбранный блок
+              const target = this.getAttribute('data-target');
+              document.querySelector(`.${target}`).classList.add('active');
+          });
+      });
+      </script>
+        <script>
+          document.addEventListener('click', function(event) {
+              if (event.target && event.target.classList.contains('add-item-btn')) {
+                  // Кнопка была нажата, прячем кнопку в предыдущем блоке
+                  event.target.style.display = 'none';
+                  
+                  // Клонируем блок с товаром
+                  let container = document.getElementById('parcelContainer');
+                  let originalBlock = event.target.closest('.firstblock');
+                  let clone = originalBlock.cloneNode(true);
+                  
+                  // Очищаем поля в новом блоке
+                  let inputs = clone.querySelectorAll('input');
+                  inputs.forEach(function(input) {
+                      input.value = '';
+                  });
+          
+                  // Возвращаем видимость кнопке в новом блоке
+                  clone.querySelector('.add-item-btn').style.display = 'inline-block';
+          
+                  // Добавляем новый блок в конец контейнера
+                  container.appendChild(clone);
+              }
+          });
+          </script>
+        <script>
+          document.getElementById('addParcelBtn').addEventListener('click', function() {
+              // Получаем все поля формы
+              let inputs = document.querySelectorAll('.form-container input');
+          
+              // Флаг, чтобы отслеживать, все ли поля заполнены
+              let allFilled = true;
+          
+              // Проверяем, все ли поля заполнены
+              inputs.forEach(function(input) {
+                  if (input.value === '') {
+                      allFilled = false;
+                  }
+              });
+          
+              // Если все поля заполнены, показываем блоки
+              if (allFilled) {
+                  document.getElementById('parcelInfoBlock').style.display = 'block';
+                  document.getElementById('parcelActionBlock').style.display = 'block';
+              } else {
+                  alert('Пожалуйста, заполните все поля.');
+              }
+          });
+          </script>
+            <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll('.action-box');
+
+    boxes.forEach(box => {
+        box.addEventListener('click', function() {
+            // Убираем активный класс у всех элементов
+            boxes.forEach(b => b.classList.remove('active'));
+            // Добавляем активный класс к нажатому элементу
+            this.classList.add('active');
+        });
+    });
+});
+
+            </script>
+          <script>// Функция для активации анимации
+            function activateAnimations() {
+              const animatedBlocks = document.querySelectorAll('.anim-0-block, .anim-6-block ,.anim-0,.anim-1, .anim-2, .anim-3, .anim-4, .anim-5, .anim-6, .anim-7, .anim-8');
+              
+              animatedBlocks.forEach(block => {
+                block.classList.add('anim-active'); // Добавляем класс, чтобы запустить анимацию
+              });
+            }
+            
+            // Пример активации анимации после клика на кнопку
+            document.getElementById('addParcelBtn').addEventListener('click', function() {
+              activateAnimations();
+            });
+            </script>
+            <script>
+              </script>
+              <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script><!-- Bootstrap JS -->
+    <script src="assets/js/scripts.js"></script><!-- Custom JS -->
+    <script src="https://cdn.tailwindcss.com"></script><!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </body>
+</html>
