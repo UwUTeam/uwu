@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* root */
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  /* исправлено */
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* обнуление конец */
+body {
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.question {
+  position: relative;
+  width: 100%;
+}
+.question .button_qw {
+  width: 49%;
+}
+
+span {
+  color: #f96c33;
+}
+
+.tabs {
+  display: flex;
+  /*  margin-top: 1rem; */
+}
+.tabs .tab-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.tabs .tab-group .but_con {
+  border-radius: 25px;
+  background-color: #f2f3f5;
+  color: #000000;
+  z-index: 1;
+}
+.tabs .tab-group .tab {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: #f2f3f5;
+  color: #000000;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.tabs .tab-group .tab.active {
+  background-color: #f96c33;
+  color: #ffffff;
+  z-index: 2;
+}
+.tabs .tab-group + .tab-group {
+  margin-left: 0.5rem;
+}
+
+.tab-test {
+  background-color: #f2f3f5;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background-color: #f2f3f5;
+  color: #000000;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.tab.active {
+  background-color: #f96c33;
+  color: #ffffff;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.but_con {
+  border-radius: 25px;
+  background-color: #f2f3f5;
+  color: #000000;
+  z-index: 1;
+}
+
+.tab-test {
+  border-radius: 25px;
+}
+.tab-test.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0px;
+  box-shadow: 0 10px 1px 0px #f2f3f5;
+}
+
+.drop-content {
+  background-color: #f2f3f5;
+  border-color: #f2f3f5;
+  position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  /* margin-top: -10px; */
+  transition: all 0.3s ease;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.drop-content p {
+  text-align: center;
+}
+
+.orange-line {
+  width: 90%; /* Линия занимает 80% от ширины блока */
+  height: 3px; /* Высота линии */
+  background-color: #f96c33; /* Цвет линии */
+  margin: 0 auto; /* Центрирование линии */
+  border-radius: 25px;
+}/*# sourceMappingURL=question.css.map */
