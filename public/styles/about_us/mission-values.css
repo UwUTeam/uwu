@@ -118,6 +118,10 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .mission-values-container .section-title {
@@ -128,6 +132,12 @@ body {
 }
 .mission-values-container .section-title span {
   color: #f96c33;
+}
+.mission-values-container .section-title h2 {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .mission-values-container .value-box {
   background-color: #f2f3f5;

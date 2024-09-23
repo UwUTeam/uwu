@@ -19,7 +19,7 @@
       background-color: #000000;
     }
 
-    &.active {
+    &.active-manu {
       background-color: #00cfdd;
       color: #000000;
 
@@ -71,4 +71,13 @@ dl,
 ol,
 ul {
   margin-bottom: 0;
+}
+
+/* CSS для управления видимостью блоков страниц */
+.pages-content > div {
+  display: none;
+}
+
+.pages-content > div.active {
+  display: block;
 }

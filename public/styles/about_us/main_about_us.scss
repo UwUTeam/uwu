@@ -131,4 +131,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  pointer-events: none;
+  user-select: none;
 }

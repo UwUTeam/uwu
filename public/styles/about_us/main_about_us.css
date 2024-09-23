@@ -118,4 +118,8 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=main_about_us.css.map */

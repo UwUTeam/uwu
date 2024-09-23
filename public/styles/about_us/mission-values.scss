@@ -10,6 +10,10 @@
     span {
       color: $color_orenge;
     }
+    h2 {
+      pointer-events: none;
+      user-select: none;
+    }
   }
 
   .value-box {

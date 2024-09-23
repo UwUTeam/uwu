@@ -131,7 +131,7 @@ canvas {
   margin-bottom: 10px;
   color: #000000;
 }
-.login-title .highlight {
+.login-title span {
   color: #f96c33;
 }
 

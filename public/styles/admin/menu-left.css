@@ -18,15 +18,40 @@
 
 .side-menu-left {
   height: 100%;
-  width: 0;
+  width: 20%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #1c1c27;
+  overflow-y: auto;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   z-index: 99;
+}
+.side-menu-left ::-webkit-scrollbar {
+  width: 10px;
+}
+.side-menu-left ::-webkit-scrollbar-thumb {
+  background-color: #292936;
+  border-radius: 5px;
+}
+.side-menu-left ::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+/* Стили для полосы прокрутки */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #01015c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #00cae4;
 }
 
 .side-menu-left div {
@@ -141,4 +166,15 @@
 .accordion-body {
   padding: 0;
   padding-bottom: 5px;
+}
+
+.pages-content > div,
+.side-menu-left > div {
+  display: none;
+}
+
+/* Показываем активный контент для страниц и меню */
+.pages-content > div.active-pages,
+.side-menu-left > div.active-content {
+  display: block;
 }/*# sourceMappingURL=menu-left.css.map */

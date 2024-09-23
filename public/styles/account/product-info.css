@@ -130,7 +130,7 @@ canvas {
   font-weight: bold;
   /*  margin-bottom: 10px; */
 }
-.product-info-container h4 .highlight {
+.product-info-container h4 span {
   color: #f96c33;
 }
 .product-info-container .instructions {

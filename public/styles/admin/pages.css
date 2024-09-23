@@ -18,7 +18,7 @@
 .tabs-a .tab-a:hover {
   background-color: #000000;
 }
-.tabs-a .tab-a.active {
+.tabs-a .tab-a.active-manu {
   background-color: #00cfdd;
   color: #000000;
   border-bottom: none;
@@ -68,4 +68,13 @@ dl,
 ol,
 ul {
   margin-bottom: 0;
+}
+
+/* CSS для управления видимостью блоков страниц */
+.pages-content > div {
+  display: none;
+}
+
+.pages-content > div.active {
+  display: block;
 }/*# sourceMappingURL=pages.css.map */

@@ -11,13 +11,19 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/public/styles/admin/max.css" />
     <link rel="stylesheet" href="/public/styles/admin/menu.css" />
     <link rel="stylesheet" href="/public/styles/admin/pages.css" />
     <link rel="stylesheet" href="/public/styles/index/main.css" />
     <link rel="stylesheet" href="/public/styles/admin/menu-left.css" />
     <link rel="stylesheet" href="/public/styles/admin/login.css" />
+
+    <link rel="stylesheet" href="/styles/admin/max.css" />
+    <link rel="stylesheet" href="/styles/admin/menu.css" />
+    <link rel="stylesheet" href="/styles/admin/pages.css" />
+    <link rel="stylesheet" href="/styles/index/main.css" />
+    <link rel="stylesheet" href="/styles/admin/menu-left.css" />
+    <link rel="stylesheet" href="/styles/admin/login.css" />
   </head>
   <body>
     <div id="loginModal" class="modal-login">
@@ -36,12 +42,1901 @@
     </div>
 
     <div id="leftMenu" class="side-menu-left">
-      <a href="javascript:void(0)" class="close-btn" onclick="closeLeftMenu()"
+      <div class="Menu-content-index active-content active">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeLeftMenu()"
+          >&times;</a
+        >
+        <button id="save-text" class="btn btn-primary w-100 mb-2">
+          Сохранить изменения
+        </button>
+        <!-- Аккордеон внутри меню -->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Поиск
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div>
+                <label for="tracking_number_1" class="form-label"
+                  >Помогу найти твою посылку:</label
+                >
+                <textarea
+                  id="tracking_number_1"
+                  class="form-control"
+                  rows="1"
+                  data-key="tracking_number_1"
+                >
+Помогу найти твою <br><span>посылку</span></textarea
+                >
+              </div>
+
+              <div>
+                <label for="tracking_number_2" class="form-label"
+                  >Введите номер отслеживания, чтобы узнать текущее
+                  местоположение вашей посылки.:</label
+                >
+                <textarea
+                  id="tracking_number_2"
+                  class="form-control"
+                  rows="1"
+                  data-key="tracking_number_2"
+                >
+Введите номер отслеживания, чтобы<br>узнать текущее местоположение вашей<br>посылки.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="tracking_number_3" class="form-label"
+                  >Num pack:</label
+                >
+                <textarea
+                  id="tracking_number_3"
+                  class="form-control"
+                  rows="1"
+                  data-key="tracking_number_3"
+                >
+Num pack</textarea
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Слайдер
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <label for="slider_image_1" class="form-label"
+                    >26 December 2019:</label
+                  >
+                  <textarea
+                    id="slider_image_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_1"
+                  >
+26 December 2019</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_2" class="form-label"
+                    >Lorem Ipsum Dolor:</label
+                  >
+                  <textarea
+                    id="slider_image_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_2"
+                  >
+Lorem Ipsum Dolor</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_3" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.Recusandae voluptate repellendus magni illo ea
+                    animi:</label
+                  >
+                  <textarea
+                    id="slider_image_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_3"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_4" class="form-label"
+                    >READ MORE:</label
+                  >
+                  <textarea
+                    id="slider_image_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_4"
+                  >
+READ MORE</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_5" class="form-label"
+                    >26 December 2019:</label
+                  >
+                  <textarea
+                    id="slider_image_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_5"
+                  >
+26 December 2019</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_6" class="form-label"
+                    >Lorem Ipsum Dolor:</label
+                  >
+                  <textarea
+                    id="slider_image_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_6"
+                  >
+Lorem Ipsum Dolor</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_7" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.Recusandae voluptate repellendus magni illo ea
+                    animi:</label
+                  >
+                  <textarea
+                    id="slider_image_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_7"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_8" class="form-label"
+                    >READ MORE:</label
+                  >
+                  <textarea
+                    id="slider_image_8"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_8"
+                  >
+READ MORE</textarea
+                  >
+                </div>
+                <div>
+                  <label for="slider_image_9" class="form-label"
+                    >26 December 2019:</label
+                  >
+                  <textarea
+                    id="slider_image_9"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_9"
+                  >
+26 December 2019</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_10" class="form-label"
+                    >Lorem Ipsum Dolor:</label
+                  >
+                  <textarea
+                    id="slider_image_10"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_10"
+                  >
+Lorem Ipsum Dolor</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_11" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit.Recusandae voluptate repellendus magni illo ea
+                    animi:</label
+                  >
+                  <textarea
+                    id="slider_image_11"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_11"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="slider_image_12" class="form-label"
+                    >READ MORE:</label
+                  >
+                  <textarea
+                    id="slider_image_12"
+                    class="form-control"
+                    rows="1"
+                    data-key="slider_image_12"
+                  >
+READ MORE</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Достоинство
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <label for="benefit_item_1" class="form-label"
+                    >Быстрая доставка:</label
+                  >
+                  <textarea
+                    id="benefit_item_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_1"
+                  >
+Быстрая доставка</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_2" class="form-label"
+                    >Мы обеспечиваем максимально короткие сроки доставки по всей
+                    стране:</label
+                  >
+                  <textarea
+                    id="benefit_item_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_2"
+                  >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_3" class="form-label"
+                    >Быстрая доставка:</label
+                  >
+                  <textarea
+                    id="benefit_item_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_3"
+                  >
+Быстрая доставка</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_4" class="form-label"
+                    >Мы обеспечиваем максимально короткие сроки доставки по всей
+                    стране:</label
+                  >
+                  <textarea
+                    id="benefit_item_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_4"
+                  >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_5" class="form-label"
+                    >Быстрая доставка:</label
+                  >
+                  <textarea
+                    id="benefit_item_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_5"
+                  >
+Быстрая доставка</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_6" class="form-label"
+                    >Мы обеспечиваем максимально короткие сроки доставки по всей
+                    стране:</label
+                  >
+                  <textarea
+                    id="benefit_item_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_6"
+                  >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_7" class="form-label"
+                    >Быстрая доставка:</label
+                  >
+                  <textarea
+                    id="benefit_item_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_7"
+                  >
+Быстрая доставка</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_8" class="form-label"
+                    >Мы обеспечиваем максимально короткие сроки доставки по всей
+                    стране:</label
+                  >
+                  <textarea
+                    id="benefit_item_8"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_8"
+                  >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_9" class="form-label"
+                    >Быстрая доставка:</label
+                  >
+                  <textarea
+                    id="benefit_item_9"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_9"
+                  >
+Быстрая доставка</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_10" class="form-label"
+                    >Мы обеспечиваем максимально короткие сроки доставки по всей
+                    стране:</label
+                  >
+                  <textarea
+                    id="benefit_item_10"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_10"
+                  >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_11" class="form-label"
+                    >Быстрая доставка:</label
+                  >
+                  <textarea
+                    id="benefit_item_11"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_11"
+                  >
+Быстрая доставка</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="benefit_item_12" class="form-label"
+                    >Мы обеспечиваем максимально короткие сроки доставки по всей
+                    стране:</label
+                  >
+                  <textarea
+                    id="benefit_item_12"
+                    class="form-control"
+                    rows="1"
+                    data-key="benefit_item_12"
+                  >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Вопросы требование
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <label for="question_1" class="form-label"
+                    >Часто задаваемые <span>вопросы</span> и
+                    <span>требования</span>:</label
+                  >
+                  <textarea
+                    id="question_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_1"
+                  >
+Часто задаваемые <span>вопросы</span> и <span>требования</span></textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_2" class="form-label">вопросы:</label>
+                  <textarea
+                    id="question_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_2"
+                  >
+вопросы</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_3" class="form-label">требования:</label>
+                  <textarea
+                    id="question_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_3"
+                  >
+требования</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_4" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_4"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_5" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_5"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_6" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_6"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_7" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_7"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_8" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_8"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_8"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_9" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_9"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_9"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_10" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_10"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_10"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_11" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_11"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_11"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_12" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_12"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_12"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_13" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_13"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_13"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+                <div>
+                  <label for="question_14" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_14"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_14"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_15" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_15"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_15"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_16" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_16"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_16"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_17" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_17"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_17"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_18" class="form-label"
+                    >Как я могу отследить свою посылку?</label
+                  >
+                  <textarea
+                    id="question_18"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_18"
+                  >
+Как я могу отследить свою посылку?</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="question_19" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.:</label
+                  >
+                  <textarea
+                    id="question_19"
+                    class="form-control"
+                    rows="1"
+                    data-key="question_19"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Новости
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div>
+                  <label for="news_1" class="form-label"
+                    >Последние новости в <span>мире</span>:</label
+                  >
+                  <textarea
+                    id="news_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_1"
+                  >
+Последние новости в <span>мире</span></textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_2" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_2"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_3" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_3"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_4" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_4"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_5" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_5"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_6" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_6"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_7" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_7"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_8" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_8"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_8"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_9" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_9"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_9"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_10" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_10"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_10"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+                <div>
+                  <label for="news_11" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_11"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_11"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_12" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_12"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_12"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_13" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_13"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_13"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_14" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_14"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_14"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_15" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_15"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_15"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_16" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_16"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_16"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_17" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_17"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_17"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_18" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_18"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_18"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_19" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_19"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_19"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_20" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_20"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_20"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_21" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_21"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_21"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_22" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_22"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_22"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_23" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_23"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_23"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_24" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_24"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_24"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_25" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_25"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_25"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_26" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_26"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_26"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_27" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_27"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_27"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_28" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_28"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_28"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_29" class="form-label"
+                    >Автор: Администратор:</label
+                  >
+                  <textarea
+                    id="news_29"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_29"
+                  >
+Автор: Администратор</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_30" class="form-label"
+                    >Новая технология отслеживания:</label
+                  >
+                  <textarea
+                    id="news_30"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_30"
+                  >
+Новая технология отслеживания</textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="news_31" class="form-label"
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae at odio reiciendis.00000000000 0000000000000
+                    000000000000000:</label
+                  >
+                  <textarea
+                    id="news_31"
+                    class="form-control"
+                    rows="1"
+                    data-key="news_31"
+                  >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Menu-content-login">
+        <div class="accordion" id="accordionExample">
+          <a href="javascript:void(0)" class="close-btn" onclick="closeLeftMenu()"
+          >&times;</a
+        >
+        <button id="save-text" class="btn btn-primary w-100 mb-2">
+          Сохранить изменения
+        </button>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Вход
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!-- Здесь было наполнение -->
+                <div>
+                  <label for="login_field_1" class="form-label"
+                    >Вход в личный кабинет</label
+                  >
+                  <textarea
+                    id="login_field_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_1"
+                  >
+                    Вход в <span>личный кабинет</span>
+                </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="login_field_2" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="login_field_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_2"
+                  >
+                    Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+                </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="login_field_3" class="form-label"
+                    >Адрес электронной почты</label
+                  >
+                  <textarea
+                    id="login_field_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_3"
+                  >
+                    Адрес электронной почты
+                </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="login_field_4" class="form-label">Пароль</label>
+                  <textarea
+                    id="login_field_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_4"
+                  >
+                    Пароль
+                </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="login_field_5" class="form-label">войти</label>
+                  <textarea
+                    id="login_field_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_5"
+                  >
+                    войти
+                </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="login_field_6" class="form-label"
+                    >регистрация</label
+                  >
+                  <textarea
+                    id="login_field_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_6"
+                  >
+                    регистрация
+                </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="login_field_7" class="form-label"
+                    >восстановить</label
+                  >
+                  <textarea
+                    id="login_field_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="login_field_7"
+                  >
+                    восстановить
+                </textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Регистрация
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!-- Здесь было наполнение -->
+
+                <div>
+                  <label for="registration_field_1" class="form-label"
+                    >Регистрация нового пользователя</label
+                  >
+                  <textarea
+                    id="registration_field_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_1"
+                  >
+      Регистрация нового <span>пользователя</span>
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_2" class="form-label"
+                    >Еще нет аккаунта? Зарегистрируйтесь, чтобы начать
+                    пользоваться всеми преимуществами нашего сервиса.</label
+                  >
+                  <textarea
+                    id="registration_field_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_2"
+                  >
+      Еще нет аккаунта? Зарегистрируйтесь, чтобы начать пользоваться всеми преимуществами нашего сервиса.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_3" class="form-label"
+                    >First Name</label
+                  >
+                  <textarea
+                    id="registration_field_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_3"
+                  >
+      First Name
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_4" class="form-label"
+                    >Last Name</label
+                  >
+                  <textarea
+                    id="registration_field_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_4"
+                  >
+      Last Name
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_5" class="form-label"
+                    >Адрес электронной почты</label
+                  >
+                  <textarea
+                    id="registration_field_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_5"
+                  >
+      Адрес электронной почты
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_6" class="form-label"
+                    >Пароль</label
+                  >
+                  <textarea
+                    id="registration_field_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_6"
+                  >
+      Пароль
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_7" class="form-label"
+                    >Пароль</label
+                  >
+                  <textarea
+                    id="registration_field_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_7"
+                  >
+      Пароль
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_8" class="form-label"
+                    >зарегистрироваться</label
+                  >
+                  <textarea
+                    id="registration_field_8"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_8"
+                  >
+      зарегистрироваться
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="registration_field_9" class="form-label"
+                    >войти</label
+                  >
+                  <textarea
+                    id="registration_field_9"
+                    class="form-control"
+                    rows="1"
+                    data-key="registration_field_9"
+                  >
+      войти
+  </textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Отправить код
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!-- Здесь было наполнение -->
+
+                <div>
+                  <label for="password_recovery_field_1" class="form-label"
+                    >Вход в личный кабинет</label
+                  >
+                  <textarea
+                    id="password_recovery_field_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_1"
+                  >
+      Вход в <span>личный кабинет</span>
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_2" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="password_recovery_field_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_2"
+                  >
+      Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_3" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="password_recovery_field_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_3"
+                  >
+      Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_4" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="password_recovery_field_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_4"
+                  >
+      Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_5" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="password_recovery_field_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_5"
+                  >
+      Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_6" class="form-label"
+                    >Адрес электронной почты</label
+                  >
+                  <textarea
+                    id="password_recovery_field_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_6"
+                  >
+      Адрес электронной почты
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_7" class="form-label"
+                    >отправить код</label
+                  >
+                  <textarea
+                    id="password_recovery_field_7"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_7"
+                  >
+      отправить код
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="password_recovery_field_8" class="form-label"
+                    >войти</label
+                  >
+                  <textarea
+                    id="password_recovery_field_8"
+                    class="form-control"
+                    rows="1"
+                    data-key="password_recovery_field_8"
+                  >
+      войти
+  </textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Код
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!-- Здесь было наполнение -->
+
+                <div>
+                  <label for="code_entry_field_1" class="form-label"
+                    >Вход в личный кабинет</label
+                  >
+                  <textarea
+                    id="code_entry_field_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="code_entry_field_1"
+                  >
+      Вход в <span>личный кабинет</span>
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="code_entry_field_2" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="code_entry_field_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="code_entry_field_2"
+                  >
+      Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="code_entry_field_3" class="form-label">код</label>
+                  <textarea
+                    id="code_entry_field_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="code_entry_field_3"
+                  >
+      код
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="code_entry_field_4" class="form-label"
+                    >восстановить пароль</label
+                  >
+                  <textarea
+                    id="code_entry_field_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="code_entry_field_4"
+                  >
+      восстановить пароль
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="code_entry_field_5" class="form-label"
+                    >войти</label
+                  >
+                  <textarea
+                    id="code_entry_field_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="code_entry_field_5"
+                  >
+      войти
+  </textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Новый пароль
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <!-- Здесь было наполнение -->
+
+                <div>
+                  <label for="new_password_field_1" class="form-label"
+                    >Вход в личный кабинет</label
+                  >
+                  <textarea
+                    id="new_password_field_1"
+                    class="form-control"
+                    rows="1"
+                    data-key="new_password_field_1"
+                  >
+      Вход в <span>личный кабинет</span>
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="new_password_field_2" class="form-label"
+                    >Уже зарегистрированы? Войдите в свой аккаунт, чтобы
+                    получить доступ ко всем функциям.</label
+                  >
+                  <textarea
+                    id="new_password_field_2"
+                    class="form-control"
+                    rows="1"
+                    data-key="new_password_field_2"
+                  >
+      Уже зарегистрированы? Войдите в свой аккаунт, чтобы получить доступ ко всем функциям.
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="new_password_field_3" class="form-label"
+                    >новый пароль</label
+                  >
+                  <textarea
+                    id="new_password_field_3"
+                    class="form-control"
+                    rows="1"
+                    data-key="new_password_field_3"
+                  >
+      новый пароль
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="new_password_field_4" class="form-label"
+                    >повтор пароля</label
+                  >
+                  <textarea
+                    id="new_password_field_4"
+                    class="form-control"
+                    rows="1"
+                    data-key="new_password_field_4"
+                  >
+      повтор пароля
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="new_password_field_5" class="form-label"
+                    >сменить пароль</label
+                  >
+                  <textarea
+                    id="new_password_field_5"
+                    class="form-control"
+                    rows="1"
+                    data-key="new_password_field_5"
+                  >
+      сменить пароль
+  </textarea
+                  >
+                </div>
+
+                <div>
+                  <label for="new_password_field_6" class="form-label"
+                    >войти</label
+                  >
+                  <label
+                    id="new_password_field_6"
+                    class="form-control"
+                    rows="1"
+                    data-key="new_password_field_6"
+                  >
+      войти
+  </textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Menu-content-account"><div class="accordion" id="accordionExample">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeLeftMenu()"
         >&times;</a
       >
-
-      <!-- Аккордеон внутри меню -->
-      <div class="accordion" id="accordionExample">
+      <button id="save-text" class="btn btn-primary w-100 mb-2">
+        Сохранить изменения
+      </button>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button
@@ -52,7 +1947,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              Поиск
+             Профиль
             </button>
           </h2>
           <div
@@ -61,53 +1956,92 @@
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Пример текстового поля</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="1"
-              ></textarea>
-            </div>
-            <div class="">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Пример текстового поля</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="1"
-              ></textarea>
-            </div>
-          </div>
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
 
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Пример текстового поля</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="1"
-              ></textarea>
-            </div>
-            <div class="">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Пример текстового поля</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="1"
-              ></textarea>
+<div>
+  <label for="account_info_1" class="form-label">Номер клиента: #731241</label>
+  <textarea id="account_info_1" class="form-control" rows="1" data-key="account_info_1">
+      Номер клиента: <span>#731241</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_2" class="form-label">ФИО</label>
+  <textarea id="account_info_2" class="form-control" rows="1" data-key="account_info_2">
+      ФИО
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_3" class="form-label">Тариф: Стандартный</label>
+  <textarea id="account_info_3" class="form-control" rows="1" data-key="account_info_3">
+      Тариф: <span>Стандартный</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_4" class="form-label">Почта: xxxxxx@gmail.com</label>
+  <textarea id="account_info_4" class="form-control" rows="1" data-key="account_info_4">
+      Почта: <span>xxxxxx@gmail.com</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_5" class="form-label">Адрес: xxxxxxxxxxxxxxxx</label>
+  <textarea id="account_info_5" class="form-control" rows="1" data-key="account_info_5">
+      Адрес: <span>xxxxxxxxxxxxxxxx</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_6" class="form-label">Телефон: xxxxxxxxxxxxx</label>
+  <textarea id="account_info_6" class="form-control" rows="1" data-key="account_info_6">
+      Телефон: <span>xxxxxxxxxxxxx</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_7" class="form-label">Профиль</label>
+  <textarea id="account_info_7" class="form-control" rows="1" data-key="account_info_7">
+      Профиль
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_8" class="form-label">Тарифы</label>
+  <textarea id="account_info_8" class="form-control" rows="1" data-key="account_info_8">
+      Тарифы
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_9" class="form-label">Получатели</label>
+  <textarea id="account_info_9" class="form-control" rows="1" data-key="account_info_9">
+      Получатели
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_10" class="form-label">Адреса доставки</label>
+  <textarea id="account_info_10" class="form-control" rows="1" data-key="account_info_10">
+      Адреса доставки
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_11" class="form-label">Сменить пароль</label>
+  <textarea id="account_info_11" class="form-control" rows="1" data-key="account_info_11">
+      Сменить пароль
+  </textarea>
+</div>
+
+<div>
+  <label for="account_info_12" class="form-label">Выход</label>
+  <textarea id="account_info_12" class="form-control" rows="1" data-key="account_info_12">
+      Выход
+  </textarea>
+</div>
             </div>
           </div>
         </div>
@@ -121,7 +2055,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Слайдер
+              Добавить посылку
             </button>
           </h2>
           <div
@@ -130,7 +2064,48 @@
             aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">Контент для раздела "Слайдер".</div>
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
+              <div>
+                <label for="expected_package_1" class="form-label">Адрес электронной почты</label>
+                <textarea id="expected_package_1" class="form-control" rows="1" data-key="expected_package_1">
+                    Адрес электронной почты
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="expected_package_2" class="form-label"> Адрес электронной почты</label>
+                <textarea id="expected_package_2" class="form-control" rows="1" data-key="expected_package_2">
+                     Адрес электронной почты
+                </textarea>
+            </div>
+            <div>
+              <label for="expected_package_3" class="form-label">Адрес электронной почты</label>
+              <textarea id="expected_package_3" class="form-control" rows="1" data-key="expected_package_3">
+                  Адрес электронной почты
+              </textarea>
+          </div>
+          
+          <div>
+              <label for="expected_package_4" class="form-label"> Адрес электронной почты</label>
+              <textarea id="expected_package_4" class="form-control" rows="1" data-key="expected_package_4">
+                   Адрес электронной почты
+              </textarea>
+          </div>
+          <div>
+            <label for="expected_package_5" class="form-label">Адрес электронной почты</label>
+            <textarea id="expected_package_5" class="form-control" rows="1" data-key="expected_package_5">
+                Адрес электронной почты
+            </textarea>
+        </div>
+        
+        <div>
+            <label for="expected_package_6" class="form-label">Добавить ожидаемую посылку</label>
+            <textarea id="expected_package_6" class="form-control" rows="1" data-key="expected_package_6">
+                Добавить ожидаемую посылку
+            </textarea>
+        </div>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -143,7 +2118,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Достоинство
+             Информация о посылки
             </button>
           </h2>
           <div
@@ -152,7 +2127,87 @@
             aria-labelledby="headingThree"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">Контент для раздела "Достоинство".</div>
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
+
+
+<div>
+  <label for="product_info_1" class="form-label">Информация о товарах</label>
+  <textarea id="product_info_1" class="form-control" rows="1" data-key="product_info_1">
+      Информация о <span>товарах</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_2" class="form-label">Пожалуйста, внимательно опишите каждый товар в заказе.</label>
+  <textarea id="product_info_2" class="form-control" rows="1" data-key="product_info_2">
+      Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления таможенной декларации.
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_3" class="form-label">Ссылка на товар</label>
+  <textarea id="product_info_3" class="form-control" rows="1" data-key="product_info_3">
+      Ссылка на товар
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_4" class="form-label">Тип товара</label>
+  <textarea id="product_info_4" class="form-control" rows="1" data-key="product_info_4">
+      Тип товара
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_5" class="form-label">Название товара</label>
+  <textarea id="product_info_5" class="form-control" rows="1" data-key="product_info_5">
+      Название товара
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_6" class="form-label">Бренд</label>
+  <textarea id="product_info_6" class="form-control" rows="1" data-key="product_info_6">
+      Бренд
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_7" class="form-label">Цвет</label>
+  <textarea id="product_info_7" class="form-control" rows="1" data-key="product_info_7">
+      Цвет
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_8" class="form-label">Размер</label>
+  <textarea id="product_info_8" class="form-control" rows="1" data-key="product_info_8">
+      Размер
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_9" class="form-label">Количество в шт</label>
+  <textarea id="product_info_9" class="form-control" rows="1" data-key="product_info_9">
+      Количество в шт
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_10" class="form-label">Стоимость за шт</label>
+  <textarea id="product_info_10" class="form-control" rows="1" data-key="product_info_10">
+      Стоимость за шт
+  </textarea>
+</div>
+
+<div>
+  <label for="product_info_11" class="form-label">+ Добавить товар</label>
+  <textarea id="product_info_11" class="form-control" rows="1" data-key="product_info_11">
+      + Добавить товар
+  </textarea>
+</div>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -165,7 +2220,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              Вопросы требование
+              Доставка посылки
             </button>
           </h2>
           <div
@@ -175,7 +2230,57 @@
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              Контент для раздела "Вопросы требование".
+              <!-- Здесь было наполнение -->
+
+
+<div>
+  <label for="package_action_1" class="form-label">Выберите дальнейшие действия с посылкой</label>
+  <textarea id="package_action_1" class="form-control" rows="1" data-key="package_action_1">
+      Выберите дальнейшие действия с <span>посылкой</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="package_action_2" class="form-label">Отправить посылку сразу без объединения с другими посылками</label>
+  <textarea id="package_action_2" class="form-control" rows="1" data-key="package_action_2">
+      Отправить посылку сразу без объединения с другими посылками
+  </textarea>
+</div>
+
+<div>
+  <label for="package_action_3" class="form-label">Самый быстрый вариант: после регистрации входящей посылки мы сразу ее упакуем.</label>
+  <textarea id="package_action_3" class="form-control" rows="1" data-key="package_action_3">
+      Самый быстрый вариант: после регистрации входящей посылки мы сразу ее упакуем.
+  </textarea>
+</div>
+
+<div>
+  <label for="package_action_4" class="form-label">Объединить эту посылку с другой посылкой</label>
+  <textarea id="package_action_4" class="form-control" rows="1" data-key="package_action_4">
+      Объединить эту посылку с другой посылкой
+  </textarea>
+</div>
+
+<div>
+  <label for="package_action_5" class="form-label">При объединении посылки сроки упаковки могут быть увеличены</label>
+  <textarea id="package_action_5" class="form-control" rows="1" data-key="package_action_5">
+      При объединении посылки сроки упаковки могут быть увеличены
+  </textarea>
+</div>
+
+<div>
+  <label for="package_action_6" class="form-label">Разделить посылку</label>
+  <textarea id="package_action_6" class="form-control" rows="1" data-key="package_action_6">
+      Разделить посылку
+  </textarea>
+</div>
+
+<div>
+  <label for="package_action_7" class="form-label">Вариант для тех, кому нужно разделить посылку на несколько частей.</label>
+  <textarea id="package_action_7" class="form-control" rows="1" data-key="package_action_7">
+      Вариант для тех, кому нужно разделить посылку на несколько частей.
+  </textarea>
+</div>
             </div>
           </div>
         </div>
@@ -189,7 +2294,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              Новости
+             Вопросы
             </button>
           </h2>
           <div
@@ -198,12 +2303,1142 @@
             aria-labelledby="headingFive"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body">Контент для раздела "Новости".</div>
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
+
+
+<div>
+  <label for="question_1-1" class="form-label">Часто задаваемые вопросы и требования</label>
+  <textarea id="question_1-1" class="form-control" rows="1" data-key="question_1-1">
+      Часто задаваемые <span>вопросы</span> и <span>требования</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="question_2-1" class="form-label">вопросы</label>
+  <textarea id="question_2-1" class="form-control" rows="1" data-key="question_2-1">
+      вопросы
+  </textarea>
+</div>
+
+<div>
+  <label for="question_3-1" class="form-label">требования</label>
+  <textarea id="question_3-1" class="form-control" rows="1" data-key="question_3-1">
+      требования
+  </textarea>
+</div>
+
+<div>
+  <label for="question_4-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_4-1" class="form-control" rows="1" data-key="question_4-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_5-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_5-1" class="form-control" rows="1" data-key="question_5-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_6-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_6-1" class="form-control" rows="1" data-key="question_6-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_7-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_7-1" class="form-control" rows="1" data-key="question_7-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_8-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_8-1" class="form-control" rows="1" data-key="question_8-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_9-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_9-1" class="form-control" rows="1" data-key="question_9-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_10-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_10-1" class="form-control" rows="1" data-key="question_10-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_11-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_11-1" class="form-control" rows="1" data-key="question_11-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_12-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_12-1" class="form-control" rows="1" data-key="question_12-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_13-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_13-1" class="form-control" rows="1" data-key="question_13-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_14-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_14-1" class="form-control" rows="1" data-key="question_14-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_15-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_15-1" class="form-control" rows="1" data-key="question_15-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_16-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_16-1" class="form-control" rows="1" data-key="question_16-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_17-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_17-1" class="form-control" rows="1" data-key="question_17-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_18-1" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_18-1" class="form-control" rows="1" data-key="question_18-1">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_19-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_19-1" class="form-control" rows="1" data-key="question_19-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+            </div>
+          </div>
+        </div>
+        <!-- Новый добавленный блок -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+            Новости
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Здесь будет наполнение нового блока -->
+
+
+<div>
+  <label for="news_1-1" class="form-label">Последние новости в мире</label>
+  <textarea id="news_1-1" class="form-control" rows="1" data-key="news_1-1">
+      Последние новости в <span>мире</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="news_2-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_2-1" class="form-control" rows="1" data-key="news_2-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_3-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_3-1" class="form-control" rows="1" data-key="news_3-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_4-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="news_4-1" class="form-control" rows="1" data-key="news_4-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+<div>
+  <label for="news_5-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_5-1" class="form-control" rows="1" data-key="news_5-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_6-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_6-1" class="form-control" rows="1" data-key="news_6-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_7-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="news_7-1" class="form-control" rows="1" data-key="news_7-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_8-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_8-1" class="form-control" rows="1" data-key="news_8-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_9-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_9-1" class="form-control" rows="1" data-key="news_9-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_10-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_10-1" class="form-control" rows="1" data-key="news_10-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_11-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_11-1" class="form-control" rows="1" data-key="news_11-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_12-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_12-1" class="form-control" rows="1" data-key="news_12-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_13-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_13-1" class="form-control" rows="1" data-key="news_13-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_14-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_14-1" class="form-control" rows="1" data-key="news_14-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_15-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_15-1" class="form-control" rows="1" data-key="news_15-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_16-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_16-1" class="form-control" rows="1" data-key="news_16-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_17-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_17-1" class="form-control" rows="1" data-key="news_17-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_18-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_18-1" class="form-control" rows="1" data-key="news_18-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_19-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_19-1" class="form-control" rows="1" data-key="news_19-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_20-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_20-1" class="form-control" rows="1" data-key="news_20-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_21-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_21-1" class="form-control" rows="1" data-key="news_21-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_22-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_22-1" class="form-control" rows="1" data-key="news_22-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_23-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_23-1" class="form-control" rows="1" data-key="news_23-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_24-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_24-1" class="form-control" rows="1" data-key="news_24-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_25-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_25-1" class="form-control" rows="1" data-key="news_25-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_26-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_26-1" class="form-control" rows="1" data-key="news_26-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_27-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_27-1" class="form-control" rows="1" data-key="news_27-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_28-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_28-1" class="form-control" rows="1" data-key="news_28-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_29-1" class="form-label">Автор: Администратор</label>
+  <textarea id="news_29-1" class="form-control" rows="1" data-key="news_29-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_30-1" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_30-1" class="form-control" rows="1" data-key="news_30-1">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_31-1" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_31-1" class="form-control" rows="1" data-key="news_31-1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <div class="Menu-content-about_us"><div class="accordion" id="accordionExample">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeLeftMenu()"
+        >&times;</a
+      >
+      <button id="save-text" class="btn btn-primary w-100 mb-2">
+        Сохранить изменения
+      </button>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+            Миссия и ценности
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
+              <div>
+                <label for="mission_value_1" class="form-label">Миссия и ценности</label>
+                <textarea id="mission_value_1" class="form-control" rows="1" data-key="mission_value_1">
+                    <span>Миссия</span> и <span>ценности</span>
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_2" class="form-label">Надежность</label>
+                <textarea id="mission_value_2" class="form-control" rows="1" data-key="mission_value_2">
+                    Надежность
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_3" class="form-label">Мы гарантируем своевременную и безопасную доставку ваших посылок</label>
+                <textarea id="mission_value_3" class="form-control" rows="1" data-key="mission_value_3">
+                    Мы гарантируем своевременную и безопасную доставку ваших посылок, уделяя особое внимание качеству всех процессов.
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_4" class="form-label">Надежность</label>
+                <textarea id="mission_value_4" class="form-control" rows="1" data-key="mission_value_4">
+                    Надежность
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_5" class="form-label">Мы гарантируем своевременную и безопасную доставку ваших посылок</label>
+                <textarea id="mission_value_5" class="form-control" rows="1" data-key="mission_value_5">
+                    Мы гарантируем своевременную и безопасную доставку ваших посылок, уделяя особое внимание качеству всех процессов.
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_6" class="form-label">Надежность</label>
+                <textarea id="mission_value_6" class="form-control" rows="1" data-key="mission_value_6">
+                    Надежность
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_7" class="form-label">Мы гарантируем своевременную и безопасную доставку ваших посылок</label>
+                <textarea id="mission_value_7" class="form-control" rows="1" data-key="mission_value_7">
+                    Мы гарантируем своевременную и безопасную доставку ваших посылок, уделяя особое внимание качеству всех процессов.
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_8" class="form-label">Надежность</label>
+                <textarea id="mission_value_8" class="form-control" rows="1" data-key="mission_value_8">
+                    Надежность
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_9" class="form-label">Мы гарантируем своевременную и безопасную доставку ваших посылок</label>
+                <textarea id="mission_value_9" class="form-control" rows="1" data-key="mission_value_9">
+                    Мы гарантируем своевременную и безопасную доставку ваших посылок, уделяя особое внимание качеству всех процессов.
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_10" class="form-label">Надежность</label>
+                <textarea id="mission_value_10" class="form-control" rows="1" data-key="mission_value_10">
+                    Надежность
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_11" class="form-label">Мы гарантируем своевременную и безопасную доставку ваших посылок</label>
+                <textarea id="mission_value_11" class="form-control" rows="1" data-key="mission_value_11">
+                    Мы гарантируем своевременную и безопасную доставку ваших посылок, уделяя особое внимание качеству всех процессов.
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_12" class="form-label">Надежность</label>
+                <textarea id="mission_value_12" class="form-control" rows="1" data-key="mission_value_12">
+                    Надежность
+                </textarea>
+            </div>
+            
+            <div>
+                <label for="mission_value_13" class="form-label">Мы гарантируем своевременную и безопасную доставку ваших посылок</label>
+                <textarea id="mission_value_13" class="form-control" rows="1" data-key="mission_value_13">
+                    Мы гарантируем своевременную и безопасную доставку ваших посылок, уделяя особое внимание качеству всех процессов.
+                </textarea>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+            Наши достижения
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
 
+<div>
+  <label for="achievements_1" class="form-label">Наши достижения</label>
+  <textarea id="achievements_1" class="form-control" rows="1" data-key="achievements_1">
+      Наши <span>достижения</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_2" class="form-label">Развитие сети пунктов выдачи</label>
+  <textarea id="achievements_2" class="form-control" rows="1" data-key="achievements_2">
+      Развитие сети пунктов выдачи
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_3" class="form-label">Мы увеличили количество пунктов выдачи в два раза за последний год</label>
+  <textarea id="achievements_3" class="form-control" rows="1" data-key="achievements_3">
+      Мы увеличили количество пунктов выдачи в два раза за последний год, что сделало нашу сеть еще более доступной.
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_4" class="form-label">Развитие сети пунктов выдачи</label>
+  <textarea id="achievements_4" class="form-control" rows="1" data-key="achievements_4">
+      Развитие сети пунктов выдачи
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_5" class="form-label">Мы увеличили количество пунктов выдачи в два раза за последний год</label>
+  <textarea id="achievements_5" class="form-control" rows="1" data-key="achievements_5">
+      Мы увеличили количество пунктов выдачи в два раза за последний год, что сделало нашу сеть еще более доступной.
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_6" class="form-label">Развитие сети пунктов выдачи</label>
+  <textarea id="achievements_6" class="form-control" rows="1" data-key="achievements_6">
+      Развитие сети пунктов выдачи
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_7" class="form-label">Мы увеличили количество пунктов выдачи в два раза за последний год</label>
+  <textarea id="achievements_7" class="form-control" rows="1" data-key="achievements_7">
+      Мы увеличили количество пунктов выдачи в два раза за последний год, что сделало нашу сеть еще более доступной.
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_8" class="form-label">Развитие сети пунктов выдачи</label>
+  <textarea id="achievements_8" class="form-control" rows="1" data-key="achievements_8">
+      Развитие сети пунктов выдачи
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_9" class="form-label">Мы увеличили количество пунктов выдачи в два раза за последний год</label>
+  <textarea id="achievements_9" class="form-control" rows="1" data-key="achievements_9">
+      Мы увеличили количество пунктов выдачи в два раза за последний год, что сделало нашу сеть еще более доступной.
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_10" class="form-label">Развитие сети пунктов выдачи</label>
+  <textarea id="achievements_10" class="form-control" rows="1" data-key="achievements_10">
+      Развитие сети пунктов выдачи
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_11" class="form-label">Мы увеличили количество пунктов выдачи в два раза за последний год</label>
+  <textarea id="achievements_11" class="form-control" rows="1" data-key="achievements_11">
+      Мы увеличили количество пунктов выдачи в два раза за последний год, что сделало нашу сеть еще более доступной.
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_12" class="form-label">Развитие сети пунктов выдачи</label>
+  <textarea id="achievements_12" class="form-control" rows="1" data-key="achievements_12">
+      Развитие сети пунктов выдачи
+  </textarea>
+</div>
+
+<div>
+  <label for="achievements_13" class="form-label">Мы увеличили количество пунктов выдачи в два раза за последний год</label>
+  <textarea id="achievements_13" class="form-control" rows="1" data-key="achievements_13">
+      Мы увеличили количество пунктов выдачи в два раза за последний год, что сделало нашу сеть еще более доступной.
+  </textarea>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+            Почему выбирают нас
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
+
+<div>
+  <label for="why_choose_us_1" class="form-label">Почему выбирают нас</label>
+  <textarea id="why_choose_us_1" class="form-control" rows="1" data-key="why_choose_us_1">
+      Почему <span>выбирают</span> нас
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_2" class="form-label">Оперативная доставка</label>
+  <textarea id="why_choose_us_2" class="form-control" rows="1" data-key="why_choose_us_2">
+      Оперативная доставка
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_3" class="form-label">Мы обеспечиваем максимально быструю доставку</label>
+  <textarea id="why_choose_us_3" class="form-control" rows="1" data-key="why_choose_us_3">
+      Мы обеспечиваем максимально быструю доставку, благодаря оптимизированным логистическим процессам.
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_4" class="form-label">Оперативная доставка</label>
+  <textarea id="why_choose_us_4" class="form-control" rows="1" data-key="why_choose_us_4">
+      Оперативная доставка
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_5" class="form-label">Мы обеспечиваем максимально быструю доставку</label>
+  <textarea id="why_choose_us_5" class="form-control" rows="1" data-key="why_choose_us_5">
+      Мы обеспечиваем максимально быструю доставку, благодаря оптимизированным логистическим процессам.
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_6" class="form-label">Оперативная доставка</label>
+  <textarea id="why_choose_us_6" class="form-control" rows="1" data-key="why_choose_us_6">
+      Оперативная доставка
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_7" class="form-label">Мы обеспечиваем максимально быструю доставку</label>
+  <textarea id="why_choose_us_7" class="form-control" rows="1" data-key="why_choose_us_7">
+      Мы обеспечиваем максимально быструю доставку, благодаря оптимизированным логистическим процессам.
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_8" class="form-label">Оперативная доставка</label>
+  <textarea id="why_choose_us_8" class="form-control" rows="1" data-key="why_choose_us_8">
+      Оперативная доставка
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_9" class="form-label">Мы обеспечиваем максимально быструю доставку</label>
+  <textarea id="why_choose_us_9" class="form-control" rows="1" data-key="why_choose_us_9">
+      Мы обеспечиваем максимально быструю доставку, благодаря оптимизированным логистическим процессам.
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_10" class="form-label">Оперативная доставка</label>
+  <textarea id="why_choose_us_10" class="form-control" rows="1" data-key="why_choose_us_10">
+      Оперативная доставка
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_11" class="form-label">Мы обеспечиваем максимально быструю доставку</label>
+  <textarea id="why_choose_us_11" class="form-control" rows="1" data-key="why_choose_us_11">
+      Мы обеспечиваем максимально быструю доставку, благодаря оптимизированным логистическим процессам.
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_12" class="form-label">Оперативная доставка</label>
+  <textarea id="why_choose_us_12" class="form-control" rows="1" data-key="why_choose_us_12">
+      Оперативная доставка
+  </textarea>
+</div>
+
+<div>
+  <label for="why_choose_us_13" class="form-label">Мы обеспечиваем максимально быструю доставку</label>
+  <textarea id="why_choose_us_13" class="form-control" rows="1" data-key="why_choose_us_13">
+      Мы обеспечиваем максимально быструю доставку, благодаря оптимизированным логистическим процессам.
+  </textarea>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+             Вопросы
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Здесь было наполнение -->
+
+
+<div>
+  <label for="question_1-2" class="form-label">Часто задаваемые вопросы и требования</label>
+  <textarea id="question_1-2" class="form-control" rows="1" data-key="question_1-2">
+      Часто задаваемые <span>вопросы</span> и <span>требования</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="question_2-2" class="form-label">вопросы</label>
+  <textarea id="question_2-2" class="form-control" rows="1" data-key="question_2-2">
+      вопросы
+  </textarea>
+</div>
+
+<div>
+  <label for="question_3-2" class="form-label">требования</label>
+  <textarea id="question_3-2" class="form-control" rows="1" data-key="question_3-2">
+      требования
+  </textarea>
+</div>
+
+<div>
+  <label for="question_4-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_4-2" class="form-control" rows="1" data-key="question_4-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_5-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_5-2" class="form-control" rows="1" data-key="question_5-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_6-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_6-2" class="form-control" rows="1" data-key="question_6-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_7-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_7-2" class="form-control" rows="1" data-key="question_7-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_8-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_8-2" class="form-control" rows="1" data-key="question_8-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_9-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_9-2" class="form-control" rows="1" data-key="question_9-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_10-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_10-2" class="form-control" rows="1" data-key="question_10-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_11-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_11-2" class="form-control" rows="1" data-key="question_11-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_12-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_12-2" class="form-control" rows="1" data-key="question_12-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_13-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_13-2" class="form-control" rows="1" data-key="question_13-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_14-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_14-2" class="form-control" rows="1" data-key="question_14-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_15-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_15-2" class="form-control" rows="1" data-key="question_15-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_16-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_16-2" class="form-control" rows="1" data-key="question_16-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_17-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_17-2" class="form-control" rows="1" data-key="question_17-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="question_18-2" class="form-label">Как я могу отследить свою посылку?</label>
+  <textarea id="question_18-2" class="form-control" rows="1" data-key="question_18-2">
+      Как я могу отследить свою посылку?
+  </textarea>
+</div>
+
+<div>
+  <label for="question_19-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="question_19-2" class="form-control" rows="1" data-key="question_19-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.
+  </textarea>
+</div>
+            </div>
+          </div>
+        </div>
+        <!-- Новый добавленный блок -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+            Новости
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <!-- Здесь будет наполнение нового блока -->
+
+
+<div>
+  <label for="news_1-2" class="form-label">Последние новости в мире</label>
+  <textarea id="news_1-2" class="form-control" rows="1" data-key="news_1-2">
+      Последние новости в <span>мире</span>
+  </textarea>
+</div>
+
+<div>
+  <label for="news_2-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_2-2" class="form-control" rows="1" data-key="news_2-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_3-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_3-2" class="form-control" rows="1" data-key="news_3-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_4-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="news_4-2" class="form-control" rows="1" data-key="news_4-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+<div>
+  <label for="news_5-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_5-2" class="form-control" rows="1" data-key="news_5-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_6-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_6-2" class="form-control" rows="1" data-key="news_6-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_7-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</label>
+  <textarea id="news_7-2" class="form-control" rows="1" data-key="news_7-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_8-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_8-2" class="form-control" rows="1" data-key="news_8-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_9-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_9-2" class="form-control" rows="1" data-key="news_9-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_10-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_10-2" class="form-control" rows="1" data-key="news_10-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_11-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_11-2" class="form-control" rows="1" data-key="news_11-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_12-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_12-2" class="form-control" rows="1" data-key="news_12-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_13-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_13-2" class="form-control" rows="1" data-key="news_13-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_14-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_14-2" class="form-control" rows="1" data-key="news_14-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_15-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_15-2" class="form-control" rows="1" data-key="news_15-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_16-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_16-2" class="form-control" rows="1" data-key="news_16-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_17-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_17-2" class="form-control" rows="1" data-key="news_17-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_18-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_18-2" class="form-control" rows="1" data-key="news_18-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_19-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_19-2" class="form-control" rows="1" data-key="news_19-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_20-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_20-2" class="form-control" rows="1" data-key="news_20-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_21-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_21-2" class="form-control" rows="1" data-key="news_21-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_22-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_22-2" class="form-control" rows="1" data-key="news_22-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_23-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_23-2" class="form-control" rows="1" data-key="news_23-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_24-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_24-2" class="form-control" rows="1" data-key="news_24-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_25-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_25-2" class="form-control" rows="1" data-key="news_25-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_26-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_26-2" class="form-control" rows="1" data-key="news_26-1">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_27-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_27-2" class="form-control" rows="1" data-key="news_27-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_28-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_28-2" class="form-control" rows="1" data-key="news_28-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+
+<div>
+  <label for="news_29-2" class="form-label">Автор: Администратор</label>
+  <textarea id="news_29-2" class="form-control" rows="1" data-key="news_29-2">
+      Автор: Администратор
+  </textarea>
+</div>
+
+<div>
+  <label for="news_30-2" class="form-label">Новая технология отслеживания</label>
+  <textarea id="news_30-2" class="form-control" rows="1" data-key="news_30-2">
+      Новая технология отслеживания
+  </textarea>
+</div>
+
+<div>
+  <label for="news_31-2" class="form-label">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.</label>
+  <textarea id="news_31-2" class="form-control" rows="1" data-key="news_31-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaе at odio reiciendis.
+  </textarea>
+</div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+    </div>
     <!-- Правое меню -->
     <div id="rightMenu" class="side-menu-right">
       <a href="javascript:void(0)" class="close-btn" onclick="closeRightMenu()"
@@ -278,9 +3513,7 @@
             class="accordion-collapse collapse"
             aria-labelledby="headingTwoRight"
             data-bs-parent="#accordionRightMenu"
-          >
-            <div class="accordion-body">Контент для раздела "Профиль".</div>
-          </div>
+          ></div>
         </div>
 
         <div class="accordion-item">
@@ -315,10 +3548,35 @@
           <button class="open-btn" onclick="openLeftMenu()">
             &#9776; Открыть левое меню
           </button>
-          <li class="tab-a active" data-target="pages-index">Главная</li>
-          <li class="tab-a" data-target="pages-login">Логин</li>
-          <li class="tab-a" data-target="pages-account">Аккаунт</li>
-          <li class="tab-a" data-target="pages-about_us">О нас</li>
+          <li
+            class="tab-a active-manu"
+            data-target="Menu-content-index"
+            data-page="pages-index"
+          >
+            Главная
+          </li>
+          <li
+            class="tab-a"
+            data-target="Menu-content-login"
+            data-page="pages-login"
+          >
+            Логин
+          </li>
+          <li
+            class="tab-a"
+            data-target="Menu-content-account"
+            data-page="pages-account"
+          >
+            Аккаунт
+          </li>
+          <li
+            class="tab-a"
+            data-target="Menu-content-about_us"
+            data-page="pages-about_us"
+          >
+            О нас
+          </li>
+
           <button class="open-btn open-btn-right" onclick="openRightMenu()">
             &#9776; Открыть правое меню
           </button>
@@ -326,30 +3584,32 @@
 
         <!-- Блоки контента -->
         <div class="pages-content">
-          <div class="pages-index active resizable-container border">
+          <div class="pages-index active-pages resizable-container border">
+            <iframe class="index-pg" src="/index.html"></iframe>
             <iframe class="index-pg" src="/public/index.html"></iframe>
             <div class="resizer"></div>
           </div>
           <div class="pages-login resizable-container border">
+            <iframe class="index-pg" src="/login.html"></iframe>
             <iframe class="index-pg" src="/public/login.html"></iframe>
             <div class="resizer"></div>
           </div>
           <div class="pages-account resizable-container border">
+            <iframe class="index-pg" src="/account.html"></iframe>
             <iframe class="index-pg" src="/public/account.html"></iframe>
             <div class="resizer"></div>
           </div>
           <div class="pages-about_us resizable-container border">
+            <iframe class="index-pg" src="/about_us.html"></iframe>
             <iframe class="index-pg" src="/public/about_us.html"></iframe>
             <div class="resizer"></div>
           </div>
         </div>
       </div>
     </div>
-
-    <!--  <div class=".news-block-content container mt-5">
+    <!-- 
+    <div class=".news-block-content container mt-5">
       <h1>Редактирование контента</h1>
-
-     
       <div class="mb-3">
         <label for="main-title" class="form-label">Заголовок страницы:</label>
         <textarea
@@ -368,12 +3628,58 @@
           data-key="main-text"
         ></textarea>
       </div>
-
-      
       <button id="save-text" class="btn btn-primary">
         Сохранить изменения
       </button>
     </div> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-a");
+        const menuContent = document.querySelectorAll(".side-menu-left > div");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Удаляем класс active-manu у всех вкладок
+            tabs.forEach((item) => {
+              item.classList.remove("active-manu");
+            });
+
+            // Скрываем весь контент меню
+            menuContent.forEach((content) =>
+              content.classList.remove("active-content")
+            );
+
+            // Добавляем класс active-manu к текущей вкладке
+            this.classList.add("active-manu");
+
+            // Показать выбранный блок меню
+            const targetMenu = this.getAttribute("data-target");
+            document
+              .querySelector(`.${targetMenu}`)
+              .classList.add("active-content");
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-a");
+        const pages = document.querySelectorAll(".pages-content > div");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Скрываем весь контент страниц
+            pages.forEach((page) => page.classList.remove("active-pages"));
+
+            // Показать выбранную страницу
+            const targetPage = this.getAttribute("data-page");
+            document
+              .querySelector(`.${targetPage}`)
+              .classList.add("active-pages");
+          });
+        });
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const colorInput = document.getElementById("colorInput");
@@ -395,10 +3701,11 @@
         });
       });
     </script>
+
     <script>
       // Функции для левого меню
       function openLeftMenu() {
-        document.getElementById("leftMenu").style.width = "250px";
+        document.getElementById("leftMenu").style.width = "310px";
       }
 
       function closeLeftMenu() {
@@ -407,32 +3714,14 @@
 
       // Функции для правого меню
       function openRightMenu() {
-        document.getElementById("rightMenu").style.width = "250px";
+        document.getElementById("rightMenu").style.width = "310px";
       }
 
       function closeRightMenu() {
         document.getElementById("rightMenu").style.width = "0";
       }
     </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const tabs = document.querySelectorAll(".tab-a");
-        const pages = document.querySelectorAll(".pages-content div");
 
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", function () {
-            // Удаляем класс active у всех вкладок и блоков
-            tabs.forEach((t) => t.classList.remove("active"));
-            pages.forEach((page) => page.classList.remove("active"));
-
-            // Добавляем класс active к выбранной вкладке и соответствующему блоку
-            this.classList.add("active");
-            const target = this.getAttribute("data-target");
-            document.querySelector(`.${target}`).classList.add("active");
-          });
-        });
-      });
-    </script>
     <script>
       const resizer = document.querySelector(".resizer");
       const container = document.querySelector(".resizable-container");
@@ -471,29 +3760,29 @@
         .catch((err) => console.log("Ошибка при загрузке текста:", err));
 
       // Сохраняем изменения при нажатии кнопки "Сохранить"
-      document
-        .getElementById("save-text")
-        .addEventListener("click", function () {
-          const updatedContent = {};
+      document.querySelectorAll(".btn-primary").forEach((button) => {
+  button.addEventListener("click", function () {
+    const updatedContent = {};
 
-          document.querySelectorAll("textarea").forEach((element) => {
-            const key = element.getAttribute("data-key");
-            updatedContent[key] = element.value; // Сохраняем содержимое textarea
-          });
+    document.querySelectorAll("textarea").forEach((element) => {
+      const key = element.getAttribute("data-key");
+      updatedContent[key] = element.value; // Сохраняем содержимое textarea
+    });
 
-          fetch("/update-text", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(updatedContent), // Преобразуем данные в JSON
-          })
-            .then((response) => response.text())
-            .then((result) => {
-              alert("Изменения сохранены!"); // Сообщаем пользователю, что текст сохранен
-            })
-            .catch((err) => console.error("Ошибка при сохранении:", err));
-        });
+    fetch("/update-text", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedContent), // Преобразуем данные в JSON
+    })
+      .then((response) => response.text())
+      .then((result) => {
+        alert("Изменения сохранены!"); // Сообщаем пользователю, что текст сохранен
+      })
+      .catch((err) => console.error("Ошибка при сохранении:", err));
+  });
+});
     </script>
     <script>
       // Проверка логина и пароля

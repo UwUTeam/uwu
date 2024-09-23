@@ -12,9 +12,14 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     height: 100%;
     color: $color_text;
-
     span {
-      color: $color_text_g;
+      color: $color_orenge;
+      font-weight: bold;
+    }
+    .tariffff {
+      span {
+        color: $color_text_g;
+      }
     }
 
     .profile-image {
@@ -23,11 +28,6 @@
       background-color: #000;
       border-radius: $border_rad;
       margin-bottom: 10px;
-    }
-
-    .client-number {
-      color: $color_orenge;
-      font-weight: bold;
     }
 
     .tariff,

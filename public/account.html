@@ -30,6 +30,21 @@
     <link rel="stylesheet" href="/public/styles/account/anim.css" />
     <link rel="stylesheet" href="/public/styles/account/news_block.css" /> 
     <link rel="stylesheet" href="/public/styles/account/question.css" />
+
+
+
+
+    <link rel="stylesheet" href="/styles/account/main_account.css" />
+    <link rel="stylesheet" href="/styles/account/firstblock.css" />
+    <link rel="stylesheet" href="/styles/account/navi.css" />
+    <link rel="stylesheet" href="/styles/account/info.css" />
+    <link rel="stylesheet" href="/styles/account/parcel.css" />
+    <link rel="stylesheet" href="/styles/account/footer.css" />
+    <link rel="stylesheet" href="/styles/account/product-info.css" />
+    <link rel="stylesheet" href="/styles/account/shipment-actions.css" /> 
+    <link rel="stylesheet" href="/styles/account/anim.css" />
+    <link rel="stylesheet" href="/styles/account/news_block.css" /> 
+    <link rel="stylesheet" href="/styles/account/question.css" />
 <body>
     <div class="firstblock navi show" style="position: relative">
         <!-- Логотип -->
@@ -67,38 +82,43 @@
           </div>
         </nav>
       </div>
-      <div class="firstblock"><div class="container">
-        <div class="row">
+      <div class="firstblock">
+        <div class="container">
+          <div class="row">
             <!-- Левая колонка -->
             <div class="col-md-6 profile-info">
-                <div class="profile-card">
-                   
-                    <div class="profile-details">
-                      <div class="row"> 
-                         <div class="profile-image col-md-6"></div>
-                      <div class="col">
-                        <p >Номер клиента: <span class="client-number ">#731241</span></p>
-                        <p>ФИО</p>
+              <div class="profile-card">
+                <div class="profile-details">
+                  <div class="row">
+                    <div class="profile-image col-md-6"></div>
+                    <div class="col">
+                      <p contenteditable="true" data-key="account_info_1"style="pointer-events: none;">Номер клиента: <span>#731241</span></p>
+                      <p contenteditable="true" data-key="account_info_2"style="pointer-events: none;">ФИО</p>
                     </div>
-                    </div>
-                        <p>Тариф: <span class="tariff">Стандартный</span></p>
-                        <p>Почта: <span class="email">xxxxxx@gmail.com</span></p>
-                        <p>Адрес: <span class="address">xxxxxxxxxxxxxxxx</span></p>
-                        <p>Телефон: <span class="phone">xxxxxxxxxxxxx</span></p>
-                    </div>
+                  </div>
+                  <div class="tariffff">
+                    <p contenteditable="true" data-key="account_info_3"style="pointer-events: none;">Тариф: <span>Стандартный</span></p>
+                    <p contenteditable="true" data-key="account_info_4"style="pointer-events: none;">Почта: <span>xxxxxx@gmail.com</span></p>
+                    <p contenteditable="true" data-key="account_info_5"style="pointer-events: none;">Адрес: <span>xxxxxxxxxxxxxxxx</span></p>
+                    <p contenteditable="true" data-key="account_info_6"style="pointer-events: none;">Телефон: <span>xxxxxxxxxxxxx</span></p>
+                  </div>
                 </div>
+              </div>
             </div>
             <!-- Правая колонка -->
             <div class="col-md-6 profile-menu">
               <ul class="menu">
-                  <li data-target="Profile">Профиль</li>
-                  <li data-target="Tariffs">Тарифы</li>
-                  <li data-target="Recipients">Получатели</li>
-                  <li data-target="Delivery_Addresses">Адреса доставки</li>
-                  <li data-target="Change_password">Сменить пароль</li>
-                  <li data-target="Logout">Выход</li>
+                <li data-target="Profile" contenteditable="true" data-key="account_info_7"style="pointer-events: none;">Профиль</li>
+                <li data-target="Tariffs" contenteditable="true" data-key="account_info_8"style="pointer-events: none;">Тарифы</li>
+                <li data-target="Recipients" contenteditable="true" data-key="account_info_9"style="pointer-events: none;">Получатели</li>
+                <li data-target="Delivery_Addresses" contenteditable="true" data-key="account_info_10"style="pointer-events: none;">Адреса доставки</li>
+                <li data-target="Change_password" contenteditable="true" data-key="account_info_11"style="pointer-events: none;">Сменить пароль</li>
+                <li data-target="Logout" contenteditable="true" data-key="account_info_12"style="pointer-events: none;"м>Выход</li>
               </ul>
-          </div> </div> </div> </div>
+            </div>
+          </div>
+        </div>
+      </div>
           
           <div class="firstblock firstblock-1 Profile">Контент профиля</div>
           <div class="firstblock firstblock-1 Tariffs">Контент тарифов</div>
@@ -106,641 +126,691 @@
           <div class="firstblock firstblock-1 Delivery_Addresses">Контент адресов доставки</div>
           <div class="firstblock firstblock-1 Change_password">Контент смены пароля</div>
    
-          <div class="firstblock ">
+          <div class="firstblock">
             <div class="container form-container">
-                <div class="row">
-                    <div class="col-md-6 mt-3">
-                        <div class="form-floating form-group ">
-                            <input type="text" class="form-control" id="email1" placeholder="name@example.com" required>
-                            <label for="email1">Адрес электронной почты</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <div class="form-floating form-group ">
-                            <input type="text" class="form-control" id="email2" placeholder="name@example.com" required>
-                            <label for="email2">Адрес электронной почты</label>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-md-6 mt-3">
+                  <div class="form-floating form-group">
+                    <input type="text" class="form-control" id="email1" placeholder="name@example.com" required>
+                    <label for="email1" contenteditable="true" data-key="expected_package_1"style="pointer-events: none;">Адрес электронной почты</label>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 mt-3">
-                        <div class="form-floating form-group">
-                            <input type="text" class="form-control" id="email3" placeholder="name@example.com" required>
-                            <label for="email3">Адрес электронной почты</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <div class="form-floating form-group ">
-                            <input type="text" class="form-control" id="email4" placeholder="name@example.com" required>
-                            <label for="email4">Адрес электронной почты</label>
-                        </div>
-                    </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-floating form-group">
+                    <input type="text" class="form-control" id="email2" placeholder="name@example.com" required>
+                    <label for="email2" contenteditable="true" data-key="expected_package_2"style="pointer-events: none;">Адрес электронной почты</label>
+                  </div>
                 </div>
-                <div class="row mt-2">
-                    <div class="col-md-12 mt-2">
-                        <div class="form-floating mt-1 form-group">
-                            <input type="text" class="form-control" id="email5" placeholder="name@example.com" required>
-                            <label for="email5">Адрес электронной почты</label>
-                        </div>
-                    </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mt-3">
+                  <div class="form-floating form-group">
+                    <input type="text" class="form-control" id="email3" placeholder="name@example.com" required>
+                    <label for="email3" contenteditable="true" data-key="expected_package_3"style="pointer-events: none;">Адрес электронной почты</label>
+                  </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-md-12 text-right">
-                        <button class="btn btn-orange" id="addParcelBtn">Добавить ожидаемую посылку</button>
-                    </div>
+                <div class="col-md-6 mt-3">
+                  <div class="form-floating form-group">
+                    <input type="text" class="form-control" id="email4" placeholder="name@example.com" required>
+                    <label for="email4" contenteditable="true" data-key="expected_package_4"style="pointer-events: none;">Адрес электронной почты</label>
+                  </div>
                 </div>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-12 mt-2">
+                  <div class="form-floating mt-1 form-group">
+                    <input type="text" class="form-control" id="email5" placeholder="name@example.com" required>
+                    <label for="email5" contenteditable="true" data-key="expected_package_5"style="pointer-events: none;">Адрес электронной почты</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12 text-right">
+                  <button class="btn btn-orange" id="addParcelBtn" contenteditable="true" data-key="expected_package_6"style="pointer-events: none;">Добавить ожидаемую посылку</button>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="" id="parcelContainer">
-          <div class="firstblock firstblock-1 anim-0-block" id="parcelInfoBlock">
+          </div>
+          
+          <div class="" id="parcelContainer">
+            <div class="firstblock firstblock-1 anim-0-block" id="parcelInfoBlock">
               <div class="container product-info-container">
-                  <div class="row">
-                      <div class="col-12 anim-0">
-                          <h4><strong>Информация о <span class="highlight">товарах</span></strong></h4>
-                          <p class="instructions">Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления таможенной декларации.</p>
-                      </div>
+                <div class="row">
+                  <div class="col-12 anim-0">
+                    <h4 contenteditable="true" data-key="product_info_1"style="pointer-events: none;"><strong>Информация о <span>товарах</span></strong></h4>
+                    <p class="instructions" contenteditable="true" data-key="product_info_2"style="pointer-events: none;">Пожалуйста, внимательно опишите каждый товар в заказе. Эти данные будут использоваться для оформления таможенной декларации.</p>
                   </div>
-      
-                  <div class="row mt-3">
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-1">
-                              <input type="text" class="form-control" id="floatingLink" placeholder="Ссылка на товар" required>
-                              <label for="floatingLink">Ссылка на товар</label>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-1">
-                              <input type="text" class="form-control" id="floatingType" placeholder="Тип товара" required>
-                              <label for="floatingType">Тип товара</label>
-                          </div>
-                      </div>
+                </div>
+          
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-1">
+                      <input type="text" class="form-control" id="floatingLink" placeholder="Ссылка на товар" required>
+                      <label for="floatingLink" contenteditable="true" data-key="product_info_3"style="pointer-events: none;">Ссылка на товар</label>
+                    </div>
                   </div>
-      
-                  <div class="row ">
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-2">
-                              <input type="text" class="form-control" id="floatingName" placeholder="Название товара" required>
-                              <label for="floatingName">Название товара</label>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-2">
-                              <input type="text" class="form-control" id="floatingBrand" placeholder="Бренд" required>
-                              <label for="floatingBrand">Бренд</label>
-                          </div>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-1">
+                      <input type="text" class="form-control" id="floatingType" placeholder="Тип товара" required>
+                      <label for="floatingType" contenteditable="true" data-key="product_info_4"style="pointer-events: none;">Тип товара</label>
+                    </div>
                   </div>
-      
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-3">
-                              <input type="text" class="form-control" id="floatingColor" placeholder="Цвет" required>
-                              <label for="floatingColor">Цвет</label>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-3">
-                              <input type="text" class="form-control" id="floatingSize" placeholder="Размер" required>
-                              <label for="floatingSize">Размер</label>
-                          </div>
-                      </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-2">
+                      <input type="text" class="form-control" id="floatingName" placeholder="Название товара" required>
+                      <label for="floatingName" contenteditable="true" data-key="product_info_5"style="pointer-events: none;">Название товара</label>
+                    </div>
                   </div>
-      
-                  <div class="row ">
-                      <div class="col-md-6">
-                          <div class="form-floating form-group anim-4">
-                              <input type="text" class="form-control" id="floatingQuantity" placeholder="Количество в шт" required>
-                              <label for="floatingQuantity">Количество в шт</label>
-                          </div>
-                      </div>
-                      <div class="col-md-6 ">
-                          <div class="form-floating form-group anim-4">
-                              <input type="text" class="form-control" id="floatingPrice" placeholder="Стоимость за шт" required>
-                              <label for="floatingPrice">Стоимость за шт</label>
-                          </div>
-                      </div>
-                      <div class="col text-left ml-5">
-                          <button class="btn btn-orange add-item-btn">+ Добавить товар</button>
-                      </div>
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-2">
+                      <input type="text" class="form-control" id="floatingBrand" placeholder="Бренд" required>
+                      <label for="floatingBrand" contenteditable="true" data-key="product_info_6"style="pointer-events: none;">Бренд</label>
+                    </div>
                   </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingColor" placeholder="Цвет" required>
+                      <label for="floatingColor" contenteditable="true" data-key="product_info_7"style="pointer-events: none;">Цвет</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-3">
+                      <input type="text" class="form-control" id="floatingSize" placeholder="Размер" required>
+                      <label for="floatingSize" contenteditable="true" data-key="product_info_8"style="pointer-events: none;">Размер</label>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-4">
+                      <input type="text" class="form-control" id="floatingQuantity" placeholder="Количество в шт" required>
+                      <label for="floatingQuantity" contenteditable="true" data-key="product_info_9"style="pointer-events: none;">Количество в шт</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating form-group anim-4">
+                      <input type="text" class="form-control" id="floatingPrice" placeholder="Стоимость за шт" required>
+                      <label for="floatingPrice" contenteditable="true" data-key="product_info_10"style="pointer-events: none;">Стоимость за шт</label>
+                    </div>
+                  </div>
+                  <div class="col text-left ml-5">
+                    <button class="btn btn-orange add-item-btn" contenteditable="true" data-key="product_info_11"style="pointer-events: none;">+ Добавить товар</button>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-      </div>
-        <div class="firstblock firstblock-1 anim-6-block" id="parcelActionBlock"> <div class="container action-container">
-          <h4 class="anim-6"><strong>Выберите дальнейшие действия с <span class="highlight">посылкой</span></strong></h4>
-      
-          <div class="row mt-4 action-box-box anim-7">
-              <div class="col-4">
+          <div class="firstblock firstblock-1 anim-6-block" id="parcelActionBlock">
+            <div class="container action-container">
+              <h4 class="anim-6" contenteditable="true" data-key="package_action_1"style="pointer-events: none;"><strong>Выберите дальнейшие действия с <span>посылкой</span></strong></h4>
+          
+              <div class="row mt-4 action-box-box anim-7">
+                <div class="col-4">
                   <div class="action-box active" id="action1">
-                      <div class="icon-placeholder"></div>
-                      <p class="action-text">
-                          Отправить посылку сразу без объединения с другими посылками<br>
-                          <small>Самый быстрый вариант: после регистрации входящей посылки мы сразу ее упакуем.</small>
-                      </p>
+                    <div class="icon-placeholder"></div>
+                    <p class="action-text" contenteditable="true" data-key="package_action_2"style="pointer-events: none;">
+                      Отправить посылку сразу без объединения с другими посылками<br>
+                      <small contenteditable="true" data-key="package_action_3"style="pointer-events: none;">Самый быстрый вариант: после регистрации входящей посылки мы сразу ее упакуем.</small>
+                    </p>
                   </div>
-              </div>
-              <div class="col-4">
+                </div>
+                <div class="col-4">
                   <div class="action-box" id="action2">
-                      <div class="icon-placeholder"></div>
-                      <p class="action-text">
-                          Объединить эту посылку с другой посылкой<br>
-                          <small>При объединении посылки сроки упаковки могут быть увеличены</small>
-                      </p>
+                    <div class="icon-placeholder"></div>
+                    <p class="action-text" contenteditable="true" data-key="package_action_4"style="pointer-events: none;">
+                      Объединить эту посылку с другой посылкой<br>
+                      <small contenteditable="true" data-key="package_action_5"style="pointer-events: none;">При объединении посылки сроки упаковки могут быть увеличены</small>
+                    </p>
                   </div>
-              </div>
-              <div class="col-4">
+                </div>
+                <div class="col-4">
                   <div class="action-box" id="action3">
-                      <div class="icon-placeholder"></div>
-                      <p class="action-text">
-                          Разделить посылку<br>
-                          <small>Вариант для тех, кому нужно разделить посылку на несколько частей.</small>
-                      </p>
+                    <div class="icon-placeholder"></div>
+                    <p class="action-text" contenteditable="true" data-key="package_action_6"style="pointer-events: none;">
+                      Разделить посылку<br>
+                      <small contenteditable="true" data-key="package_action_7"style="pointer-events: none;">Вариант для тех, кому нужно разделить посылку на несколько частей.</small>
+                    </p>
                   </div>
+                </div>
               </div>
+            </div>
           </div>
-      </div></div> 
+          
       
     <div class="firstblock">
-        <div class="question">
-          <div class="tabs column-gap-2">
-            <div class="col">
-              <div class="flax flax-row">
-                <h2 class="fs-4 font-bold w-100 mb-1">
-                  Часто задаваемые <span>вопросы</span> и <span>требования</span>
-                </h2>
-                <div class="but_con">
-                  <button
-                    class="tab active button_w button_qw"
-                    id="questions-btn"
+      <div class="question">
+        <div class="tabs column-gap-2">
+          <div class="col">
+            <div class="flax flax-row">
+              <h2 class="fs-4 font-bold w-100 mb-1"   contenteditable="true" data-key="question_1-1"style="pointer-events: none;">
+                Часто задаваемые <span>вопросы</span> и <span>требования</span>
+              </h2>
+              <div class="but_con">
+                <button
+                  class="tab active button_w button_qw"
+                  id="questions-btn"
+                  contenteditable="true" data-key="question_2-1"style="pointer-events: none;"
+                >
+                  вопросы
+                </button>
+                <button class="tab button_q button_qw" id="requirements-btn"
+                contenteditable="true" data-key="question_3-1"style="pointer-events: none;">
+                  требования
+                </button>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                contenteditable="true" data-key="question_4-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_5-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_6-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p contenteditable="true" data-key="question_7-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_8-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_9-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+          </div>
+          <div class="col mt-2">
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_10-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_11-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_12-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_13-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_14-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_15-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_16-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_17-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button
+                class="tab-test p-2 mt-1 btn-secondary"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false" contenteditable="true" data-key="question_18-1"style="pointer-events: none;"
+              >
+                Как я могу отследить свою посылку?
+              </button>
+              <ul class="dropdown-menu drop-content">
+                <div class="orange-line"></div>
+                <p  contenteditable="true" data-key="question_19-1"style="pointer-events: none;">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  at odio reiciendis.
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="firstblock">
+      <div class="news-text-h2">
+        <h2 class="news-text fs-4 font-bold w-100 mb-1" contenteditable="true" data-key="news_1-1"style="pointer-events: none;">
+          Последние новости в <span>мире</span>
+        </h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news-block d-flex flex-column w-100 h-100">
+              <div class="tabs d-flex w-100 h-100 gap-2">
+                <div class="news-block-col col-6 d-flex flex-column gap-2">
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title" contenteditable="true" data-key="news_2-1"style="pointer-events: none;">Автор: Администратор</div>
+                          <div class="description" contenteditable="true" data-key="news_3-1"style="pointer-events: none;">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <div class="orange-line"></div>
+                      <p contenteditable="true" data-key="news_4-1"style="pointer-events: none;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 0000000000000
+                        000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title" contenteditable="true" data-key="news_5-1"style="pointer-events: none;">Автор: Администратор</div>
+                          <div class="description" contenteditable="true" data-key="news_6-1"style="pointer-events: none;">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <div class="orange-line"></div>
+                      <p contenteditable="true" data-key="news_7-1"style="pointer-events: none;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 0000000000000
+                        000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title" contenteditable="true" data-key="news_8-1"style="pointer-events: none;">Автор: Администратор</div>
+                          <div class="description" contenteditable="true" data-key="news_9-1"style="pointer-events: none;">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <div class="orange-line"></div>
+                      <p contenteditable="true" data-key="news_10-1"style="pointer-events: none;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 0000000000000
+                        000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title" contenteditable="true" data-key="news_11-1"style="pointer-events: none;">Автор: Администратор</div>
+                          <div class="description" contenteditable="true" data-key="news_12-1"style="pointer-events: none;">
+                            Новая технология отслеживания
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <div class="orange-line"></div>
+                      <p contenteditable="true" data-key="news_13-1"style="pointer-events: none;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 0000000000000
+                        000000000000000
+                      </p>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                    class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    вопросы
+                    <div class="news-block-content d-flex flex-grow-1">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <div class="title" contenteditable="true" data-key="news_14-1"style="pointer-events: none;">Автор: Администратор</div>
+                        <div class="description" contenteditable="true" data-key="news_15-1"style="pointer-events: none;">
+                          Новая технология отслеживания
+                        </div>
+                      </div>
+                    </div>
                   </button>
-                  <button class="tab button_q button_qw" id="requirements-btn">
-                    требования
-                  </button>
+                  <ul class="dropdown-menu drop-content">
+                    <div class="orange-line"></div>
+                    <p contenteditable="true" data-key="news_16-1"style="pointer-events: none;">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Quae at odio reiciendis.00000000000 0000000000000
+                      000000000000000
+                    </p>
+                  </ul>
                 </div>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-            </div>
-            <div class="col mt-2">
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button
-                  class="tab-test p-2 mt-1 btn-secondary"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Как я могу отследить свою посылку?
-                </button>
-                <ul class="dropdown-menu drop-content">
-                  <div class="orange-line"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                    at odio reiciendis.
-                  </p>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="firstblock">
-        <div class="news-text-h2">
-          <h2 class="news-text fs-4 font-bold w-100 mb-1">
-            Последние новости в <span>мире</span>
-          </h2>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="news-block d-flex flex-column w-100 h-100">
-                <div class="tabs d-flex w-100 h-100 gap-2">
-                  <div class="news-block-col col-6 d-flex flex-column gap-2">
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
+                  <!-- Повторите блоки контента по аналогии -->
+                </div>
+                <div class="news-block-col col-6 d-flex flex-column gap-2">
+                  <div class="dropdown">
+                    <button
+                    class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="news-block-content d-flex flex-grow-1">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <div class="title" contenteditable="true" data-key="news_17-1"style="pointer-events: none;">Автор: Администратор</div>
+                        <div class="description" contenteditable="true" data-key="news_18-1"style="pointer-events: none;">
+                          Новая технология отслеживания
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <ul class="dropdown-menu drop-content">
+                    <div class="orange-line"></div>
+                    <p contenteditable="true" data-key="news_19-1"style="pointer-events: none;">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Quae at odio reiciendis.00000000000 0000000000000
+                      000000000000000
+                    </p>
+                  </ul>
+                </div>
+                  <div class="dropdown">
+                    <button
+                    class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="news-block-content d-flex flex-grow-1">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <div class="title" contenteditable="true" data-key="news_20-1"style="pointer-events: none;">Автор: Администратор</div>
+                        <div class="description" contenteditable="true" data-key="news_21-1"style="pointer-events: none;">
+                          Новая технология отслеживания
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <ul class="dropdown-menu drop-content">
+                    <div class="orange-line"></div>
+                    <p contenteditable="true" data-key="news_22-1"style="pointer-events: none;">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Quae at odio reiciendis.00000000000 0000000000000
+                      000000000000000
+                    </p>
+                  </ul>
+                </div>
+                  <div class="dropdown">
+                    <button
+                      class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="news-block-content d-flex flex-grow-1">
+                        <img
+                          src="https://via.placeholder.com/40"
+                          alt="Avatar"
+                        />
+                        <div>
+                          <div class="title" contenteditable="true" data-key="news_23-1"style="pointer-events: none;">Автор: Администратор</div>
+                          <div class="description" contenteditable="true" data-key="news_24-1"style="pointer-events: none;">
+                            Новая технология отслеживания
                           </div>
                         </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.00000000000 0000000000000
-                          000000000000000
-                        </p>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.000000000 000000000000
-                          00000000000 0000000
-                        </p>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.000000000 0000000 000000
-                          00000 00000 00 0000
-                        </p>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.0000 00000000000
-                          0000000000 000000000 00000
-                        </p>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">заменить на другой элемент</div>
-                            <div class="description">
-                              заменить на другой элемент
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.00000000000 00000000
-                          00000000000000000000
-                        </p>
-                      </ul>
-                    </div>
-                    <!-- Повторите блоки контента по аналогии -->
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu drop-content">
+                      <div class="orange-line"></div>
+                      <p contenteditable="true" data-key="news_25-1"style="pointer-events: none;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Quae at odio reiciendis.00000000000 0000000000000
+                        000000000000000
+                      </p>
+                    </ul>
                   </div>
-                  <div class="news-block-col col-6 d-flex flex-column gap-2">
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
+                  <div class="dropdown">
+                    <button
+                    class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="news-block-content d-flex flex-grow-1">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <div class="title" contenteditable="true" data-key="news_26-1"style="pointer-events: none;">Автор: Администратор</div>
+                        <div class="description" contenteditable="true" data-key="news_27-1"style="pointer-events: none;">
+                          Новая технология отслеживания
                         </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.0000000000000000
-                          00000000000000000000000
-                        </p>
-                      </ul>
+                      </div>
                     </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
+                  </button>
+                  <ul class="dropdown-menu drop-content">
+                    <div class="orange-line"></div>
+                    <p contenteditable="true" data-key="news_28-1"style="pointer-events: none;">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Quae at odio reiciendis.00000000000 0000000000000
+                      000000000000000
+                    </p>
+                  </ul>
+                </div>
+                  <div class="dropdown">
+                    <button
+                    class="tab-test news-block-content p-2 mt-1 btn-secondary"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="news-block-content d-flex flex-grow-1">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <div class="title" contenteditable="true" data-key="news_29-1"style="pointer-events: none;">Автор: Администратор</div>
+                        <div class="description" contenteditable="true" data-key="news_30-1"style="pointer-events: none;">
+                          Новая технология отслеживания
                         </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.000000000000 00000000
-                          000000 00000 00000000
-                        </p>
-                      </ul>
+                      </div>
                     </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.000000 000000000 0000000
-                          000000 00000000000
-                        </p>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">Автор: Администратор</div>
-                            <div class="description">
-                              Новая технология отслеживания
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.000000 00000000000
-                          000000000 00000000 00000
-                        </p>
-                      </ul>
-                    </div>
-                    <div class="dropdown">
-                      <button
-                        class="tab-test news-block-content p-2 mt-1 btn-secondary"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <div class="news-block-content d-flex flex-grow-1">
-                          <img
-                            src="https://via.placeholder.com/40"
-                            alt="Avatar"
-                          />
-                          <div>
-                            <div class="title">заменить на другой элемент</div>
-                            <div class="description">
-                              заменить на другой элемент
-                            </div>
-                          </div>
-                        </div>
-                      </button>
-                      <ul class="dropdown-menu drop-content">
-                        <div class="orange-line"></div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Quae at odio reiciendis.000000 00000 000000 00000
-                          000 000000 00000000
-                        </p>
-                      </ul>
-                    </div>
-                    <!-- Повторите блоки контента по аналогии -->
-                  </div>
+                  </button>
+                  <ul class="dropdown-menu drop-content">
+                    <div class="orange-line"></div>
+                    <p contenteditable="true" data-key="news_31-1"style="pointer-events: none;">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Quae at odio reiciendis.00000000000 0000000000000
+                      000000000000000
+                    </p>
+                  </ul>
+                </div>
+                  <!-- Повторите блоки контента по аналогии -->
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">Slide 2</div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
+    </div>
   
    
         <div class="firstblock"></div>
-        <div class="firstblock footer"></div><script>document.querySelectorAll('.menu li').forEach(item => {
+        <div class="firstblock footer"></div>
+        
+        <script>
+          fetch('/get-text')
+            .then(response => response.json())  // Получаем JSON-ответ от сервера
+            .then(data => {
+              document.querySelectorAll('[contenteditable="true"]').forEach(element => {
+                const key = element.getAttribute('data-key'); // Получаем уникальный ключ элемента
+                if (data[key]) {
+                  element.innerHTML = data[key]; // Вставляем текст из JSON в элемент
+                }
+              });
+            })
+            .catch(err => console.log('Ошибка при загрузке текста:', err));
+        </script>
+        <script>
+              // Сохраняем изменения при нажатии кнопки "Сохранить"
+              document.getElementById('save-text').addEventListener('click', function () {
+                const editableElements = document.querySelectorAll('[contenteditable="true"]');
+                const updatedContent = {};
+        
+                // Собираем все редактируемые элементы и их содержимое
+                editableElements.forEach(element => {
+                  const key = element.getAttribute('data-key');
+                  updatedContent[key] = element.innerHTML;  // Сохраняем содержимое элемента
+                });
+        
+                // Отправляем обновленный текст на сервер
+                fetch('/update-text', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(updatedContent),  // Преобразуем данные в JSON
+                })
+                .then(response => response.text())
+                .then(result => {
+                  alert('Изменения сохранены!');  // Сообщаем пользователю, что текст сохранен
+                })
+                .catch(err => console.error('Ошибка при сохранении:', err));  // Обработка ошибок
+              });
+            </script>
+        <script>document.querySelectorAll('.menu li').forEach(item => {
           item.addEventListener('click', function() {
               // Скрыть все блоки
               document.querySelectorAll('.firstblock').forEach(block => {
@@ -753,6 +823,7 @@
           });
       });
       </script>
+
         <script>
           document.addEventListener('click', function(event) {
               if (event.target && event.target.classList.contains('add-item-btn')) {

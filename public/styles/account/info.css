@@ -138,6 +138,10 @@ canvas {
   color: #000000;
 }
 .profile-info .profile-card span {
+  color: #f96c33;
+  font-weight: bold;
+}
+.profile-info .profile-card .tariffff span {
   color: #4e4a67;
 }
 .profile-info .profile-card .profile-image {
@@ -146,10 +150,6 @@ canvas {
   background-color: #000;
   border-radius: 25px;
   margin-bottom: 10px;
-}
-.profile-info .profile-card .client-number {
-  color: #f96c33;
-  font-weight: bold;
 }
 .profile-info .profile-card .tariff,
 .profile-info .profile-card .email,

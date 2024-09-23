@@ -1,0 +1,1377 @@
+{
+  contenteditable="true" data-key="tracking_number_1"
+  contenteditable="true" data-key="slider_image_1"
+  contenteditable="true" data-key="benefit_item_1"
+  contenteditable="true" data-key="question_1"
+   contenteditable="true" data-key="question_1"
+ contenteditable="true" data-key="news_1"
+
+
+
+
+    "tracking_number_1": "Помогу найти твою <br><span >посылку</span>",
+    "tracking_number_2": "Введите номер отслеживания, чтобы<br>узнать текущее местоположение вашей<br>посылки.",
+    "tracking_number_3": "Num pack",
+   
+
+    "slider_image_1": "26 December 2019",
+    "slider_image_2": "Lorem Ipsum Dolor",
+    "slider_image_3": " Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?",
+    "slider_image_4": "READ MORE",
+    "slider_image_5": "26 December 2019",
+    "slider_image_6": "Lorem Ipsum Dolor",
+    "slider_image_7": " Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?",
+    "slider_image_8": "READ MORE", 
+    "slider_image_9": "26 December 2019",
+    "slider_image_10": "Lorem Ipsum Dolor",
+    "slider_image_11": " Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?",
+    "slider_image_12": "READ MORE",
+ 
+    "benefit_item_1": "Быстрая доставка",
+    "benefit_item_2": "Мы обеспечиваем максимально короткие сроки доставки по всей стране.",
+    "benefit_item_3": "Быстрая доставка",
+    "benefit_item_4": "Мы обеспечиваем максимально короткие сроки доставки по всей стране.",
+    "benefit_item_5": "Быстрая доставка",
+    "benefit_item_6": "Мы обеспечиваем максимально короткие сроки доставки по всей стране.",
+    "benefit_item_7": "Быстрая доставка",
+    "benefit_item_8": "Мы обеспечиваем максимально короткие сроки доставки по всей стране.",
+    "benefit_item_9": "Быстрая доставка",
+    "benefit_item_10": "Мы обеспечиваем максимально короткие сроки доставки по всей стране.",
+    "benefit_item_11": "Быстрая доставка",
+    "benefit_item_12": "Мы обеспечиваем максимально короткие сроки доставки по всей стране.",
+  
+    "question_1": "   Часто задаваемые <span>вопросы</span> и <span>требования</span>",
+    "question_2": " вопросы",
+    "question_3": "требования",
+    "question_4": "Как я могу отследить свою посылку?",
+    "question_5": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",  
+    "question_6": "Как я могу отследить свою посылку?",
+    "question_7": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_8": "Как я могу отследить свою посылку?",
+    "question_9": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_10": "Как я могу отследить свою посылку?",
+    "question_11": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_12": "Как я могу отследить свою посылку?",
+    "question_13": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_14": "Как я могу отследить свою посылку?",
+    "question_15": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_16": "Как я могу отследить свою посылку?",
+    "question_17": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_18": "Как я могу отследить свою посылку?",
+    "question_19": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.",
+    "question_20": "ничего",
+    "question_21": "ничего",
+    "question_22": "ничего",
+    "question_23": "ничего",
+    "question_24": "ничего",
+    "question_25": "ничего",
+    "question_26": "ничего",
+    "question_27": "ничего",
+    "question_28": "ничего",
+    "question_29": "ничего",
+    "question_30": "ничего",
+    "question_31": "ничего",
+    "question_32": "ничего",
+    "question_33": "ничего",
+    "question_34": "ничего",
+    "question_35": "ничего",
+    "question_36": "ничего",
+    "question_37": "ничего",
+  
+    "news_1": " Последние новости в <span>мире</span>",
+    "news_2": "Автор: Администратор",
+    "news_3": "   Новая технология отслеживания",
+    "news_4": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_5": "Автор: Администратор",
+    "news_6": "   Новая технология отслеживания",
+    "news_7": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_8": "Автор: Администратор",
+    "news_9": "   Новая технология отслеживания",
+    "news_10": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_11": "Автор: Администратор",
+    "news_12": "   Новая технология отслеживания",
+    "news_13": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_14": "Автор: Администратор",
+    "news_15": "   Новая технология отслеживания",
+    "news_16": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_17": "Автор: Администратор",
+    "news_18": "   Новая технология отслеживания",
+    "news_19": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_20": "Автор: Администратор",
+    "news_21": "   Новая технология отслеживания",
+    "news_22": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_23": "Автор: Администратор",
+    "news_24": "   Новая технология отслеживания",
+    "news_25": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_26": "Автор: Администратор",
+    "news_27": "   Новая технология отслеживания",
+    "news_28": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   "news_29": "Автор: Администратор",
+    "news_30": "   Новая технология отслеживания",
+    "news_31": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000",
+   
+    "news_32": "ничего",
+    "news_33": "ничего",
+    "news_34": "ничего",
+    "news_35": "ничего",
+    "news_36": "ничего",
+    "news_37": "ничего",
+    "news_38": "ничего",
+    "news_39": "ничего",
+    "news_40": "ничего",
+    "news_41": "ничего",
+    "news_42": "ничего",
+    "news_43": "ничего",
+    "news_44": "ничего",
+    "news_45": "ничего",
+    "news_46": "ничего",
+    "news_47": "ничего",
+    "news_48": "ничего",
+    "news_49": "ничего",
+    "news_50": "ничего",
+    "news_51": "ничего",
+    "news_52": "ничего",
+    "news_53": "ничего",
+    "news_54": "ничего",
+    "news_55": "ничего",
+    "news_56": "ничего",
+    "news_57": "ничего",
+    "news_58": "ничего",
+    "news_59": "ничего",
+    "news_60": "ничего",
+    "news_61": "ничего",
+    "news_62": "ничего"
+  }
+
+ <div id="leftMenu" class="side-menu-left">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeLeftMenu()"
+        >&times;</a
+      >
+      <button id="save-text" class="btn btn-primary w-100 mb-2">
+        Сохранить изменения
+      </button>
+      <!-- Аккордеон внутри меню -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Поиск
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div>
+              <label for="tracking_number_1" class="form-label"
+                >Помогу найти твою посылку:</label
+              >
+              <textarea
+                id="tracking_number_1"
+                class="form-control"
+                rows="1"
+                data-key="tracking_number_1"
+              >
+Помогу найти твою <br><span>посылку</span></textarea
+              >
+            </div>
+
+            <div>
+              <label for="tracking_number_2" class="form-label"
+                >Введите номер отслеживания, чтобы узнать текущее местоположение
+                вашей посылки.:</label
+              >
+              <textarea
+                id="tracking_number_2"
+                class="form-control"
+                rows="1"
+                data-key="tracking_number_2"
+              >
+Введите номер отслеживания, чтобы<br>узнать текущее местоположение вашей<br>посылки.</textarea
+              >
+            </div>
+
+            <div>
+              <label for="tracking_number_3" class="form-label"
+                >Num pack:</label
+              >
+              <textarea
+                id="tracking_number_3"
+                class="form-control"
+                rows="1"
+                data-key="tracking_number_3"
+              >
+Num pack</textarea
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Слайдер
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div>
+                <label for="slider_image_1" class="form-label"
+                  >26 December 2019:</label
+                >
+                <textarea
+                  id="slider_image_1"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_1"
+                >
+26 December 2019</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_2" class="form-label"
+                  >Lorem Ipsum Dolor:</label
+                >
+                <textarea
+                  id="slider_image_2"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_2"
+                >
+Lorem Ipsum Dolor</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_3" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.Recusandae voluptate repellendus magni illo ea
+                  animi:</label
+                >
+                <textarea
+                  id="slider_image_3"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_3"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_4" class="form-label"
+                  >READ MORE:</label
+                >
+                <textarea
+                  id="slider_image_4"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_4"
+                >
+READ MORE</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_5" class="form-label"
+                  >26 December 2019:</label
+                >
+                <textarea
+                  id="slider_image_5"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_5"
+                >
+26 December 2019</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_6" class="form-label"
+                  >Lorem Ipsum Dolor:</label
+                >
+                <textarea
+                  id="slider_image_6"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_6"
+                >
+Lorem Ipsum Dolor</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_7" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.Recusandae voluptate repellendus magni illo ea
+                  animi:</label
+                >
+                <textarea
+                  id="slider_image_7"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_7"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_8" class="form-label"
+                  >READ MORE:</label
+                >
+                <textarea
+                  id="slider_image_8"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_8"
+                >
+READ MORE</textarea
+                >
+              </div>
+              <div>
+                <label for="slider_image_9" class="form-label"
+                  >26 December 2019:</label
+                >
+                <textarea
+                  id="slider_image_9"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_9"
+                >
+26 December 2019</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_10" class="form-label"
+                  >Lorem Ipsum Dolor:</label
+                >
+                <textarea
+                  id="slider_image_10"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_10"
+                >
+Lorem Ipsum Dolor</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_11" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit.Recusandae voluptate repellendus magni illo ea
+                  animi:</label
+                >
+                <textarea
+                  id="slider_image_11"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_11"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit.Recusandae voluptate repellendus magni illo ea animi?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="slider_image_12" class="form-label"
+                  >READ MORE:</label
+                >
+                <textarea
+                  id="slider_image_12"
+                  class="form-control"
+                  rows="1"
+                  data-key="slider_image_12"
+                >
+READ MORE</textarea
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Достоинство
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div>
+                <label for="benefit_item_1" class="form-label"
+                  >Быстрая доставка:</label
+                >
+                <textarea
+                  id="benefit_item_1"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_1"
+                >
+Быстрая доставка</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_2" class="form-label"
+                  >Мы обеспечиваем максимально короткие сроки доставки по всей
+                  стране:</label
+                >
+                <textarea
+                  id="benefit_item_2"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_2"
+                >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_3" class="form-label"
+                  >Быстрая доставка:</label
+                >
+                <textarea
+                  id="benefit_item_3"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_3"
+                >
+Быстрая доставка</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_4" class="form-label"
+                  >Мы обеспечиваем максимально короткие сроки доставки по всей
+                  стране:</label
+                >
+                <textarea
+                  id="benefit_item_4"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_4"
+                >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_5" class="form-label"
+                  >Быстрая доставка:</label
+                >
+                <textarea
+                  id="benefit_item_5"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_5"
+                >
+Быстрая доставка</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_6" class="form-label"
+                  >Мы обеспечиваем максимально короткие сроки доставки по всей
+                  стране:</label
+                >
+                <textarea
+                  id="benefit_item_6"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_6"
+                >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_7" class="form-label"
+                  >Быстрая доставка:</label
+                >
+                <textarea
+                  id="benefit_item_7"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_7"
+                >
+Быстрая доставка</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_8" class="form-label"
+                  >Мы обеспечиваем максимально короткие сроки доставки по всей
+                  стране:</label
+                >
+                <textarea
+                  id="benefit_item_8"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_8"
+                >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_9" class="form-label"
+                  >Быстрая доставка:</label
+                >
+                <textarea
+                  id="benefit_item_9"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_9"
+                >
+Быстрая доставка</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_10" class="form-label"
+                  >Мы обеспечиваем максимально короткие сроки доставки по всей
+                  стране:</label
+                >
+                <textarea
+                  id="benefit_item_10"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_10"
+                >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_11" class="form-label"
+                  >Быстрая доставка:</label
+                >
+                <textarea
+                  id="benefit_item_11"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_11"
+                >
+Быстрая доставка</textarea
+                >
+              </div>
+
+              <div>
+                <label for="benefit_item_12" class="form-label"
+                  >Мы обеспечиваем максимально короткие сроки доставки по всей
+                  стране:</label
+                >
+                <textarea
+                  id="benefit_item_12"
+                  class="form-control"
+                  rows="1"
+                  data-key="benefit_item_12"
+                >
+Мы обеспечиваем максимально короткие сроки доставки по всей стране.</textarea
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Вопросы требование
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div>
+                <label for="question_1" class="form-label"
+                  >Часто задаваемые <span>вопросы</span> и
+                  <span>требования</span>:</label
+                >
+                <textarea
+                  id="question_1"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_1"
+                >
+Часто задаваемые <span>вопросы</span> и <span>требования</span></textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_2" class="form-label">вопросы:</label>
+                <textarea
+                  id="question_2"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_2"
+                >
+вопросы</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_3" class="form-label">требования:</label>
+                <textarea
+                  id="question_3"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_3"
+                >
+требования</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_4" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_4"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_4"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_5" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_5"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_5"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_6" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_6"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_6"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_7" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_7"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_7"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_8" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_8"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_8"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_9" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_9"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_9"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_10" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_10"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_10"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_11" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_11"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_11"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_12" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_12"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_12"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_13" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_13"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_13"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+              <div>
+                <label for="question_14" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_14"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_14"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_15" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_15"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_15"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_16" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_16"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_16"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_17" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_17"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_17"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_18" class="form-label"
+                  >Как я могу отследить свою посылку?</label
+                >
+                <textarea
+                  id="question_18"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_18"
+                >
+Как я могу отследить свою посылку?</textarea
+                >
+              </div>
+
+              <div>
+                <label for="question_19" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.:</label
+                >
+                <textarea
+                  id="question_19"
+                  class="form-control"
+                  rows="1"
+                  data-key="question_19"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.</textarea
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Новости
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div>
+                <label for="news_1" class="form-label"
+                  >Последние новости в <span>мире</span>:</label
+                >
+                <textarea
+                  id="news_1"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_1"
+                >
+Последние новости в <span>мире</span></textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_2" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_2"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_2"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_3" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_3"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_3"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_4" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_4"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_4"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_5" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_5"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_5"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_6" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_6"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_6"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_7" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_7"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_7"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_8" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_8"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_8"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_9" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_9"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_9"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_10" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_10"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_10"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+              <div>
+                <label for="news_11" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_11"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_11"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_12" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_12"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_12"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_13" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_13"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_13"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_14" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_14"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_14"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_15" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_15"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_15"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_16" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_16"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_16"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_17" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_17"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_17"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_18" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_18"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_18"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_19" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_19"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_19"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_20" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_20"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_20"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_21" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_21"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_21"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_22" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_22"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_22"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_23" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_23"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_23"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_24" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_24"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_24"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_25" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_25"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_25"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_26" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_26"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_26"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_27" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_27"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_27"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_28" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_28"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_28"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_29" class="form-label"
+                  >Автор: Администратор:</label
+                >
+                <textarea
+                  id="news_29"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_29"
+                >
+Автор: Администратор</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_30" class="form-label"
+                  >Новая технология отслеживания:</label
+                >
+                <textarea
+                  id="news_30"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_30"
+                >
+Новая технология отслеживания</textarea
+                >
+              </div>
+
+              <div>
+                <label for="news_31" class="form-label"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quae at odio reiciendis.00000000000 0000000000000
+                  000000000000000:</label
+                >
+                <textarea
+                  id="news_31"
+                  class="form-control"
+                  rows="1"
+                  data-key="news_31"
+                >
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae at odio reiciendis.00000000000 0000000000000  000000000000000</textarea
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

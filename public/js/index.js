@@ -62,17 +62,30 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
 const burger = document.querySelector(".navbar-burger");
 const menu = document.querySelector(".navbar-menu");
 const iconList = burger.querySelector(".bi-list");
 const iconX = burger.querySelector(".bi-x-lg");
+const navi = document.querySelector(".navi");
+const overlay = document.querySelector(".overlay"); // Выбор overlay
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("is-active");
   menu.classList.toggle("is-active");
+  navi.classList.toggle("active");
+  overlay.classList.toggle("active"); // Переключение класса active для overlay
 
   // Переключаем видимость иконок
   iconList.classList.toggle("d-none");
   iconX.classList.toggle("d-none");
+});
+window.addEventListener("scroll", function () {
+  const navi = document.querySelector(".navi");
+
+  if (window.scrollY > 0) {
+    // Если прокрутка больше 50 пикселей
+    navi.classList.add("active-top");
+  } else {
+    navi.classList.remove("active-top");
+  }
 });
