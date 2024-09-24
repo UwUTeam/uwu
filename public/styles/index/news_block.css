@@ -210,4 +210,119 @@ body {
   padding: 3px;
   padding-bottom: 5px;
   border-radius: 25px;
+}
+
+.news-section h2 {
+  font-size: 24px;
+}
+.news-section h2 .highlight {
+  color: #f45c42;
+}
+.news-section .news-content {
+  margin-top: 20px;
+}
+.news-section .news-content .news-page {
+  display: none;
+}
+.news-section .news-content .news-page.active-news {
+  display: block;
+}
+.news-section .news-content .news-item {
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.news-section .pagination-container {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали, если нужно */
+  height: 50px; /* Можно задать фиксированную высоту или отрегулировать */
+  margin-top: 10px; /* Отступ сверху */
+}
+.news-section .pagination {
+  display: inline-flex; /* Используем inline-flex для корректного центрирования */
+  padding: 5px;
+  background-color: #f2f3f5;
+  border-radius: 25px;
+}
+.news-section .pagination .page-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.news-section .pagination .page-number .animate {
+  opacity: 0;
+}
+.news-section .pagination .page-number.active-news {
+  background-color: #f96c33; /* Оранжевый цвет для активной страницы */
+  color: #ffffff;
+}
+.news-section .pagination .page-number.active-news.animate {
+  opacity: 0;
+}
+.news-section .pagination .page-number:hover {
+  background-color: #ddd; /* Цвет при наведении */
+  color: #000000;
+}
+
+/* Общая анимация появления */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Анимации для новостных блоков */
+.anim-news-1 {
+  animation: fadeInUp 0.2s ease-in-out;
+}
+
+.anim-news-2 {
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+.anim-news-3 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.anim-news-4 {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.anim-news-5 {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.anim-news-1-1 {
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+.anim-news-2-1 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.anim-news-3-1 {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.anim-news-4-1 {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.anim-news-5-1 {
+  animation: fadeInUp 0.7s ease-in-out;
 }/*# sourceMappingURL=news_block.css.map */
