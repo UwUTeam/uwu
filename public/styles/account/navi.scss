@@ -6,6 +6,7 @@
     border-bottom-right-radius: 0;
     margin-bottom: 0px;
     box-shadow: 0 10px 1px 0px $color_block_content;
+    z-index: 101;
   }
 }
 .firstblock.navi {
@@ -68,6 +69,7 @@
   background-color: $color_text_w; /* Белые полоски */
   border-radius: 1px;
   margin: 3px 0;
+  z-index: 101;
 }
 
 .firstblock.navi::before {
@@ -128,7 +130,7 @@
   padding: $padding_main;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 $border_rad $border_rad; /* Скругленные углы снизу */
-  z-index: 9999;
+  z-index: 11;
 }
 
 .navbar-menu.is-active {
@@ -179,4 +181,187 @@
     10%
   ); /* Темнее оранжевый при наведении */
   color: $color_text_w; /* Белый текст при наведении */
+}
+/* Для блока навигации */
+.navi {
+  border-radius: $border_rad; /* Радиус по умолчанию */
+  z-index: 100;
+  &.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: border-radius 0.3s ease; /* Плавное изменение радиуса нижних углов */
+  }
+}
+
+/* Для выпадающего меню */
+.navbar-menu {
+  border-radius: $border_rad; /* Скругленные углы по умолчанию */
+  transition: border-radius 0.3s ease; /* Плавный переход радиусов */
+
+  &.is-active {
+    border-top-left-radius: 0; /* Верхние углы выравниваются при открытии */
+    border-top-right-radius: 0;
+    border-bottom-left-radius: $border_rad; /* Нижние углы остаются скругленными */
+    border-bottom-right-radius: $border_rad;
+  }
+}
+
+.navbar-menu {
+  display: none; /* Меню скрыто по умолчанию */
+  position: absolute;
+  top: 100%; /* Открываем меню прямо под навигацией */
+  left: 0;
+  width: 100%; /* Меню занимает всю ширину контейнера */
+  background-color: $color_block; /* Цвет фона меню */
+  padding: $padding_main;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 $border_rad $border_rad;
+  z-index: 101;
+  transform: translate(0%, -1%);
+}
+
+.navbar-menu.is-active {
+  display: block; /* Показываем меню при открытии */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  opacity: 0; /* По умолчанию невидим */
+  pointer-events: none; /* Не позволяет кликам проходить через оверлей, когда он скрыт */
+  transition: opacity 0.3s ease;
+  z-index: 100; /* Фон выше контента, но ниже меню */
+}
+
+.overlay.active {
+  opacity: 1; /* Делаем оверлей видимым */
+  pointer-events: all; /* Включаем клики, когда меню открыто */
+}
+.navi {
+  border-radius: $border_rad; /* Радиус по умолчанию */
+  z-index: 101;
+  transition: border-radius 0.3s ease; /* Плавное изменение радиуса */
+
+  &.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0px;
+    box-shadow: 0 10px 1px 0px $color_block_content;
+    z-index: 101;
+  }
+
+  .page-manu {
+    background-color: $color_line;
+    border-radius: $border_rad;
+    margin-bottom: 10px;
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-manu-text {
+      margin: 0 auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      font-size: 24px;
+      color: $color_text;
+    }
+
+    .page-manu-b {
+      background-color: $color_orenge;
+      border-radius: 50px;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($color_orenge, 10%);
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .manu-block {
+    background-color: $color_line;
+    border-radius: $border_rad;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+    /*  padding: 20px; */
+    width: 66%;
+    height: 130px;
+  }
+  .language-theme-manu {
+    /*  padding: 20px; */
+    width: auto;
+    height: 50px;
+  }
+  .theme-manu {
+    background-color: $color_orenge;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-right: 20px;
+    /*  padding: 20px; */
+    width: 40px;
+    height: 40px;
+  }
+  .language-manu {
+    background-color: $color_line;
+    border-radius: $border_rad;
+
+    /*  padding: 20px; */
+    width: auto;
+    height: 50px;
+  }
+  .language-manu-1 {
+    background-color: $color_black;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    &.active-language {
+      background-color: $color_orenge;
+    }
+  }
+}
+.navi {
+  border-radius: $border_rad; /* Радиус по умолчанию */
+  z-index: 101;
+
+  top: 0;
+
+  transition: border-radius 0.3s ease; /* Плавное изменение радиуса */
+  background-color: $color_line; /* Цвет фона навигации */
+
+  &.active-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 101;
+  }
+}
+.firstblock-nav {
+  /* Смещение сверху на 50% */
+  left: 50%; /* Смещение слева на 50% */
+  transform: translate(-50%, -10%);
+}
+.mar-top {
+  margin-top: 55px;
 }

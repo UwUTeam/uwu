@@ -118,10 +118,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 .footer {

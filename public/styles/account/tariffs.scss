@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import "main_account.scss";
+.block-tariffs {
+  background-color: $color_block_content;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: $border_rad;
+  display: flex;
+  justify-content: space-between;
+
+  .cart-tariffs {
+    width: 100%;
+    height: auto;
+    background-color: $color_block_content;
+    border-radius: $border_rad;
+    padding: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Добавляем, чтобы кнопка была внизу */
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $color_orenge;
+      margin-bottom: 15px;
+    }
+
+    .benefits {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+
+      li {
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+    }
+
+    .btn-tariff {
+      background-color: $color_orenge;
+      color: $color_text_w;
+      border: none;
+      padding: 10px 20px;
+      border-radius: $border_rad;
+      cursor: pointer;
+      margin-top: auto; /* Обеспечиваем, чтобы кнопка оставалась внизу */
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: darken(#fff, 10%);
+        color: $color_text;
+      }
+    }
+  }
+
+  .active-tariffs {
+    background-color: $color_orenge;
+    border-radius: $border_rad;
+
+    .btn-tariff {
+      background-color: $color_line;
+      color: $color_text;
+    }
+
+    .price {
+      color: $color_text_w;
+    }
+  }
+}

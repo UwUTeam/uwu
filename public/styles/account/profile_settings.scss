@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "main_account.scss";
+
+.prof-but {
+  background-color: $color_orenge;
+  border-radius: $border_rad;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: $color_text_w;
+  padding: 5px;
+
+  .prof-but-text {
+    margin-top: 0px;
+  }
+}

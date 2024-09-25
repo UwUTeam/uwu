@@ -43,45 +43,105 @@
     <link rel="stylesheet" href="/styles/about_us/news_block.css" />
   </head>
   <body>
-    <div class="firstblock navi show navibordrad" style="position: relative">
+    <div class="firstblock firstblock-nav navi position-fixed">
       <!-- Логотип -->
       <a href="/" class="navbar-logo">
         <img src="/public/img/logo.png" alt="Логотип сайта" />
       </a>
-
+    
       <!-- Личный кабинет -->
       <a href="/account" class="navbar-account"> Личный кабинет </a>
-
+    
       <!-- Бургер-меню -->
       <div class="navbar-container">
         <button class="navbar-burger" aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
-          <!-- Иконка бургер-меню -->
           <i class="bi bi-x-lg d-none"></i>
-          <!-- Иконка крестика, скрыта по умолчанию -->
         </button>
       </div>
 
       <!-- Меню, которое должно открываться на всю ширину контейнера -->
       <nav class="navbar-menu">
-        <ul class="navbar-nav">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Услуги</a></li>
-        </ul>
-
-        <!-- Языковой переключатель -->
-        <div class="language-switcher">
-          <button class="lang-btn lang-active">en</button>
-          <button class="lang-btn">ru</button>
-          <button class="lang-btn">de</button>
+        <div class="row">
+          <div class="col">
+            <a href="about_us.html">
+              <div class="page-manu">
+                <p class="page-manu-text">О нас</p>
+                <div class="page-manu-b"></div>
+              </div>
+            </a>
+            <a href="account.html">
+              <div class="page-manu">
+                <p class="page-manu-text">Аккаунт</p>
+                <div class="page-manu-b"></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col">
+            <a href="admin.html">
+              <div class="page-manu">
+                <p class="page-manu-text">Админ</p>
+                <div class="page-manu-b"></div>
+              </div>
+            </a>
+            <a href="index.html">
+              <div class="page-manu">
+                <p class="page-manu-text">Главная</p>
+                <div class="page-manu-b"></div>
+              </div>
+            </a>
+          </div>
+        
+          <div class="col">
+            <a href="login.html">
+              <div class="page-manu">
+                <p class="page-manu-text">Вход</p>
+                <div class="page-manu-b"></div>
+              </div>
+            </a>
+          </div>
         </div>
-      </nav>
-    </div>
+       <div class="row">
+       <div class="row">
+        <div class="manu-block"></div>
+
+       </div>
+       <div>
+        <div   class="position-absolute bottom-7 end-10  language-theme-manu row">
+
+          <div class="theme-manu">
+
+
+          </div>
+
+          <div class="language-manu row">
+
+
+            <div class="language-manu-1 active-language"></div>
+            <div class="language-manu-1"></div>
+            <div class="language-manu-1"></div>
+
+
+          </div>
+          
+
+
+        </div>
+
+       </div>
+      </div></nav>
+      </div>
+      
+      
+    
     <div class="overlay"></div>
-    <div class="firstblock firstblock-img">
-      <div class="img"></div>
+  
+  
+      <div class="overlay"></div>
+      <div class="mar-top">
+    <div class="firstblock firstblock-img ">
+      <div class="img"></div></div>
     </div>
     <div class="firstblock">
       <div class="mission-values-container">
@@ -818,13 +878,34 @@
     
       </div>
     <div class="firstblock footer"></div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+    <script>const burger = document.querySelector(".navbar-burger");
+      const menu = document.querySelector(".navbar-menu");
+      const iconList = burger.querySelector(".bi-list");
+      const iconX = burger.querySelector(".bi-x-lg");
+      const navi = document.querySelector(".navi");
+      const overlay = document.querySelector(".overlay"); // Выбор overlay
+      
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("is-active");
+        menu.classList.toggle("is-active");
+        navi.classList.toggle("active");
+        overlay.classList.toggle("active"); // Переключение класса active для overlay
+      
+        // Переключаем видимость иконок
+        iconList.classList.toggle("d-none");
+        iconX.classList.toggle("d-none");
+      });
+      window.addEventListener("scroll", function () {
+        const navi = document.querySelector(".navi");
+      
+        if (window.scrollY > 0) {
+          // Если прокрутка больше 50 пикселей
+          navi.classList.add("active-top");
+        } else {
+          navi.classList.remove("active-top");
+        }
+      });
+      </script>
     <script>
       fetch('/get-text')
         .then(response => response.json())  // Получаем JSON-ответ от сервера
@@ -927,30 +1008,16 @@
           document.getElementById("questions-btn").classList.remove("active");
         });
 
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-          },
-        },
-      });
+      
 
-      const burger = document.querySelector(".navbar-burger");
-      const menu = document.querySelector(".navbar-menu");
-      const iconList = burger.querySelector(".bi-list");
-      const iconX = burger.querySelector(".bi-x-lg");
-
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("is-active");
-        menu.classList.toggle("is-active");
-
-        // Переключаем видимость иконок
-        iconList.classList.toggle("d-none");
-        iconX.classList.toggle("d-none");
-      });
     </script>
-    <script></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+
   </body>
 </html>

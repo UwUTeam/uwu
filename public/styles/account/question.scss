@@ -112,3 +112,48 @@ span {
 
   border-radius: $border_rad;
 }
+
+/* Общая анимация появления */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимации для блоков */
+.anim-drop-1 {
+  animation: fadeInUp 0.2s ease-in-out;
+}
+
+.anim-drop-2 {
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+.anim-drop-3 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.anim-drop-1-1 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.anim-drop-2-1 {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.anim-drop-3-1 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.anim-drop-4-1 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+.anim-drop-5-1 {
+  animation: fadeInUp 0.4s ease-in-out;
+}
