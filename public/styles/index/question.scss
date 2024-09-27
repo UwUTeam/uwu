@@ -23,7 +23,6 @@ span {
     flex-direction: column;
     gap: 0.5rem; // equivalent to space-y-2
     width: 100%;
-
     .but_con {
       // equivalent to px-4 py-2
       border-radius: $border_rad; // equivalent to rounded-lg
@@ -43,6 +42,11 @@ span {
         background-color: var(--color-orenge); // equivalent to bg-orange-500
         color: var(--color-text-w); // equivalent to text-white
         z-index: 2;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: var(--color-orenge-act);
+        }
       }
     }
   }
@@ -67,9 +71,17 @@ span {
 
   &.active {
     background-color: var(--color-orenge); // equivalent to bg-orange-500
-    color: var(--color-text-w); // equivalent to text-white
+    color: #fff; // equivalent to text-white
     z-index: 2;
     transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    p {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: var(--color-orenge-act);
+    }
   }
 }
 .but_con {
@@ -86,6 +98,7 @@ span {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 0px;
+    color: #fff;
     box-shadow: 0 10px 1px 0px var(--color-block-content);
   }
 }

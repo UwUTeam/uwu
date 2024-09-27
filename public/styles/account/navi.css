@@ -6,12 +6,14 @@
   --color-line: #f2f3f5;
   --color-line-act: #e2e2e2;
   --color-text: #000000;
+  --color-text-rgb: 0, 0, 0;
   --color-black: #000000;
   --color-text-g: #4e4a67;
   --color-grem: #4e4a67;
   --color-text-w: #ffffff;
   --color-block-content: #f2f3f5;
   --color-orenge-rgb: 249, 108, 51;
+  --color-orenge-act: #ff4800;
 }
 
 .dark-theme {
@@ -19,14 +21,16 @@
   --color-block: #262626;
   --color-orenge: #2a8db5;
   --color-line: #2d2e2f;
-  --color-line-act: #4200dc;
+  --color-line-act: #249ece;
   --color-text: #ffffff;
+  --color-text-rgb: 255, 255, 255;
   --color-black: #ffffff;
   --color-text-g: #d9d9d9;
   --color-grem: #a5a5a5;
   --color-text-w: #f6f6f6;
   --color-block-content: #2d2e2f;
-  --color-orenge-rgb: 249, 108, 51;
+  --color-orenge-rgb: 42, 141, 181;
+  --color-orenge-act: #249ece;
 }
 
 :root {
@@ -149,6 +153,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navi.active {
@@ -182,13 +187,10 @@ body {
   border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .firstblock.navi .navbar-account:hover {
-  /*  background-color: darken(
-    var(--color-orenge),
-    10%
-  ); */ /* Темнее оранжевый при наведении */
+  background-color: var(--color-orenge-act);
 }
 
 .firstblock.navi .navbar-burger {
@@ -204,6 +206,10 @@ body {
   cursor: pointer;
   padding: 0;
   transition: background-color 0.3s ease; /* Плавный переход цвета */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.firstblock.navi .navbar-burger:hover {
+  background-color: var(--color-orenge-act);
 }
 
 .firstblock.navi .navbar-burger:hover {
@@ -424,6 +430,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .navi .page-manu .page-manu-b:hover {
+  background-color: var(--color-orenge-act);
   /*   background-color: darken(var(--color-orenge), 10%); */
 }
 .navi a {
@@ -454,6 +461,10 @@ body {
   /*  padding: 20px; */
   width: 40px;
   height: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navi .theme-manu:hover {
+  background-color: var(--color-orenge-act);
 }
 .navi .language-manu {
   background-color: var(--color-line);
@@ -468,9 +479,13 @@ body {
   width: 40px;
   height: 40px;
   margin: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .navi .language-manu-1.active-language {
   background-color: var(--color-orenge);
+}
+.navi .language-manu-1:hover {
+  background-color: var(--color-orenge-act);
 }
 
 .navi {

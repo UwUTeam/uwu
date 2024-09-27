@@ -67,8 +67,9 @@
       }
 
       &:hover {
-        background-color: var(--color-line); /* Цвет при наведении */
-        color: var(--color-text);
+        background-color: var(--color-orenge-act);
+
+        color: #fff;
       }
     }
   }
@@ -89,6 +90,7 @@
 .title {
   color: var(--color-text);
 }
+
 /* Анимации для новостных блоков */
 .anim-news-1 {
   animation: fadeInUp 0.2s ease-in-out;

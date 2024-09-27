@@ -33,13 +33,14 @@
   border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-orenge-act);
+  }
 }
 
-.firstblock.navi .navbar-account:hover {
-  /*  background-color: darken(
-    var(--color-orenge),
-    10%
-  ); */ /* Темнее оранжевый при наведении */
+.navbar-account {
 }
 .firstblock.navi .navbar-burger {
   display: flex;
@@ -54,6 +55,11 @@
   cursor: pointer;
   padding: 0;
   transition: background-color 0.3s ease; /* Плавный переход цвета */
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-orenge-act);
+  }
 }
 
 .firstblock.navi .navbar-burger:hover {
@@ -283,6 +289,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
+        background-color: var(--color-orenge-act);
         /*   background-color: darken(var(--color-orenge), 10%); */
       }
     }
@@ -318,6 +325,11 @@
     /*  padding: 20px; */
     width: 40px;
     height: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-orenge-act);
+    }
   }
   .language-manu {
     background-color: var(--color-line);
@@ -333,8 +345,14 @@
     width: 40px;
     height: 40px;
     margin: 5px;
+
     &.active-language {
       background-color: var(--color-orenge);
+    }
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-orenge-act);
     }
   }
 }

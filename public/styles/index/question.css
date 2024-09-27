@@ -6,12 +6,14 @@
   --color-line: #f2f3f5;
   --color-line-act: #e2e2e2;
   --color-text: #000000;
+  --color-text-rgb: 0, 0, 0;
   --color-black: #000000;
   --color-text-g: #4e4a67;
   --color-grem: #4e4a67;
   --color-text-w: #ffffff;
   --color-block-content: #f2f3f5;
   --color-orenge-rgb: 249, 108, 51;
+  --color-orenge-act: #ff4800;
 }
 
 .dark-theme {
@@ -19,14 +21,16 @@
   --color-block: #262626;
   --color-orenge: #2a8db5;
   --color-line: #2d2e2f;
-  --color-line-act: #4200dc;
+  --color-line-act: #249ece;
   --color-text: #ffffff;
+  --color-text-rgb: 255, 255, 255;
   --color-black: #ffffff;
   --color-text-g: #d9d9d9;
   --color-grem: #a5a5a5;
   --color-text-w: #f6f6f6;
   --color-block-content: #2d2e2f;
-  --color-orenge-rgb: 249, 108, 51;
+  --color-orenge-rgb: 42, 141, 181;
+  --color-orenge-act: #249ece;
 }
 
 :root {
@@ -149,6 +153,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .light-theme {
@@ -158,12 +163,14 @@ body {
   --color-line: #f2f3f5;
   --color-line-act: #e2e2e2;
   --color-text: #000000;
+  --color-text-rgb: 0, 0, 0;
   --color-black: #000000;
   --color-text-g: #4e4a67;
   --color-grem: #4e4a67;
   --color-text-w: #ffffff;
   --color-block-content: #f2f3f5;
   --color-orenge-rgb: 249, 108, 51;
+  --color-orenge-act: #ff4800;
 }
 
 .dark-theme {
@@ -171,14 +178,16 @@ body {
   --color-block: #262626;
   --color-orenge: #2a8db5;
   --color-line: #2d2e2f;
-  --color-line-act: #4200dc;
+  --color-line-act: #249ece;
   --color-text: #ffffff;
+  --color-text-rgb: 255, 255, 255;
   --color-black: #ffffff;
   --color-text-g: #d9d9d9;
   --color-grem: #a5a5a5;
   --color-text-w: #f6f6f6;
   --color-block-content: #2d2e2f;
-  --color-orenge-rgb: 249, 108, 51;
+  --color-orenge-rgb: 42, 141, 181;
+  --color-orenge-act: #249ece;
 }
 
 .question {
@@ -221,6 +230,10 @@ span {
   background-color: var(--color-orenge);
   color: var(--color-text-w);
   z-index: 2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.tabs .tab-group .tab.active:hover {
+  background-color: var(--color-orenge-act);
 }
 .tabs .tab-group + .tab-group {
   margin-left: 0.5rem;
@@ -242,9 +255,16 @@ span {
 }
 .tab.active {
   background-color: var(--color-orenge);
-  color: var(--color-text-w);
+  color: #fff;
   z-index: 2;
   transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.tab.active p {
+  color: #fff;
+}
+.tab.active:hover {
+  background-color: var(--color-orenge-act);
 }
 
 .but_con {
@@ -261,6 +281,7 @@ span {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-bottom: 0px;
+  color: #fff;
   box-shadow: 0 10px 1px 0px var(--color-block-content);
 }
 

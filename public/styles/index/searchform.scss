@@ -105,8 +105,15 @@
 .form-floating > .form-select ~ label::after {
   background: none;
 }
-
 .form-control:focus {
-  border-color: var(--color-orenge);
-  box-shadow: 0 0 0 0.25rem rgba(249, 108, 51, 0.4);
+  border-color: var(--color-orenge); /* Указываем желаемый цвет */
+  box-shadow: 0 0 0 0.25rem rgba(var(--color-orenge-rgb), 0.4); /* Опционально: настройка тени */
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: rgba(var(--color-text-rgb), 0.65);
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
