@@ -5,10 +5,12 @@
   .section-title {
     text-align: center;
     font-size: 2rem;
-    color: $color_text; // Оранжевый цвет
+    color: var(--color-text); // Оранжевый цвет
     margin-bottom: 2rem;
+    transition: all 0.3s ease;
     span {
-      color: $color_orenge;
+      color: var(--color-orenge);
+      transition: all 0.3s ease;
     }
     h2 {
       pointer-events: none;
@@ -17,7 +19,8 @@
   }
 
   .value-box {
-    background-color: $color_bac;
+    background-color: var(--color-bac);
+    transition: all 0.3s ease;
     padding: 20px;
     border-radius: $border_rad;
     text-align: center;
@@ -25,14 +28,16 @@
     /*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 
     h3 {
-      color: $color_orenge; // Оранжевый цвет заголовка
+      color: var(--color-orenge); // Оранжевый цвет заголовка
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      transition: all 0.3s ease;
     }
 
     p {
       font-size: 1rem;
-      color: $color_text;
+      color: var(--color-text);
+      transition: all 0.3s ease;
     }
   }
 }

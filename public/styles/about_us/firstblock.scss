@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "main_about_us.scss";
 .firstblock {
-  background-color: $color_block;
+  background-color: var(--color-block);
   width: 60%;
   max-width: 1150px;
   /* height: 300px; */ /* Adjust the height as needed */
@@ -9,4 +9,5 @@
   margin: 0 auto;
   margin-top: 4px;
   border-radius: $border_rad;
+  transition: all 0.3s ease;
 }

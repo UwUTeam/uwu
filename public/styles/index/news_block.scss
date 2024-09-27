@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @import "main.scss";
-
+@import "../color.scss";
 .news-section {
   h2 {
     font-size: 24px;
     .highlight {
-      color: $color_orenge;
+      color: var(--color-orenge);
     }
   }
   .news-content {
@@ -17,7 +17,7 @@
       }
     }
     .news-item {
-      background-color: $color_line;
+      background-color: var(--color-line);
       margin-bottom: 10px;
       padding: 10px;
       border-radius: 5px;
@@ -34,7 +34,7 @@
   .pagination {
     display: inline-flex; /* Используем inline-flex для корректного центрирования */
     padding: 5px;
-    background-color: $color_line;
+    background-color: var(--color-line);
     border-radius: $border_rad;
 
     .page-number {
@@ -46,8 +46,8 @@
       font-size: 18px;
       border-radius: 50%;
       margin: 0 5px;
-      background-color: $color_block;
-      color: $color_text;
+      background-color: var(--color-block);
+      color: var(--color-text);
       cursor: pointer;
       transition: all 0.3s ease;
 
@@ -56,8 +56,10 @@
       }
 
       &.active-news {
-        background-color: $color_orenge; /* Оранжевый цвет для активной страницы */
-        color: $color_text_w;
+        background-color: var(
+          --color-orenge
+        ); /* Оранжевый цвет для активной страницы */
+        color: var(--color-text-w);
 
         &.animate {
           opacity: 0;
@@ -65,12 +67,14 @@
       }
 
       &:hover {
-        background-color: #ddd; /* Цвет при наведении */
-        color: $color_text;
+        background-color: var(--color-line); /* Цвет при наведении */
+        color: var(--color-text);
       }
     }
   }
-} /* Общая анимация появления */
+}
+
+/* Общая анимация появления */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -81,7 +85,10 @@
     transform: translateY(0);
   }
 }
-
+.description,
+.title {
+  color: var(--color-text);
+}
 /* Анимации для новостных блоков */
 .anim-news-1 {
   animation: fadeInUp 0.2s ease-in-out;

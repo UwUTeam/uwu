@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import "main_account.scss";
-
 .question {
   position: relative;
   width: 100%;
@@ -11,7 +10,7 @@
 }
 
 span {
-  color: $color_orenge; // equivalent to text-orange-500
+  color: var(--color-orenge); // equivalent to text-orange-500
 }
 
 .tabs {
@@ -26,21 +25,21 @@ span {
     .but_con {
       // equivalent to px-4 py-2
       border-radius: $border_rad; // equivalent to rounded-lg
-      background-color: $color_block_content; // equivalent to bg-gray-200
-      color: $color_text; // equivalent to text-black
+      background-color: var(--color-block-content); // equivalent to bg-gray-200
+      color: var(--color-text); // equivalent to text-black
       z-index: 1;
     }
     .tab {
       padding: 0.5rem 1rem; // equivalent to px-4 py-2
       border-radius: $border_rad; // equivalent to rounded-lg
-      background-color: $color_block_content; // equivalent to bg-gray-200
-      color: $color_text; // equivalent to text-black
+      background-color: var(--color-block-content); // equivalent to bg-gray-200
+      color: var(--color-text); // equivalent to text-black
       z-index: 1;
       transition: all 0.3s ease;
 
       &.active {
-        background-color: $color_orenge; // equivalent to bg-orange-500
-        color: $color_text_w; // equivalent to text-white
+        background-color: var(--color-orenge); // equivalent to bg-orange-500
+        color: var(--color-text-w); // equivalent to text-white
         z-index: 2;
       }
     }
@@ -51,7 +50,7 @@ span {
   }
 }
 .tab-test {
-  background-color: $color_line;
+  background-color: var(--color-line);
   width: 100%;
 
   border-radius: $border_rad;
@@ -59,14 +58,14 @@ span {
 .tab {
   padding: 0.5rem 1rem; // equivalent to px-4 py-2
   border-radius: $border_rad; // equivalent to rounded-lg
-  background-color: $color_block_content; // equivalent to bg-gray-200
-  color: $color_text; // equivalent to text-black
+  background-color: var(--color-block-content); // equivalent to bg-gray-200
+  color: var(--color-text); // equivalent to text-black
   z-index: 1;
   transition: all 0.3s ease;
 
   &.active {
-    background-color: $color_orenge; // equivalent to bg-orange-500
-    color: $color_text_w; // equivalent to text-white
+    background-color: var(--color-orenge); // equivalent to bg-orange-500
+    color: var(--color-text-w); // equivalent to text-white
     z-index: 2;
     transition: all 0.3s ease;
   }
@@ -74,8 +73,8 @@ span {
 .but_con {
   // equivalent to px-4 py-2
   border-radius: $border_rad; // equivalent to rounded-lg
-  background-color: $color_block_content; // equivalent to bg-gray-200
-  color: $color_text; // equivalent to text-black
+  background-color: var(--color-block-content); // equivalent to bg-gray-200
+  color: var(--color-text); // equivalent to text-black
   z-index: 1;
 }
 .tab-test {
@@ -85,12 +84,12 @@ span {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 0px;
-    box-shadow: 0 10px 1px 0px $color_block_content;
+    box-shadow: 0 10px 1px 0px var(--color-block-content);
   }
 }
 .drop-content {
-  background-color: $color_block_content;
-  border-color: $color_block_content;
+  background-color: var(--color-block-content);
+  border-color: var(--color-block-content);
   position: relative;
   border-bottom-left-radius: $border_rad;
   border-bottom-right-radius: $border_rad;
@@ -107,7 +106,7 @@ span {
 .orange-line {
   width: 90%; /* Линия занимает 80% от ширины блока */
   height: 3px; /* Высота линии */
-  background-color: $color_orenge; /* Цвет линии */
+  background-color: var(--color-orenge); /* Цвет линии */
   margin: 0 auto; /* Центрирование линии */
 
   border-radius: $border_rad;

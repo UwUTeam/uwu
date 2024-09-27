@@ -6,26 +6,26 @@
 .profile-info {
   margin-bottom: 10px;
   .profile-card {
-    background-color: $color_bac;
+    background-color: var(--color-bac);
     padding: 20px;
     border-radius: $border_rad;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     height: 100%;
-    color: $color_text;
+    color: var(--color-text);
     span {
-      color: $color_orenge;
+      color: var(--color-orenge);
       font-weight: bold;
     }
     .tariffff {
       span {
-        color: $color_text_g;
+        color: var(--color-text-g);
       }
     }
 
     .profile-image {
       width: 80px;
       height: 80px;
-      background-color: #000;
+      background-color: var(--color-text);
       border-radius: $border_rad;
       margin-bottom: 10px;
     }
@@ -48,10 +48,10 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    color: $color_text;
+    color: var(--color-text);
 
     li {
-      background-color: $color_bac;
+      background-color: var(--color-bac);
       padding: 15px;
       margin-bottom: 5px;
       border-radius: $border_rad;
@@ -59,7 +59,7 @@
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #e0e0e0;
+        background-color: var(--color-line-act);
       }
     }
   }

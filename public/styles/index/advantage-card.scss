@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @import "main.scss";
+@import "../color.scss";
 
 .custom-card {
-  background-color: $color_block_content;
+  background-color: var(--color-block-content);
   border-radius: $border_rad;
   text-align: center;
   padding: 20px;
@@ -22,7 +23,7 @@
 
   p {
     font-size: 14px;
-    color: #6c757d;
+    color: var(--color-text-g);
   }
 
   .icon-placeholder {

@@ -1,10 +1,26 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const cookieParser = require("cookie-parser"); // Подключаем cookie-parser для работы с cookies
 const app = express();
 
 app.use(express.static("public"));
 app.use(express.json()); // Для работы с JSON-данными
+app.use(cookieParser()); // Для чтения cookies
+
+// Middleware для установки темы на всех страницах
+app.use((req, res, next) => {
+  const theme = req.cookies.theme || "light"; // Получаем тему из cookies, если её нет — устанавливаем "light"
+  res.locals.theme = theme; // Передаем тему во все шаблоны или файлы, если используется движок
+  next();
+});
+
+// Маршрут для сохранения выбранной темы
+app.post("/set-theme", (req, res) => {
+  const theme = req.body.theme;
+  res.cookie("theme", theme, { maxAge: 900000, httpOnly: true }); // Сохраняем тему в cookies
+  res.send("Тема сохранена");
+});
 
 // Маршрут для получения текста
 app.get("/get-text", (req, res) => {

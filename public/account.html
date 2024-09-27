@@ -118,7 +118,7 @@
      <div>
       <div   class="position-absolute bottom-7 end-10  language-theme-manu row">
 
-        <div class="theme-manu">
+        <div id="theme-toggle" class="theme-manu">
 
 
         </div>
@@ -1492,6 +1492,24 @@
             </div>
             
           <div class="firstblock footer"></div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+           const themeToggleButton = document.getElementById('theme-toggle');
+           const currentTheme = localStorage.getItem('theme') || 'light';
+           document.documentElement.classList.add(currentTheme + '-theme');
+         
+           themeToggleButton.addEventListener('click', function () {
+             const isDark = document.documentElement.classList.contains('dark-theme');
+             const newTheme = isDark ? 'light' : 'dark';
+             
+             document.documentElement.classList.remove(isDark ? 'dark-theme' : 'light-theme');
+             document.documentElement.classList.add(newTheme + '-theme');
+             
+             localStorage.setItem('theme', newTheme);
+           });
+         });
+         
+             </script>
          <script>const burger = document.querySelector(".navbar-burger");
           const menu = document.querySelector(".navbar-menu");
           const iconList = burger.querySelector(".bi-list");

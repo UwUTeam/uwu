@@ -1,13 +1,12 @@
 @charset "UTF-8";
 @import "main_account.scss";
-
 .action-container {
   h4 {
     font-weight: bold;
     margin-bottom: 20px;
 
     span {
-      color: $color_orenge;
+      color: var(--color-orenge);
     }
   }
 
@@ -16,7 +15,7 @@
     justify-content: space-between;
   }
   .action-box-box {
-    background-color: $color_bac;
+    background-color: var(--color-bac);
     border-radius: $border_rad;
   }
   .action-box {
@@ -30,21 +29,21 @@
     border: none;
 
     padding-top: 10px;
-    color: $color_text;
+    color: var(--color-text);
 
     .icon-placeholder {
       width: 60px;
       height: 60px;
-      background-color: black;
+      background-color: var(--color-text);
       border-radius: $border_rad;
       margin: 0 auto 15px;
     }
 
     &.active {
-      background-color: $color_orenge;
-      color: $color_text_w;
+      background-color: var(--color-orenge);
+      color: var(--color-text-w);
       :hover {
-        background-color: $color_block_content;
+        background-color: var(--color-block-content);
         p {
           background: none;
         }
@@ -52,8 +51,8 @@
     }
 
     &:hover {
-      background-color: $color_grem;
-      color: $color_text_w;
+      background-color: var(--color-grem);
+      color: var(--color-text-w);
     }
 
     p {

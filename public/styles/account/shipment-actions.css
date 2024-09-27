@@ -1,5 +1,34 @@
 @charset "UTF-8";
-/* root */
+.light-theme {
+  --color-bac: #f2f3f5;
+  --color-block: #ffffff;
+  --color-orenge: #f96c33;
+  --color-line: #f2f3f5;
+  --color-line-act: #e2e2e2;
+  --color-text: #000000;
+  --color-black: #000000;
+  --color-text-g: #4e4a67;
+  --color-grem: #4e4a67;
+  --color-text-w: #ffffff;
+  --color-block-content: #f2f3f5;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
+.dark-theme {
+  --color-bac: #2f2e2d;
+  --color-block: #262626;
+  --color-orenge: #2a8db5;
+  --color-line: #2d2e2f;
+  --color-line-act: #4200dc;
+  --color-text: #ffffff;
+  --color-black: #ffffff;
+  --color-text-g: #d9d9d9;
+  --color-grem: #a5a5a5;
+  --color-text-w: #f6f6f6;
+  --color-block-content: #2d2e2f;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -47,6 +76,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  color: var(--color-text);
 }
 
 ul,
@@ -106,6 +136,7 @@ button::-moz-focus-inner {
 
 label {
   cursor: pointer;
+  color: var(--color-text-g);
 }
 
 legend {
@@ -114,16 +145,10 @@ legend {
 
 /* обнуление конец */
 body {
-  background-color: #f2f3f5;
+  background-color: var(--color-bac);
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
 }
 
 .action-container h4 {
@@ -131,14 +156,14 @@ canvas {
   margin-bottom: 20px;
 }
 .action-container h4 span {
-  color: #f96c33;
+  color: var(--color-orenge);
 }
 .action-container .row {
   display: flex;
   justify-content: space-between;
 }
 .action-container .action-box-box {
-  background-color: #f2f3f5;
+  background-color: var(--color-bac);
   border-radius: 25px;
 }
 .action-container .action-box {
@@ -150,28 +175,28 @@ canvas {
   min-height: 220px;
   border: none;
   padding-top: 10px;
-  color: #000000;
+  color: var(--color-text);
 }
 .action-container .action-box .icon-placeholder {
   width: 60px;
   height: 60px;
-  background-color: black;
+  background-color: var(--color-text);
   border-radius: 25px;
   margin: 0 auto 15px;
 }
 .action-container .action-box.active {
-  background-color: #f96c33;
-  color: #ffffff;
+  background-color: var(--color-orenge);
+  color: var(--color-text-w);
 }
 .action-container .action-box.active :hover {
-  background-color: #f2f3f5;
+  background-color: var(--color-block-content);
 }
 .action-container .action-box.active :hover p {
   background: none;
 }
 .action-container .action-box:hover {
-  background-color: #4e4a67;
-  color: #ffffff;
+  background-color: var(--color-grem);
+  color: var(--color-text-w);
 }
 .action-container .action-box p {
   width: 80%;

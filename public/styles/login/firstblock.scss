@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "main_login.scss";
 .firstblock {
-  background-color: $color_block;
+  background-color: var(--color-block);
   width: 60%;
   max-width: 1150px;
   /* height: 300px; */ /* Adjust the height as needed */

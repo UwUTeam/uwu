@@ -25,6 +25,8 @@
     />
 
     <link rel="stylesheet" href="/public/styles/index/main.css" />
+
+    <link rel="stylesheet" href="/public/styles/color.css" />
     <link rel="stylesheet" href="/public/styles/index/firstblock.css" />
     <link rel="stylesheet" href="/public/styles/index/search_pack.css" />
     <link rel="stylesheet" href="/public/styles/index/question.css" />
@@ -39,6 +41,8 @@
 
 
     <link rel="stylesheet" href="/styles/index/main.css" />
+
+    <link rel="stylesheet" href="/styles/color.css" />
     <link rel="stylesheet" href="/styles/index/firstblock.css" />
     <link rel="stylesheet" href="/styles/index/search_pack.css" />
     <link rel="stylesheet" href="/styles/index/question.css" />
@@ -119,8 +123,8 @@
        <div>
         <div   class="position-absolute bottom-7 end-10  language-theme-manu row">
 
-          <div class="theme-manu">
-
+          <div id="theme-toggle" class="theme-manu">
+           <!--  <button id="theme-toggle theme-manu">Сменить тему</button> -->
 
           </div>
 
@@ -193,7 +197,7 @@
               </div>
               <div class="blog-slider__content">
                 <span class="blog-slider__code" contenteditable="true" data-key="slider_image_1"style="pointer-events: none;">26 December 2019</span>
-                <div class="blog-slider__title" contenteditable="true" data-key="slider_image_2"style="pointer-events: none;">Lorem Ipsum Dolor</div>
+                <div class="blog-slider__title" contenteditable="true" data-key="slider_image_2"style="pointer-events: none;"><span>Lorem Ipsum Dolor</span></div>
                 <div class="blog-slider__text" contenteditable="true" data-key="slider_image_3"style="pointer-events: none;">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Recusandae voluptate repellendus magni illo ea animi?
@@ -210,7 +214,7 @@
               </div>
               <div class="blog-slider__content">
                 <span class="blog-slider__code" contenteditable="true" data-key="slider_image_5"style="pointer-events: none;">26 December 2019</span>
-                <div class="blog-slider__title" contenteditable="true" data-key="slider_image_6"style="pointer-events: none;">Lorem Ipsum Dolor2</div>
+                <div class="blog-slider__title" contenteditable="true" data-key="slider_image_6"style="pointer-events: none;"><span>Lorem Ipsum Dolor</span></div>
                 <div class="blog-slider__text" contenteditable="true" data-key="slider_image_7"style="pointer-events: none;">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Recusandae voluptate repellendus magni illo ea animi?
@@ -228,7 +232,7 @@
               </div>
               <div class="blog-slider__content">
                 <span class="blog-slider__code" contenteditable="true" data-key="slider_image_9"style="pointer-events: none;">26 December 2019</span>
-                <div class="blog-slider__title" contenteditable="true" data-key="slider_image_10"style="pointer-events: none;">Lorem Ipsum Dolor</div>
+                <div class="blog-slider__title" contenteditable="true" data-key="slider_image_10"style="pointer-events: none;"><span>Lorem Ipsum Dolor</span></div>
                 <div class="blog-slider__text" contenteditable="true" data-key="slider_image_11"style="pointer-events: none;">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Recusandae voluptate repellendus magni illo ea animi?
@@ -1299,8 +1303,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
       </div>
       
-    <div class="firstblock footer"></div>
-   
+    <div class="firstblock footer">
+    </div>
+   <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  const themeToggleButton = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.classList.add(currentTheme + '-theme');
+
+  themeToggleButton.addEventListener('click', function () {
+    const isDark = document.documentElement.classList.contains('dark-theme');
+    const newTheme = isDark ? 'light' : 'dark';
+    
+    document.documentElement.classList.remove(isDark ? 'dark-theme' : 'light-theme');
+    document.documentElement.classList.add(newTheme + '-theme');
+    
+    localStorage.setItem('theme', newTheme);
+  });
+});
+
+    </script>
     <script>document.querySelectorAll('.page-number').forEach(page => {
       page.addEventListener('click', function() {
         // Убираем класс active-news у всех страниц и кнопок пагинации

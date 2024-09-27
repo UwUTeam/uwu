@@ -1,20 +1,5 @@
 @charset "UTF-8";
-$color_bac: #f2f3f5;
-$color_block: #ffffff;
-$color_orenge: #f96c33;
-$color_orenge_rgb: 249, 108, 51;
-$color_line: #f2f3f5;
-$color_line_act: #e2e2e2;
-$color_text: #000000;
-$color_black: #000000;
-$color_text_g: #4e4a67;
-$color_grem: #4e4a67;
-$color_text_w: #ffffff;
-$color_block_content: #f2f3f5;
-$border_rad: 25px;
-$padding_main: 20px;
-$transition-time: 0.5s;
-$index: --index; /* root */
+@import "../color.scss";
 
 :root {
   --index: calc(1vw + 1vh);
@@ -62,6 +47,8 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+
+  color: var(--color-text);
 }
 
 ul,
@@ -121,6 +108,8 @@ button::-moz-focus-inner {
 
 label {
   cursor: pointer;
+
+  color: var(--color-text-g);
 }
 
 legend {
@@ -129,7 +118,8 @@ legend {
 
 /* обнуление конец */
 body {
-  background-color: $color_bac;
+  background-color: var(--color-bac);
+
   display: flex;
   justify-content: center;
   flex-direction: column;

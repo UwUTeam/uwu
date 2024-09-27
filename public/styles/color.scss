@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+$color_bac: #f2f3f5 !default;
+$color_block: #ffffff !default;
+$color_orenge: #f96c33 !default;
+$color_line: #f2f3f5 !default;
+$color_line_act: #e2e2e2 !default;
+$color_text: #000000 !default;
+$color_black: #000000 !default;
+$color_text_g: #4e4a67 !default;
+$color_grem: #4e4a67 !default;
+$color_text_w: #ffffff !default;
+$color_block_content: #f2f3f5 !default;
+
+// Темные цвета
+$color_bac_dark: #2f2e2d !default;
+$color_block_dark: #262626 !default;
+$color_orenge_dark: #2a8db5 !default;
+$color_line_dark: #2d2e2f !default;
+$color_text_w_dark: #f6f6f6 !default;
+$color_block_content_dark: #2d2e2f !default;
+$color_text_g_dark: #d9d9d9 !default;
+
+$color_line_act_dark: #4200dc !default;
+$color_text_dark: #ffffff !default;
+$color_black_dark: #ffffff !default;
+
+$color_grem_dark: #a5a5a5 !default;
+
+$color_orenge_rgb: 249, 108, 51;
+$border_rad: 25px;
+$padding_main: 20px;
+$transition-time: 0.5s;
+$index: 10; // Задаём числовое значение
+
+.light-theme {
+  --color-bac: #{$color_bac};
+  --color-block: #{$color_block};
+  --color-orenge: #{$color_orenge};
+  --color-line: #{$color_line};
+  --color-line-act: #{$color_line_act};
+  --color-text: #{$color_text};
+  --color-black: #{$color_black};
+  --color-text-g: #{$color_text_g};
+  --color-grem: #{$color_grem};
+  --color-text-w: #{$color_text_w};
+  --color-block-content: #{$color_block_content};
+  --color-orenge-rgb: #{$color_orenge_rgb};
+}
+
+.dark-theme {
+  --color-bac: #{$color_bac_dark};
+  --color-block: #{$color_block_dark};
+  --color-orenge: #{$color_orenge_dark};
+  --color-line: #{$color_line_dark};
+  --color-line-act: #{$color_line_act_dark};
+  --color-text: #{$color_text_dark};
+  --color-black: #{$color_black_dark};
+  --color-text-g: #{$color_text_g_dark};
+  --color-grem: #{$color_grem_dark};
+  --color-text-w: #{$color_text_w_dark};
+  --color-block-content: #{$color_block_content_dark};
+  --color-orenge-rgb: #{$color_orenge_rgb};
+}

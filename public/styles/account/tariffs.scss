@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "main_account.scss";
 .block-tariffs {
-  background-color: $color_block_content;
+  background-color: var(--color-block-content);
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -12,7 +12,7 @@
   .cart-tariffs {
     width: 100%;
     height: auto;
-    background-color: $color_block_content;
+    background-color: var(--color-block-content);
     border-radius: $border_rad;
     padding: 20px;
     text-align: start;
@@ -28,7 +28,7 @@
     .price {
       font-size: 2rem;
       font-weight: bold;
-      color: $color_orenge;
+      color: var(--color-orenge);
       margin-bottom: 15px;
     }
 
@@ -44,8 +44,8 @@
     }
 
     .btn-tariff {
-      background-color: $color_orenge;
-      color: $color_text_w;
+      background-color: var(--color-orenge);
+      color: var(--color-text-w);
       border: none;
       padding: 10px 20px;
       border-radius: $border_rad;
@@ -55,22 +55,22 @@
 
       &:hover {
         background-color: darken(#fff, 10%);
-        color: $color_text;
+        color: var(--color-text);
       }
     }
   }
 
   .active-tariffs {
-    background-color: $color_orenge;
+    background-color: var(--color-orenge);
     border-radius: $border_rad;
 
     .btn-tariff {
-      background-color: $color_line;
-      color: $color_text;
+      background-color: var(--color-line);
+      color: var(--color-text);
     }
 
     .price {
-      color: $color_text_w;
+      color: var(--color-text-w);
     }
   }
 }

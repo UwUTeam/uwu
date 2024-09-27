@@ -1,26 +1,25 @@
 @charset "UTF-8";
 @import "main_login.scss";
-
 .login-title {
   font-size: 24px;
   margin-bottom: 10px;
-  color: $color_text;
+  color: var(--color-text);
   span {
-    color: $color_orenge;
+    color: var(--color-orenge);
   }
 }
 
 .login-subtitle {
   margin-bottom: 20px;
   font-size: 14px;
-  color: $color_text_g;
+  color: var(--color-text-g);
 }
 
 .form-group {
   margin-bottom: 15px;
 
   .form-control {
-    background-color: $color_line;
+    background-color: var(--color-line);
     border: none;
     border-radius: 30px;
     padding: 10px 20px;
@@ -29,8 +28,8 @@
 }
 
 .login-btn {
-  background-color: $color_orenge;
-  color: $color_text_w;
+  background-color: var(--color-orenge);
+  color: var(--color-text-w);
   font-size: 18px;
   border-radius: 30px;
   padding: 10px 0;
@@ -45,15 +44,19 @@
   margin-top: 20px;
 
   .btn-light {
-    background-color: $color_line;
+    background-color: var(--color-line);
     border-radius: 30px;
     padding: 10px 20px;
-    color: $color_text_g;
+    color: var(--color-text-g);
     width: 60%;
     height: 50px;
     margin-right: 10px;
+    border-color: none;
+    border: none;
   }
-
+  .btn:focus-visible {
+    box-shadow: var(--color-orenge-rgb);
+  }
   .dots {
     display: flex;
     gap: 3px;
@@ -61,7 +64,7 @@
     .dot {
       width: 50px;
       height: 50px;
-      background-color: $color_orenge;
+      background-color: var(--color-orenge);
       border-radius: 50%;
     }
   }
@@ -74,6 +77,6 @@
   background: none;
 }
 .form-control:focus {
-  border-color: $color_orenge; /* Указываем желаемый цвет */
+  border-color: var(--color-orenge); /* Указываем желаемый цвет */
   box-shadow: 0 0 0 0.25rem rgba(249, 108, 51, 0.4); /* Опционально: настройка тени */
 }

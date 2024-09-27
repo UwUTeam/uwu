@@ -1,5 +1,34 @@
 @charset "UTF-8";
-/* root */
+.light-theme {
+  --color-bac: #f2f3f5;
+  --color-block: #ffffff;
+  --color-orenge: #f96c33;
+  --color-line: #f2f3f5;
+  --color-line-act: #e2e2e2;
+  --color-text: #000000;
+  --color-black: #000000;
+  --color-text-g: #4e4a67;
+  --color-grem: #4e4a67;
+  --color-text-w: #ffffff;
+  --color-block-content: #f2f3f5;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
+.dark-theme {
+  --color-bac: #2f2e2d;
+  --color-block: #262626;
+  --color-orenge: #2a8db5;
+  --color-line: #2d2e2f;
+  --color-line-act: #4200dc;
+  --color-text: #ffffff;
+  --color-black: #ffffff;
+  --color-text-g: #d9d9d9;
+  --color-grem: #a5a5a5;
+  --color-text-w: #f6f6f6;
+  --color-block-content: #2d2e2f;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -47,6 +76,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  color: var(--color-text);
 }
 
 ul,
@@ -106,6 +136,7 @@ button::-moz-focus-inner {
 
 label {
   cursor: pointer;
+  color: var(--color-text-g);
 }
 
 legend {
@@ -114,17 +145,47 @@ legend {
 
 /* обнуление конец */
 body {
-  background-color: #f2f3f5;
+  background-color: var(--color-bac);
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.light-theme {
+  --color-bac: #f2f3f5;
+  --color-block: #ffffff;
+  --color-orenge: #f96c33;
+  --color-line: #f2f3f5;
+  --color-line-act: #e2e2e2;
+  --color-text: #000000;
+  --color-black: #000000;
+  --color-text-g: #4e4a67;
+  --color-grem: #4e4a67;
+  --color-text-w: #ffffff;
+  --color-block-content: #f2f3f5;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
+.dark-theme {
+  --color-bac: #2f2e2d;
+  --color-block: #262626;
+  --color-orenge: #2a8db5;
+  --color-line: #2d2e2f;
+  --color-line-act: #4200dc;
+  --color-text: #ffffff;
+  --color-black: #ffffff;
+  --color-text-g: #d9d9d9;
+  --color-grem: #a5a5a5;
+  --color-text-w: #f6f6f6;
+  --color-block-content: #2d2e2f;
+  --color-orenge-rgb: 249, 108, 51;
 }
 
 .navi.active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-bottom: 0px;
-  box-shadow: 0 10px 1px 0px #f2f3f5;
+  box-shadow: 0 10px 1px 0px var(--color-block-content);
   z-index: 101;
 }
 
@@ -133,7 +194,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
-  background-color: #ffffff; /* Используем переменную для фона */
+  background-color: var(--color-block); /* Используем переменную для фона */
 }
 
 .firstblock.navi .navbar-logo img {
@@ -146,15 +207,18 @@ body {
   display: inline-block;
   padding: 8px 20px;
   font-size: 16px;
-  color: #ffffff; /* Белый текст */
-  background-color: #f96c33; /* Оранжевый фон кнопки */
+  color: var(--color-text-w); /* Белый текст */
+  background-color: var(--color-orenge); /* Оранжевый фон кнопки */
   border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .firstblock.navi .navbar-account:hover {
-  background-color: #f24b07; /* Темнее оранжевый при наведении */
+  /*  background-color: darken(
+    var(--color-orenge),
+    10%
+  ); */ /* Темнее оранжевый при наведении */
 }
 
 .firstblock.navi .navbar-burger {
@@ -164,7 +228,7 @@ body {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #f96c33; /* Оранжевый цвет для бургер-меню */
+  background-color: var(--color-orenge); /* Оранжевый цвет для бургер-меню */
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -173,26 +237,20 @@ body {
 }
 
 .firstblock.navi .navbar-burger:hover {
-  background-color: black; /* Темнее оранжевый при наведении */
+  /*   background-color: darken(
+    var(--color-orenge),
+    100%
+  ); */ /* Темнее оранжевый при наведении */
 }
 
 .firstblock.navi .navbar-burger span {
   display: block;
   width: 20px;
   height: 2px;
-  background-color: #ffffff; /* Белые полоски */
+  background-color: var(--color-text-w); /* Белые полоски */
   border-radius: 1px;
   margin: 3px 0;
   z-index: 101;
-}
-
-.firstblock.navi::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 2px;
-  background-color: #ffffff; /* Белая полоска */
-  border-radius: 1px;
 }
 
 .navbar-account,
@@ -213,7 +271,7 @@ body {
 }
 
 .navbar-burger {
-  background-color: #f96c33; /* Используем переменную для оранжевого */
+  background-color: var(--color-orenge); /* Используем переменную для оранжевого */
   border: none;
   border-radius: 25px;
   padding: 10px;
@@ -221,7 +279,7 @@ body {
 }
 
 .navbar-burger i {
-  color: #ffffff; /* Белые иконки */
+  color: var(--color-text-w); /* Белые иконки */
   font-size: 1.5rem;
 }
 
@@ -240,7 +298,7 @@ body {
   top: 100%; /* Открываем меню прямо под навигацией */
   left: 0;
   width: 100%; /* Меню занимает всю ширину контейнера */
-  background-color: #ffffff; /* Белый фон */
+  background-color: var(--color-block); /* Белый фон */
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 25px 25px; /* Скругленные углы снизу */
@@ -262,7 +320,7 @@ body {
 }
 
 .navbar-nav li a {
-  color: #000000; /* Черный текст */
+  color: var(--color-text); /* Черный текст */
   text-decoration: none;
   padding: 10px 0;
   font-size: 1rem;
@@ -274,10 +332,10 @@ body {
 }
 
 .language-switcher .lang-btn {
-  background-color: #e0e0e0; /* Здесь нет переменной, если нужно — добавим */
+  background-color: var(--color-line); /* Здесь нет переменной, если нужно — добавим */
   border: none;
   border-radius: 50%;
-  color: #000000;
+  color: var(--color-text);
   font-size: 0.9rem;
   padding: 10px;
   margin-left: 5px;
@@ -285,13 +343,13 @@ body {
 }
 
 .language-switcher .lang-btn.lang-active {
-  background-color: #f96c33; /* Оранжевый цвет для активного языка */
-  color: #ffffff; /* Белый цвет текста для активного языка */
+  background-color: var(--color-orenge); /* Оранжевый цвет для активного языка */
+  color: var(--color-text-w); /* Белый цвет текста для активного языка */
 }
 
 .language-switcher .lang-btn:hover {
-  background-color: #f24b07; /* Темнее оранжевый при наведении */
-  color: #ffffff; /* Белый текст при наведении */
+  /*  background-color: darken(var(--color-orenge), 10%); */
+  color: var(--color-text-w); /* Белый текст при наведении */
 }
 
 /* Для блока навигации */
@@ -302,28 +360,28 @@ body {
 .navi.active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  transition: border-radius 0.3s ease; /* Плавное изменение радиуса нижних углов */
+  transition: border-radius 0.3s ease;
 }
 
 /* Для выпадающего меню */
 .navbar-menu {
   border-radius: 25px; /* Скругленные углы по умолчанию */
-  transition: border-radius 0.3s ease; /* Плавный переход радиусов */
+  transition: border-radius 0.3s ease;
 }
 .navbar-menu.is-active {
-  border-top-left-radius: 0; /* Верхние углы выравниваются при открытии */
+  border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 25px; /* Нижние углы остаются скругленными */
+  border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 
 .navbar-menu {
-  display: none; /* Меню скрыто по умолчанию */
+  display: none;
   position: absolute;
-  top: 100%; /* Открываем меню прямо под навигацией */
+  top: 100%;
   left: 0;
-  width: 100%; /* Меню занимает всю ширину контейнера */
-  background-color: #ffffff; /* Цвет фона меню */
+  width: 100%;
+  background-color: var(--color-block); /* Цвет фона меню */
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 25px 25px;
@@ -356,17 +414,17 @@ body {
 .navi {
   border-radius: 25px; /* Радиус по умолчанию */
   z-index: 101;
-  transition: border-radius 0.3s ease; /* Плавное изменение радиуса */
+  transition: border-radius 0.3s ease;
 }
 .navi.active {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-bottom: 0px;
-  box-shadow: 0 10px 1px 0px #f2f3f5;
+  box-shadow: 0 10px 1px 0px var(--color-block-content);
   z-index: 101;
 }
 .navi .page-manu {
-  background-color: #f2f3f5;
+  background-color: var(--color-line);
   border-radius: 25px;
   margin-bottom: 10px;
   padding: 2px;
@@ -385,10 +443,10 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 24px;
-  color: #000000;
+  color: var(--color-text);
 }
 .navi .page-manu .page-manu-b {
-  background-color: #f96c33;
+  background-color: var(--color-orenge);
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -396,7 +454,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .navi .page-manu .page-manu-b:hover {
-  background-color: #f24b07;
+  /*   background-color: darken(var(--color-orenge), 10%); */
 }
 .navi a {
   text-decoration: none;
@@ -405,7 +463,7 @@ body {
   text-decoration: none;
 }
 .navi .manu-block {
-  background-color: #f2f3f5;
+  background-color: var(--color-line);
   border-radius: 25px;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -419,7 +477,7 @@ body {
   height: 50px;
 }
 .navi .theme-manu {
-  background-color: #f96c33;
+  background-color: var(--color-orenge);
   border-radius: 50px;
   margin-top: 5px;
   margin-right: 20px;
@@ -428,21 +486,21 @@ body {
   height: 40px;
 }
 .navi .language-manu {
-  background-color: #f2f3f5;
+  background-color: var(--color-line);
   border-radius: 25px;
   /*  padding: 20px; */
   width: auto;
   height: 50px;
 }
 .navi .language-manu-1 {
-  background-color: #000000;
+  background-color: var(--color-black);
   border-radius: 50px;
   width: 40px;
   height: 40px;
   margin: 5px;
 }
 .navi .language-manu-1.active-language {
-  background-color: #f96c33;
+  background-color: var(--color-orenge);
 }
 
 .navi {
@@ -450,7 +508,7 @@ body {
   z-index: 101;
   top: 0;
   transition: border-radius 0.3s ease; /* Плавное изменение радиуса */
-  background-color: #f2f3f5; /* Цвет фона навигации */
+  background-color: var(--color-line); /* Цвет фона навигации */
 }
 .navi.active-top {
   border-top-left-radius: 0;

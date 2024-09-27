@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "main.scss";
-
+@import "../color.scss";
 .blog-slider {
   position: relative;
 
@@ -63,7 +63,6 @@
     width: 300px;
     flex-shrink: 0;
     height: 300px;
-    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
 
     border-radius: $border_rad;
     transform: translateX(0px);
@@ -77,7 +76,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+
       border-radius: $border_rad;
       opacity: 0.8;
     }
@@ -130,7 +129,7 @@
   }
 
   &__code {
-    color: $color_text_g;
+    color: var(--color-text-g);
     margin-bottom: 15px;
     display: block;
     font-weight: 500;
@@ -139,22 +138,22 @@
   &__title {
     font-size: 24px;
     font-weight: 700;
-    color: $color_text;
+    color: var(--color-text);
     margin-bottom: 20px;
   }
 
   &__text {
-    color: $color_text_g;
+    color: var(--color-text-g);
     margin-bottom: 30px;
     line-height: 1.5em;
   }
 
   &__button {
     display: inline-flex;
-    background-color: $color_orenge;
+    background-color: var(--color-orenge);
     padding: 15px 35px;
     border-radius: $border_rad;
-    color: $color_text_w;
+    color: var(--color-text-w);
 
     text-decoration: none;
     font-weight: 500;
@@ -204,12 +203,12 @@
       height: 11px;
       display: block;
       border-radius: $border_rad;
-      background: $color_text;
+      background: var(--color-text);
       opacity: 0.2;
       transition: all 0.3s;
       &-active {
         opacity: 1;
-        background: $color_orenge;
+        background: var(--color-orenge);
         height: 30px;
 
         @media screen and (max-width: 768px) {

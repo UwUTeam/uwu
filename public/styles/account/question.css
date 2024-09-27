@@ -1,5 +1,34 @@
 @charset "UTF-8";
-/* root */
+.light-theme {
+  --color-bac: #f2f3f5;
+  --color-block: #ffffff;
+  --color-orenge: #f96c33;
+  --color-line: #f2f3f5;
+  --color-line-act: #e2e2e2;
+  --color-text: #000000;
+  --color-black: #000000;
+  --color-text-g: #4e4a67;
+  --color-grem: #4e4a67;
+  --color-text-w: #ffffff;
+  --color-block-content: #f2f3f5;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
+.dark-theme {
+  --color-bac: #2f2e2d;
+  --color-block: #262626;
+  --color-orenge: #2a8db5;
+  --color-line: #2d2e2f;
+  --color-line-act: #4200dc;
+  --color-text: #ffffff;
+  --color-black: #ffffff;
+  --color-text-g: #d9d9d9;
+  --color-grem: #a5a5a5;
+  --color-text-w: #f6f6f6;
+  --color-block-content: #2d2e2f;
+  --color-orenge-rgb: 249, 108, 51;
+}
+
 :root {
   --index: calc(1vw + 1vh);
 }
@@ -47,6 +76,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  color: var(--color-text);
 }
 
 ul,
@@ -106,6 +136,7 @@ button::-moz-focus-inner {
 
 label {
   cursor: pointer;
+  color: var(--color-text-g);
 }
 
 legend {
@@ -114,16 +145,10 @@ legend {
 
 /* обнуление конец */
 body {
-  background-color: #f2f3f5;
+  background-color: var(--color-bac);
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
 }
 
 .question {
@@ -135,7 +160,7 @@ canvas {
 }
 
 span {
-  color: #f96c33;
+  color: var(--color-orenge);
 }
 
 .tabs {
@@ -150,21 +175,21 @@ span {
 }
 .tabs .tab-group .but_con {
   border-radius: 25px;
-  background-color: #f2f3f5;
-  color: #000000;
+  background-color: var(--color-block-content);
+  color: var(--color-text);
   z-index: 1;
 }
 .tabs .tab-group .tab {
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  background-color: #f2f3f5;
-  color: #000000;
+  background-color: var(--color-block-content);
+  color: var(--color-text);
   z-index: 1;
   transition: all 0.3s ease;
 }
 .tabs .tab-group .tab.active {
-  background-color: #f96c33;
-  color: #ffffff;
+  background-color: var(--color-orenge);
+  color: var(--color-text-w);
   z-index: 2;
 }
 .tabs .tab-group + .tab-group {
@@ -172,7 +197,7 @@ span {
 }
 
 .tab-test {
-  background-color: #f2f3f5;
+  background-color: var(--color-line);
   width: 100%;
   border-radius: 25px;
 }
@@ -180,22 +205,22 @@ span {
 .tab {
   padding: 0.5rem 1rem;
   border-radius: 25px;
-  background-color: #f2f3f5;
-  color: #000000;
+  background-color: var(--color-block-content);
+  color: var(--color-text);
   z-index: 1;
   transition: all 0.3s ease;
 }
 .tab.active {
-  background-color: #f96c33;
-  color: #ffffff;
+  background-color: var(--color-orenge);
+  color: var(--color-text-w);
   z-index: 2;
   transition: all 0.3s ease;
 }
 
 .but_con {
   border-radius: 25px;
-  background-color: #f2f3f5;
-  color: #000000;
+  background-color: var(--color-block-content);
+  color: var(--color-text);
   z-index: 1;
 }
 
@@ -206,12 +231,12 @@ span {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   margin-bottom: 0px;
-  box-shadow: 0 10px 1px 0px #f2f3f5;
+  box-shadow: 0 10px 1px 0px var(--color-block-content);
 }
 
 .drop-content {
-  background-color: #f2f3f5;
-  border-color: #f2f3f5;
+  background-color: var(--color-block-content);
+  border-color: var(--color-block-content);
   position: relative;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -229,7 +254,7 @@ span {
 .orange-line {
   width: 90%; /* Линия занимает 80% от ширины блока */
   height: 3px; /* Высота линии */
-  background-color: #f96c33; /* Цвет линии */
+  background-color: var(--color-orenge); /* Цвет линии */
   margin: 0 auto; /* Центрирование линии */
   border-radius: 25px;
 }

@@ -5,7 +5,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 0px;
-    box-shadow: 0 10px 1px 0px $color_block_content;
+    box-shadow: 0 10px 1px 0px var(--color-block-content);
     z-index: 101;
   }
 }
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px $padding_main;
-  background-color: $color_block; /* Используем переменную для фона */
+  background-color: var(--color-block); /* Используем переменную для фона */
 }
 
 .firstblock.navi .navbar-logo img {
@@ -27,18 +27,18 @@
   display: inline-block;
   padding: 8px 20px;
   font-size: 16px;
-  color: $color_text_w; /* Белый текст */
-  background-color: $color_orenge; /* Оранжевый фон кнопки */
+  color: var(--color-text-w); /* Белый текст */
+  background-color: var(--color-orenge); /* Оранжевый фон кнопки */
   border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .firstblock.navi .navbar-account:hover {
-  background-color: darken(
-    $color_orenge,
+  /*  background-color: darken(
+    var(--color-orenge),
     10%
-  ); /* Темнее оранжевый при наведении */
+  ); */ /* Темнее оранжевый при наведении */
 }
 .firstblock.navi .navbar-burger {
   display: flex;
@@ -47,7 +47,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: $color_orenge; /* Оранжевый цвет для бургер-меню */
+  background-color: var(--color-orenge); /* Оранжевый цвет для бургер-меню */
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -56,29 +56,20 @@
 }
 
 .firstblock.navi .navbar-burger:hover {
-  background-color: darken(
-    $color_orenge,
+  /*   background-color: darken(
+    var(--color-orenge),
     100%
-  ); /* Темнее оранжевый при наведении */
+  ); */ /* Темнее оранжевый при наведении */
 }
 
 .firstblock.navi .navbar-burger span {
   display: block;
   width: 20px;
   height: 2px;
-  background-color: $color_text_w; /* Белые полоски */
+  background-color: var(--color-text-w); /* Белые полоски */
   border-radius: 1px;
   margin: 3px 0;
   z-index: 101;
-}
-
-.firstblock.navi::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 2px;
-  background-color: $color_text_w; /* Белая полоска */
-  border-radius: 1px;
 }
 
 .navbar-account,
@@ -99,7 +90,9 @@
 }
 
 .navbar-burger {
-  background-color: $color_orenge; /* Используем переменную для оранжевого */
+  background-color: var(
+    --color-orenge
+  ); /* Используем переменную для оранжевого */
   border: none;
   border-radius: $border_rad;
   padding: 10px;
@@ -107,7 +100,7 @@
 }
 
 .navbar-burger i {
-  color: $color_text_w; /* Белые иконки */
+  color: var(--color-text-w); /* Белые иконки */
   font-size: 1.5rem;
 }
 
@@ -126,7 +119,7 @@
   top: 100%; /* Открываем меню прямо под навигацией */
   left: 0;
   width: 100%; /* Меню занимает всю ширину контейнера */
-  background-color: $color_block; /* Белый фон */
+  background-color: var(--color-block); /* Белый фон */
   padding: $padding_main;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 $border_rad $border_rad; /* Скругленные углы снизу */
@@ -148,22 +141,23 @@
 }
 
 .navbar-nav li a {
-  color: $color_text; /* Черный текст */
+  color: var(--color-text); /* Черный текст */
   text-decoration: none;
   padding: 10px 0;
   font-size: 1rem;
 }
-
 .language-switcher {
   display: flex;
   justify-content: flex-end;
 }
 
 .language-switcher .lang-btn {
-  background-color: #e0e0e0; /* Здесь нет переменной, если нужно — добавим */
+  background-color: var(
+    --color-line
+  ); /* Здесь нет переменной, если нужно — добавим */
   border: none;
   border-radius: 50%;
-  color: $color_text;
+  color: var(--color-text);
   font-size: 0.9rem;
   padding: 10px;
   margin-left: 5px;
@@ -171,17 +165,17 @@
 }
 
 .language-switcher .lang-btn.lang-active {
-  background-color: $color_orenge; /* Оранжевый цвет для активного языка */
-  color: $color_text_w; /* Белый цвет текста для активного языка */
+  background-color: var(
+    --color-orenge
+  ); /* Оранжевый цвет для активного языка */
+  color: var(--color-text-w); /* Белый цвет текста для активного языка */
 }
 
 .language-switcher .lang-btn:hover {
-  background-color: darken(
-    $color_orenge,
-    10%
-  ); /* Темнее оранжевый при наведении */
-  color: $color_text_w; /* Белый текст при наведении */
+  /*  background-color: darken(var(--color-orenge), 10%); */
+  color: var(--color-text-w); /* Белый текст при наведении */
 }
+
 /* Для блока навигации */
 .navi {
   border-radius: $border_rad; /* Радиус по умолчанию */
@@ -189,30 +183,30 @@
   &.active {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    transition: border-radius 0.3s ease; /* Плавное изменение радиуса нижних углов */
+    transition: border-radius 0.3s ease;
   }
 }
 
 /* Для выпадающего меню */
 .navbar-menu {
   border-radius: $border_rad; /* Скругленные углы по умолчанию */
-  transition: border-radius 0.3s ease; /* Плавный переход радиусов */
+  transition: border-radius 0.3s ease;
 
   &.is-active {
-    border-top-left-radius: 0; /* Верхние углы выравниваются при открытии */
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-bottom-left-radius: $border_rad; /* Нижние углы остаются скругленными */
+    border-bottom-left-radius: $border_rad;
     border-bottom-right-radius: $border_rad;
   }
 }
 
 .navbar-menu {
-  display: none; /* Меню скрыто по умолчанию */
+  display: none;
   position: absolute;
-  top: 100%; /* Открываем меню прямо под навигацией */
+  top: 100%;
   left: 0;
-  width: 100%; /* Меню занимает всю ширину контейнера */
-  background-color: $color_block; /* Цвет фона меню */
+  width: 100%;
+  background-color: var(--color-block); /* Цвет фона меню */
   padding: $padding_main;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 $border_rad $border_rad;
@@ -223,6 +217,7 @@
 .navbar-menu.is-active {
   display: block; /* Показываем меню при открытии */
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -240,21 +235,22 @@
   opacity: 1; /* Делаем оверлей видимым */
   pointer-events: all; /* Включаем клики, когда меню открыто */
 }
+
 .navi {
   border-radius: $border_rad; /* Радиус по умолчанию */
   z-index: 101;
-  transition: border-radius 0.3s ease; /* Плавное изменение радиуса */
+  transition: border-radius 0.3s ease;
 
   &.active {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 0px;
-    box-shadow: 0 10px 1px 0px $color_block_content;
+    box-shadow: 0 10px 1px 0px var(--color-block-content);
     z-index: 101;
   }
 
   .page-manu {
-    background-color: $color_line;
+    background-color: var(--color-line);
     border-radius: $border_rad;
     margin-bottom: 10px;
     padding: 2px;
@@ -274,11 +270,11 @@
       margin-top: auto;
       margin-bottom: auto;
       font-size: 24px;
-      color: $color_text;
+      color: var(--color-text);
     }
 
     .page-manu-b {
-      background-color: $color_orenge;
+      background-color: var(--color-orenge);
       border-radius: 50px;
       width: 40px;
       height: 40px;
@@ -286,7 +282,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: darken($color_orenge, 10%);
+        /*   background-color: darken(var(--color-orenge), 10%); */
       }
     }
   }
@@ -299,7 +295,7 @@
     }
   }
   .manu-block {
-    background-color: $color_line;
+    background-color: var(--color-line);
     border-radius: $border_rad;
     margin-bottom: 10px;
     margin-left: 15px;
@@ -314,7 +310,7 @@
     height: 50px;
   }
   .theme-manu {
-    background-color: $color_orenge;
+    background-color: var(--color-orenge);
     border-radius: 50px;
     margin-top: 5px;
     margin-right: 20px;
@@ -323,7 +319,7 @@
     height: 40px;
   }
   .language-manu {
-    background-color: $color_line;
+    background-color: var(--color-line);
     border-radius: $border_rad;
 
     /*  padding: 20px; */
@@ -331,13 +327,13 @@
     height: 50px;
   }
   .language-manu-1 {
-    background-color: $color_black;
+    background-color: var(--color-black);
     border-radius: 50px;
     width: 40px;
     height: 40px;
     margin: 5px;
     &.active-language {
-      background-color: $color_orenge;
+      background-color: var(--color-orenge);
     }
   }
 }
@@ -348,7 +344,7 @@
   top: 0;
 
   transition: border-radius 0.3s ease; /* Плавное изменение радиуса */
-  background-color: $color_line; /* Цвет фона навигации */
+  background-color: var(--color-line); /* Цвет фона навигации */
 
   &.active-top {
     border-top-left-radius: 0;
