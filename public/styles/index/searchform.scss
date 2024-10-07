@@ -6,7 +6,7 @@
 
   align-items: center;
   position: relative; /* Контейнер станет родителем для абсолютного позиционирования */
-  background-color: var(--color-line);
+  /* background-color: var(--color-line); */
   border-radius: 25px; /* Скругление углов контейнера */
 
   .form-control {
@@ -48,11 +48,13 @@
 
 .leftsearch {
   background-color: var(--color-block);
-  width: 55%;
+  width: 100%;
   border-radius: 25px; /* Скругление углов для левого блока */
+  margin: 15px;
 }
 
 .form-group {
+  /*  top: 6vh; */
   .form-control {
     background-color: var(--color-line);
     border: none;
@@ -62,7 +64,7 @@
   }
 }
 .widthfromsearch {
-  width: 92%;
+  width: 100%;
 }
 .login-btn {
   background-color: var(--color-orenge);
@@ -116,4 +118,29 @@
 .form-floating > .form-select ~ label {
   color: rgba(var(--color-text-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+.firstblock-box {
+  padding: 0;
+}
+
+.maps {
+  padding: 0;
+  margin: 1px;
+  iframe {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1px) and (max-width: 672px) {
+  /* Стили для планшетов в портретной ориентации */
+  .maps {
+    padding: 0;
+    margin: 1px;
+    iframe {
+      border-radius: 25px;
+      width: 171%;
+      height: 100%;
+    }
+  }
 }

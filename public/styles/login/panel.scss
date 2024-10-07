@@ -12,3 +12,71 @@
   padding-left: 70px;
   padding-right: 70px;
 }
+/* Мобильные устройства (до 575.98px) */
+@media (max-width: 575.98px) {
+  /* Стили для мобильных устройств */
+  .panel {
+    background-color: var(--color-block);
+    width: 80%;
+    max-width: 1150px;
+    /* height: 300px; */ /* Adjust the height as needed */
+    padding: $padding_main;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: $border_rad;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+/* Планшеты в портретной ориентации (576px - 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Стили для планшетов в портретной ориентации */
+
+  .panel {
+    background-color: var(--color-block);
+    width: 60%;
+    max-width: 1150px;
+    /* height: 300px; */ /* Adjust the height as needed */
+    padding: $padding_main;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: $border_rad;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+/* Планшеты в ландшафтной ориентации (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Стили для планшетов в ландшафтной ориентации */
+  .panel {
+    background-color: var(--color-block);
+    width: 50%;
+    max-width: 1150px;
+    /* height: 300px; */ /* Adjust the height as needed */
+    padding: $padding_main;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: $border_rad;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+/* Небольшие десктопы (992px - 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Стили для небольших десктопов */
+  .panel {
+    background-color: var(--color-block);
+    width: 45%;
+    max-width: 1150px;
+    /* height: 300px; */ /* Adjust the height as needed */
+    padding: $padding_main;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: $border_rad;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
